@@ -1,5 +1,5 @@
 # Axiomatic Formulation of PKGF Theory
-**DOI: [10.5281/zenodo.19344285](https://doi.org/10.5281/zenodo.19344285)**
+**Supplementary Research Package: https://doi.org/10.5281/zenodo.19344285**
 
 All objects defined herein are assumed to be on a smooth, finite-dimensional manifold \(M\).
 

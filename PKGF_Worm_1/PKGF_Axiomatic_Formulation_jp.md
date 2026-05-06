@@ -1,5 +1,5 @@
 # PKGF 公理系（Axiomatic Formulation）  
-**DOI: [10.5281/zenodo.19344285](https://doi.org/10.5281/zenodo.19344285)**
+**Supplementary Research Package: https://doi.org/10.5281/zenodo.19344285**
 
 以下、すべての対象は滑らかな有限次元多様体 \(M\) 上で定義されるものとする。
 

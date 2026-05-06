@@ -156,9 +156,9 @@ ORB‑SLAM [7] 等の従来手法が特徴点マッチングに依存するの�
 ## **参考文献（References）**
 
 ### **Foundational PoI Theory (By Fumio Miyata https://orcid.org/0009-0008-8797-5578)**
-[1] F. Miyata, *並行鍵幾何流（PKGF）公理体系*, 2026. DOI: 10.5281/zenodo.19481201.  
-[2] F. Miyata, *Physics of Intelligence: Substrate‑Invariant Formalism and Verification of PKGF*, 2026. DOI: 10.5281/zenodo.19659376.  
-[3] F. Miyata, *PoI‑OCR: 物理的共鳴に基づく幾何学的文字識別*, 2026. DOI: 10.5281/zenodo.19689520.  
+[1] F. Miyata, *並行鍵幾何流（PKGF）公理体系*, 2026. Supplementary Research Package: https://doi.org/10.5281/zenodo.19481201.  
+[2] F. Miyata, *Physics of Intelligence: Substrate‑Invariant Formalism and Verification of PKGF*, 2026. Supplementary Research Package: https://doi.org/10.5281/zenodo.19659376.  
+[3] F. Miyata, *PoI‑OCR: 物理的共鳴に基づく幾何学的文字識別*, 2026. Supplementary Research Package: https://doi.org/10.5281/zenodo.19689520.  
 
 ### **External Algorithms and Baselines**
 [4] N. Otsu, "A Threshold Selection Method from Gray-Level Histograms," *IEEE Trans. SMC*, 1979.  

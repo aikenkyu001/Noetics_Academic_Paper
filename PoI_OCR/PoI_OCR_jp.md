@@ -4,7 +4,7 @@
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** 2026年4月  
 **Repository:** [https://github.com/aikenkyu001/PoI_OCR](https://github.com/aikenkyu001/PoI_OCR)  
-**DOI:** [https://doi.org/10.5281/zenodo.19689520](https://doi.org/10.5281/zenodo.19689520)  
+Supplementary Research Package: https://doi.org/10.5281/zenodo.19689520  
 
 ## **要旨（Abstract）**
 本研究は、PoI 理論に基づく物理的共鳴を用いた文字識別手法の初期的検証を行い、限られた文字集合に対して回転不変性や微細構造の識別に関する有望な傾向を確認した。提案手法は、画像から抽出したスケルトン構造をもとに、構造場 \(K\) と入力場 \(\Omega\) を構成し、両者の交換子ノルム、固有値スペクトル、量子化ランク、三体相互作用などからなる **PoI（Physics of Intelligence）共鳴スコア**を計算することで、文字間の幾何学的同一性を評価する。
@@ -707,7 +707,7 @@ Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature R
 
 Li, M., Lv, T., Cui, L., Lu, Y., Florencio, D., Zhang, C., Li, Z., & Wei, F. (2021). TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models. *arXiv preprint arXiv:2109.10282*.
 
-Miyata, F. (2026). Physics of Intelligence: A Geometric Approach to Information Processing. *Internal Research Monograph*. DOI: [https://doi.org/10.5281/zenodo.19659376](https://doi.org/10.5281/zenodo.19659376)
+Miyata, F. (2026). Physics of Intelligence: A Geometric Approach to Information Processing. *Internal Research Monograph*. Supplementary Research Package: https://doi.org/10.5281/zenodo.19659376
 
 Nielsen, M. A., & Chuang, I. L. (2010). *Quantum Computation and Quantum Information*. Cambridge University Press.
 

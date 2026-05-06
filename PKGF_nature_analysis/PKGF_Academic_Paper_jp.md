@@ -3,7 +3,7 @@
 
 **著者:** Fumio Miyata https://orcid.org/0009-0008-8797-5578
 **日付:** 2026年4月8日  
-**DOI:** [10.5281/zenodo.19477743](https://doi.org/10.5281/zenodo.19477743)  
+Supplementary Research Package: https://doi.org/10.5281/zenodo.19477743  
 **リポジトリ:** [https://github.com/aikenkyu001/PKGF_nature_analysis](https://github.com/aikenkyu001/PKGF_nature_analysis)  
 
 *(本研究で使用したすべてのデータ、ソースコード、および解析リソースは上記リポジトリにて公開されている)*

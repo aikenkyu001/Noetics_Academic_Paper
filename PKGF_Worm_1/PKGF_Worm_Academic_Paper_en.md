@@ -2,7 +2,7 @@
 
 **Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **Date: March 31, 2026**  
-**DOI: [10.5281/zenodo.19344285](https://doi.org/10.5281/zenodo.19344285)**
+**Supplementary Research Package: https://doi.org/10.5281/zenodo.19344285**
 
 ---
 
@@ -252,7 +252,7 @@ The construction of PKGF-Worm establishes a **structured goal-directed flow** gr
 
 ## 10. References
 
-1. **Miyata, F.** (2026). "Parallel Key Geometric Flow in 32D Manifolds: Theory and Implementation". *Technical Report, PKGF Project*. DOI: [10.5281/zenodo.19217632](https://doi.org/10.5281/zenodo.19217632)
+1. **Miyata, F.** (2026). "Parallel Key Geometric Flow in 32D Manifolds: Theory and Implementation". *Technical Report, PKGF Project*. Supplementary Research Package: https://doi.org/10.5281/zenodo.19217632
 2. **Bronstein, M. M., et al.** (2021). "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges". *arXiv:2104.13478*.
 3. **Perelman, G.** (2002). "The entropy formula for the Ricci flow and its geometric applications". *arXiv:math/0211159*.
 4. **Cook, S. J., et al.** (2019). "Whole-animal connectomes of both Caenorhabditis elegans sexes". *Nature*, 571(7763), 63-71. DOI: [10.1038/s41586-019-1352-7](https://doi.org/10.1038/s41586-019-1352-7)

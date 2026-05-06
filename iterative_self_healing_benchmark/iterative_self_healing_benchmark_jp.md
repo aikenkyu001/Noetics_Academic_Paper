@@ -1,7 +1,7 @@
 # 大規模言語モデルの決定論的コード生成に向けた体系的アプローチ：スキャフォールディング戦略の有効性に関する研究
 
 **著者：** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
-**DOI:** [https://doi.org/10.5281/zenodo.18678188](https://doi.org/10.5281/zenodo.18678188)
+Supplementary Research Package: https://doi.org/10.5281/zenodo.18678188
 
 ---
 

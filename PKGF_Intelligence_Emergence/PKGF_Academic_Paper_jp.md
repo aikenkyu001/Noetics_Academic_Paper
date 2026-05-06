@@ -24,7 +24,7 @@
 
 本研究の基盤となる PKGF 理論の基本構成を以下に定義する。全ての実験リソースおよびシミュレーションコードは、以下のレポジトリで公開されている。
 - **Repository**: [https://github.com/aikenkyu001/PKGF_Intelligence_Emergence](https://github.com/aikenkyu001/PKGF_Intelligence_Emergence)
-- **DOI**: [https://doi.org/10.5281/zenodo.19217632](https://doi.org/10.5281/zenodo.19217632)
+- Supplementary Research Package: https://doi.org/10.5281/zenodo.19217632
 
 ### 2.1 幾何的舞台：接束の直交分解
 - **次元数**: $D$ 次元多様体。接束 $TM$ は以下の4つの独立なサブセクターに直交分解される：
@@ -221,7 +221,7 @@ Python 3.12 と Fortran 95 という二系統の実装における相互検証�
 ## 9. データとコードの公開 (Data and Code Availability)
 Python 3.12 および Fortran 95 によるソースコード、シミュレーションログ、生データは MIT ライセンスの下で以下のレポジトリにて公開されている。
 - **GitHub**: [https://github.com/aikenkyu001/PKGF_Intelligence_Emergence](https://github.com/aikenkyu001/PKGF_Intelligence_Emergence)
-- **Zenodo (DOI)**: [10.5281/zenodo.19270060](https://doi.org/10.5281/zenodo.19270060)
+- Supplementary Research Package: https://doi.org/10.5281/zenodo.19270060
 
 ---
 

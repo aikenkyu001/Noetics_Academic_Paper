@@ -23,7 +23,7 @@ This study extends PKGF theory to multi-agent environments, positing that intell
 
 The foundational architecture of PKGF theory utilized in this research is detailed below. Supplemental resources and simulation source codes are available at:
 - **Repository**: [https://github.com/aikenkyu001/PKGF_Intelligence_Emergence](https://github.com/aikenkyu001/PKGF_Intelligence_Emergence)
-- **DOI**: [https://doi.org/10.5281/zenodo.19217632](https://doi.org/10.5281/zenodo.19217632)
+- Supplementary Research Package: https://doi.org/10.5281/zenodo.19217632
 
 ### 2.1 The Geometric Stage: Tangent Bundle Decomposition
 - **Dimensionality**: We define the stage as a $D$-dimensional manifold. The tangent bundle $TM$ undergoes a canonical orthogonal decomposition into four distinct sub-sectors:
@@ -214,7 +214,7 @@ This research demonstrates that the emergence of intelligence within PKGF is a p
 ## 9. Data and Code Availability
 Source code for both Python 3.12 and Fortran 95 implementations, along with simulation logs and raw data, are publicly available under the MIT License at the following repository:
 - **GitHub**: [https://github.com/aikenkyu001/PKGF_Intelligence_Emergence](https://github.com/aikenkyu001/PKGF_Intelligence_Emergence)
-- **Zenodo (DOI)**: [10.5281/zenodo.19270060](https://doi.org/10.5281/zenodo.19270060)
+- Supplementary Research Package: https://doi.org/10.5281/zenodo.19270060
 
 ---
 

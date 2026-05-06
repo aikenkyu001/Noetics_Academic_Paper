@@ -2,7 +2,7 @@
 
 **著者:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **日付:** 2026年3月10日  
-**DOI:** https://doi.org/10.5281/zenodo.18905026  
+Supplementary Research Package: https://doi.org/10.5281/zenodo.18905026  
 **キーワード:** 認知アーキテクチャ、記号推論、項代数、合成性、決定論的推論、言語不変性、プラットフォーム不変性
 
 ---
@@ -99,7 +99,7 @@ MIW は、合成的推論が決定論的な構造保存写像として実装可�
 ---
 
 ## データの可用性に関する宣言
-MIW カーネル（Python および Modern Fortran）の完全なソースコード、60 のアルゴリズムタスクからなるベンチマークスイート、および合成・実行ログは、査読および再現のために以下のリポジトリで公開されている： [https://github.com/aikenkyu001/morphic_inner_world](https://github.com/aikenkyu001/morphic_inner_world)。また、データセットは Zenodo でもアーカイブされている (DOI: [10.5281/zenodo.18905026](https://doi.org/10.5281/zenodo.18905026))。
+MIW カーネル（Python および Modern Fortran）の完全なソースコード、60 のアルゴリズムタスクからなるベンチマークスイート、および合成・実行ログは、査読および再現のために以下のリポジトリで公開されている： [https://github.com/aikenkyu001/morphic_inner_world](https://github.com/aikenkyu001/morphic_inner_world)。また、データセットは Zenodo でもアーカイブされている (Supplementary Research Package: https://doi.org/10.5281/zenodo.18905026)。
 
 ---
 

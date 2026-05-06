@@ -3,7 +3,7 @@
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Affiliation:** Independent Researcher  
 **Date:** March 11, 2026  
-**DOI:** [10.5281/zenodo.18954335](https://doi.org/10.5281/zenodo.18954335)
+Supplementary Research Package: https://doi.org/10.5281/zenodo.18954335
 
 ---
 

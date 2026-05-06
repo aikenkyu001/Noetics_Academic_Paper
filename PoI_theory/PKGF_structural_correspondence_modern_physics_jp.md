@@ -2,7 +2,7 @@
 
 **著者**： Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **日付**： 2026年4月  
-**DOI:** [https://doi.org/10.5281/zenodo.20018571](https://doi.org/10.5281/zenodo.20018571)  
+Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  
 
 ### 要旨（Abstract）

@@ -3,7 +3,7 @@
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 2026  
 **Repository:** [https://github.com/aikenkyu001/PoI_OCR](https://github.com/aikenkyu001/PoI_OCR)  
-**DOI:** [https://doi.org/10.5281/zenodo.19689520](https://doi.org/10.5281/zenodo.19689520)
+Supplementary Research Package: https://doi.org/10.5281/zenodo.19689520
 
 ---
 
@@ -490,7 +490,7 @@ Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature R
 
 Li, M., et al. (2021). TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models. *arXiv preprint arXiv:2109.10282*.
 
-Miyata, F. (2026). Physics of Intelligence: A Geometric Approach to Information Processing. *Internal Research Monograph*. DOI: [https://doi.org/10.5281/zenodo.19659376](https://doi.org/10.5281/zenodo.19659376)
+Miyata, F. (2026). Physics of Intelligence: A Geometric Approach to Information Processing. *Internal Research Monograph*. Supplementary Research Package: https://doi.org/10.5281/zenodo.19659376
 
 Nielsen, M. A., & Chuang, I. L. (2010). *Quantum Computation and Quantum Information*. Cambridge University Press.
 
