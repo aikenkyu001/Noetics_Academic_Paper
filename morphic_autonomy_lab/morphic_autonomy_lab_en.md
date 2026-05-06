@@ -14,16 +14,16 @@ This research establishes a paradigm for studied intelligence invariance by deco
 
 # 1 Introduction
 
-### 1.1 The Entropy Problem in AI
+## 1.1 The Entropy Problem in AI
 Contemporary artificial intelligence, particularly stochastic models based on large-scale probabilistic inference and non-deterministic runtimes, suffers from inherent "Entropy"—variance introduced by probabilistic inference, runtime environments, and hardware-specific architectural discrepancies. Following Shannon's (1948) formulation, this variance can be viewed as noise that obscures the underlying signal of pure logic. This entropy prevents the realization of a truly universal and reliable intelligence that remains invariant across different mediums of expression and execution.
 
-### 1.2 Deterministic Intelligence Hypothesis
+## 1.2 Deterministic Intelligence Hypothesis
 We hypothesize that the core of intelligence is not a probabilistic distribution but a deterministic structure of logical relations. As Wittgenstein (1921) posited that the world is a totality of facts in logical space, and Turing (1936) and Church (1936) established the formal boundaries of computable logic, we argue that intelligence can be extracted as a "Geometric Reality" that is physically and mathematically invariant. This pursuit of the structural essence of knowledge aligns with Solomonoff's (1964) theory of universal inductive inference, where the shortest logic represents the highest truth.
 
-### 1.3 Geometric Logic Representation
+## 1.3 Geometric Logic Representation
 We introduce the **Geometric Logic Sequence (GLS)** as a formal representation of intelligence. A GLS is an ordered sequence of identifiers corresponding to atomic, deterministic computational primitives. The term "geometric" refers to the invariance of the structural relationships between primitives under changes in linguistic or runtime coordinates. This representation ensures that the structural integrity of logic is preserved independently of the entropy layers, mirroring the principles of data independence established by Codd (1970).
 
-### 1.4 Contributions
+## 1.4 Contributions
 This paper makes the following contributions:
 1.  **Conceptual Framework**: We introduce the concept of Geometric Logic Sequences (GLS) as an environment-invariant representation of intelligence.
 2.  **Universal Architecture**: We propose a universal execution architecture based on WebAssembly (Wasm) kernels that ensures deterministic execution, drawing upon the protection principles of Saltzer and Schroeder (1975).
@@ -34,33 +34,33 @@ This paper makes the following contributions:
 
 # 2 Related Work
 
-### 2.1 Symbolic AI and Formal Logic
+## 2.1 Symbolic AI and Formal Logic
 The quest for a symbolic representation of intelligence dates back to the "Strong AI" debates (Searle, 1980) and the formalization of language structures (Chomsky, 1956). Recent critiques emphasize the necessity of returning to robust, symbolic reasoning (Marcus, 2020) and universal algorithmic intelligence (Hutter, 2005, 2012) to overcome the inherent limitations of representation learning (Bengio et al., 2013).
 
-### 2.2 Program Synthesis and Formal Discovery
+## 2.2 Program Synthesis and Formal Discovery
 Program synthesis (Hoare, 1969; Solar-Lezama, 2008) and structural operational semantics (Plotkin, 1981) provide the formal basis for generating executable logic from specifications. Our approach extends this by using a bounded search over deterministic primitives to discover structural "truths," analogous to the autonomous discovery of matrix algorithms by Fawzi et al. (2022).
 
-### 2.3 Deterministic Computing and Numerical Stability
+## 2.3 Deterministic Computing and Numerical Stability
 Achieving determinism in floating-point arithmetic is a long-standing challenge (Goldberg, 1991). We leverage these principles to ground abstract mathematical operations in verified, bit-identical host functions, ensuring the thermodynamic consistency of computation as discussed by Bennett (1982).
 
-### 2.4 Invariance and Geometric Foundations
+## 2.4 Invariance and Geometric Foundations
 The principle of defining structures by their invariants originated in Klein's (1872) Erlangen Program and Noether's (1918) theorems connecting symmetry to conservation laws. In the context of modern AI, Bronstein et al. (2021) formalized this as Geometric Deep Learning. Our GLS framework applies these geometric principles to the very structure of logical sequences.
 
 ---
 
 # 3 Formal Model
 
-### 3.1 Primitive Set
+## 3.1 Primitive Set
 **Definition 1 (Primitive)**: A primitive $p \in \mathcal{P}$ is a deterministic, atomic computational unit defined as a function:
 $$p : \mathbb{R}^n \to \mathbb{R}$$
 where $\mathcal{P}$ is a globally managed set of primitives within the MQDB.
 
-### 3.2 Geometric Logic Sequence (GLS)
+## 3.2 Geometric Logic Sequence (GLS)
 **Definition 2 (GLS)**: A Geometric Logic Sequence $G$ is an ordered sequence of primitive identifiers mapping to a composite computational task:
 $$G = (id_1, id_2, \dots, id_n)$$
 where each $id_i \in \text{Lexicon}$ corresponds to a specific primitive $p_i \in \mathcal{P}$. The GLS represents the "Geometric Reality" extracted from environmental entropy.
 
-### 3.3 Deterministic Evaluator
+## 3.3 Deterministic Evaluator
 **Definition 3 (Universal Kernel)**: A Universal Kernel $\mathcal{K}$ is a language-agnostic execution engine that evaluates a GLS by invoking the corresponding Wasm binaries:
 $$\mathcal{K}(L, \text{input}) \to \text{output}$$
 The kernel ensures that $\forall \text{host } H_1, H_2, \mathcal{K}_{H_1} = \mathcal{K}_{H_2}$ at the bit-level, adhering to the axiomatic basis of programming (Hoare, 1969).
@@ -69,42 +69,38 @@ The kernel ensures that $\forall \text{host } H_1, H_2, \mathcal{K}_{H_1} = \mat
 
 # 4 System Architecture
 
-### 4.1 Morphic System Overview
+## 4.1 Morphic System Overview
 The system is designed to isolate the core logic from transient layers of entropy, adhering to the principle of "separation of concerns" and the protection of information assets (Saltzer and Schroeder, 1975).
 
-![Figure 1: Principle of Decoupling Intelligence from Environmental Entropy](images/fig1_decoupling.png)  
-*[Figure 1: Principle of Decoupling Intelligence from Environmental Entropy ([PDF](images/fig1_decoupling.pdf))]*
+![Figure 1: Principle of Decoupling Intelligence from Environmental Entropy](images/fig1_decoupling.pdf)  
 
-### 4.2 MQDB Architecture
+## 4.2 MQDB Architecture
 MQDB acts as the "Source of Truth," normalizing knowledge and mechanisms. Its design follows the relational model of data (Codd, 1970), ensuring data independence where the logical representation of primitives is decoupled from their physical Wasm implementation. The term "quantum" in MQDB refers to the discrete logical units (Morphic DNA) from which intelligence is quantized, rather than quantum-mechanical computation. MQDB differs from conventional databases in that it stores verified logic sequences as immutable binary artifacts (Morphic DNA) rather than executable source programs, ensuring the permanence of Wittgenstein's (1921) logical facts.
 
-![Figure 2: Entity-Relationship Diagram of the MQDB](images/fig2_mqdb_erd.png)  
-*[Figure 2: Entity-Relationship Diagram of the MQDB ([PDF](images/fig2_mqdb_erd.pdf))]*
+![Figure 2: Entity-Relationship Diagram of the MQDB](images/fig2_mqdb_erd.pdf)  
 
-### 4.3 Discovery Agent
+## 4.3 Discovery Agent
 The agent performs a bounded search to synthesize logic from formal tasks, inspired by Solar-Lezama's (2008) program synthesis by sketching. By exploring the space of atomic primitives, the agent discovers the structural "Morphic DNA" that satisfies the axiomatic requirements of Hoare (1969).
 
-![Figure 3: Autonomous Discovery Process](images/fig3_discovery.png)  
-*[Figure 3: Autonomous Discovery Process ([PDF](images/fig3_discovery.pdf))]*
+![Figure 3: Autonomous Discovery Process](images/fig3_discovery.pdf)  
 
 ---
 
 # 5 Deterministic Execution
 
-### 5.1 Host Function Grounding
+## 5.1 Host Function Grounding
 To eliminate environment dependency, Wasm imports are grounded to verified host functions. This universal execution layer ensures that the semantic structure of logic remains independent of the host language runtime, addressing the numerical instability warned by Goldberg (1991) and ensuring invariance (Noether, 1918).
 
-![Figure 4: Precision Alignment Mechanism via Host Function Grounding](images/fig4_precision.png)  
-*[Figure 4: Precision Alignment Mechanism via Host Function Grounding ([PDF](images/fig4_precision.pdf))]*
+![Figure 4: Precision Alignment Mechanism via Host Function Grounding](images/fig4_precision.pdf)  
 
-### 5.2 Determinism Guard
+## 5.2 Determinism Guard
 The system implements strict NaN canonicalization and fuel-based execution metering (Wasmtime Team, 2025). Furthermore, the ordering of events and execution steps is strictly governed by logical clocks (Lamport, 1978), ensuring that concurrent discovery processes remain deterministic. This control minimizes the thermodynamic entropy of computation (Bennett, 1982), leading to 100% bit-level reproducibility.
 
 ---
 
 # 6 Experiments
 
-### 6.1 Logic Synthesis and Autonomous Discovery
+## 6.1 Logic Synthesis and Autonomous Discovery
 The agent performed a bounded search over the primitive set $\mathcal{P}$ to synthesize logic sequences that satisfy formal I/O contracts. In total, 37 distinct mathematical and physical tasks were evaluated.
 
 | Task Category | Task Name | Status | Synthesized GLS (IDs) |
@@ -116,7 +112,7 @@ The agent performed a bounded search over the primitive set $\mathcal{P}$ to syn
 
 **Table 1: Performance and Results of Autonomous Logic Synthesis**
 
-### 6.2 Cross-Runtime Execution Parity
+## 6.2 Cross-Runtime Execution Parity
 We measured the output consistency across Python, Fortran, and native Wasm runtimes.
 
 | Benchmark Task | Synthesized GLS (IDs) | Cross-Runtime Consistency | Status |
@@ -130,12 +126,12 @@ We measured the output consistency across Python, Fortran, and native Wasm runti
 
 # 7 Theoretical Properties
 
-### 7.1 Theorem 1: Environment Invariance
+## 7.1 Theorem 1: Environment Invariance
 **Theorem**: *Given a Geometric Logic Sequence $G$ and deterministic primitive implementations $\mathcal{P}$, execution through the universal kernel $\mathcal{K}$ produces identical outputs across all host environments $E_n$.*
 $$\forall E_1, E_2 : \mathcal{K}_{E_1}(G, I) = \mathcal{K}_{E_2}(G, I)$$
 *for all valid inputs $I$.*
 
-### 7.2 Proof Sketch
+## 7.2 Proof Sketch
 1.  **Primitives Deterministic**: Each $p \in \mathcal{P}$ is implemented as a Wasm binary with bit-identical host-function grounding (Goldberg, 1991).
 2.  **GLS Structural**: $G$ is an ordered sequence of integer IDs, independent of implementation syntax.
 3.  **Wasm Semantics Fixed**: The universal kernel $\mathcal{K}$ adheres to the fixed Wasm specification with NaN canonicalization, ensuring invariant state transitions (Plotkin, 1981).
@@ -190,6 +186,3 @@ We have demonstrated that intelligence can be decoupled from linguistic and envi
 - Turing, A. M. (1936). *On Computable Numbers, with an Application to the Entscheidungsproblem*.
 - Voevodsky, V. (2013). *Homotopy Type Theory: Univalent Foundations of Mathematics*.
 - Wittgenstein, L. (1921). *Tractatus Logico-Philosophicus*.
-
----
-**© 2026 Fumio Miyata https://orcid.org/0009-0008-8797-5578. All Rights Reserved.**
