@@ -1,0 +1,23 @@
+@startuml
+
+skinparam rectangle {
+  MinimumWidth 350
+  MaximumWidth 350
+}
+
+rectangle "Input:\nPrompt specifying filter conditions and strict output format\ne.g., 'Return a list string of even numbers that are not 8'" as A
+
+rectangle "LLM" as B
+
+rectangle "Output:\nA string, not Python code\ne.g., '[2, 4, 6, 10, ...]'" as C
+
+rectangle "Exact Match Verification\nwith Expected String" as D
+
+rectangle "Result:\nSuccess / Failure" as E
+
+A --> B
+B --> C
+C --> D
+D --> E
+
+@enduml

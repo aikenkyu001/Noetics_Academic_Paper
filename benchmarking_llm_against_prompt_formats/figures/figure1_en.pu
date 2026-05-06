@@ -1,0 +1,18 @@
+@startuml
+skinparam roundCorner 20
+skinparam rectangle {
+  MinimumWidth 300
+  MaximumWidth 300
+}
+
+rectangle "Input: Natural Language Prompt\n(en, ja, eo, jbo)\n(Imperative / Conversational)" as A
+rectangle "LLM" as B
+rectangle "Output: Python Function Code" as C
+rectangle "Automated Verification by Pytest" as D
+rectangle "Result: Success / Failure" as E
+
+A --> B
+B --> C
+C --> D
+D --> E
+@enduml

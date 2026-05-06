@@ -1,0 +1,31 @@
+@startuml
+skinparam roundCorner 20
+
+skinparam rectangle {
+  MinimumWidth 350
+  MaximumWidth 350
+}
+
+rectangle "<b>Input: A single, long prompt</b>\nContaining: 1. A puzzle in an unknown token language,\n2. Grammar rules for the language, and\n3. An example solution using a backtracking algorithm" as A
+
+rectangle "LLM" as B
+
+package "Internal Tasks for the LLM" {
+    rectangle "<b>Task 1: Grammar Learning</b>\nInterpret token language rules" as B1
+    rectangle "<b>Task 2: Algorithm Learning</b>\nExtract backtracking structure from the example" as B2
+    rectangle "<b>Task 3: Code Implementation</b>\nCombine grammar and algorithm to implement a Python solver" as B3
+}
+
+rectangle "Output: Final Python solver code" as C
+rectangle "Automated Verification by Pytest" as D
+rectangle "Result: Failure" as E
+
+A --> B
+B --> B1
+B1 --> B2
+B2 --> B3
+B3 --> C
+C --> D
+D --> E : "Runtime Error (e.g., KeyError)"
+
+@enduml

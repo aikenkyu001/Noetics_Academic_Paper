@@ -1,0 +1,27 @@
+@startuml
+skinparam roundCorner 20
+
+skinparam rectangle {
+  MinimumWidth 300
+  MaximumWidth 300
+}
+
+package "Input Prompt" {
+  rectangle "Rule Set (S-expression format)" as A1
+  rectangle "Rule Set (JSON format)" as A2
+  rectangle "Rule Set (TSV format, etc.)" as A3
+}
+
+rectangle "LLM" as B
+rectangle "Output: Python function implementing the rules" as C
+rectangle "Automated Verification by Pytest" as D
+rectangle "Result: Success / Failure" as E
+
+A1 --> B
+A2 --> B
+A3 --> B
+B --> C
+C --> D
+D --> E
+
+@enduml
