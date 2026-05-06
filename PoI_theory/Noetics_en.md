@@ -1,7 +1,7 @@
 # **Founding Declaration of Noetics**  
 **— Establishing a New Fundamental Science for the Physical and Geometric Study of Intelligence —**
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 2026  
 **DOI:** [https://doi.org/10.5281/zenodo.20018571](https://doi.org/10.5281/zenodo.20018571)  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  

@@ -1,7 +1,7 @@
 # PoI 理論の構造場物理を実世界タスクで実証する：  
 **PKGF・CDU・K‑field に基づく単眼 SLAM 実験**
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 2026  
 **DOI:** `https://doi.org/10.5281/zenodo.19727137`  
 **Repository:** `https://github.com/aikenkyu001/PoI_SLAM`  
@@ -155,7 +155,7 @@ ORB‑SLAM [7] 等の従来手法が特徴点マッチングに依存するの�
 
 ## **参考文献（References）**
 
-### **Foundational PoI Theory (By Fumio Miyata)**
+### **Foundational PoI Theory (By Fumio Miyata https://orcid.org/0009-0008-8797-5578)**
 [1] F. Miyata, *並行鍵幾何流（PKGF）公理体系*, 2026. DOI: 10.5281/zenodo.19481201.  
 [2] F. Miyata, *Physics of Intelligence: Substrate‑Invariant Formalism and Verification of PKGF*, 2026. DOI: 10.5281/zenodo.19659376.  
 [3] F. Miyata, *PoI‑OCR: 物理的共鳴に基づく幾何学的文字識別*, 2026. DOI: 10.5281/zenodo.19689520.  

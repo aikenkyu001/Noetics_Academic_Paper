@@ -1,7 +1,7 @@
 # **PKGF 知能創発プロジェクト：全フェーズ統合報告書**
 **Comprehensive Report on Intelligence Emergence in Parallel Key Geometric Flow**
 
-**著者: Fumio Miyata**  
+**著者: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付: 2026年3月27日**  
 **理論基盤: Parallel Key Geometric Flow (PKGF)**
 

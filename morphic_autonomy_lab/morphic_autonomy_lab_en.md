@@ -1,6 +1,6 @@
 # Geometric Invariance of Intelligence: Decoupling Structural Logic from Linguistic and Execution Entropy via Universal Kernels
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Affiliation:** Independent Researcher  
 **Date:** March 11, 2026  
 **DOI:** [10.5281/zenodo.18954335](https://doi.org/10.5281/zenodo.18954335)
@@ -192,4 +192,4 @@ We have demonstrated that intelligence can be decoupled from linguistic and envi
 - Wittgenstein, L. (1921). *Tractatus Logico-Philosophicus*.
 
 ---
-**© 2026 Fumio Miyata. All Rights Reserved.**
+**© 2026 Fumio Miyata https://orcid.org/0009-0008-8797-5578. All Rights Reserved.**

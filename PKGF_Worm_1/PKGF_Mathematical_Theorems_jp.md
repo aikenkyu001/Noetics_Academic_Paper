@@ -1,7 +1,7 @@
 # **並行鍵幾何流 (PKGF) における知能創発の諸定理**
 **Mathematical Theorems of Intelligence Emergence in Parallel Key Geometric Flow**
 
-**著者: Fumio Miyata**  
+**著者: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付: 2026年3月27日**  
 
 本稿は、可微分多様体 $M$ 上の並行鍵幾何流 (PKGF) およびその多体結合系において成立する数学的定理を定義する。これらの定理は、幾何学的制約下における構造保存、相転移、および次元依存的収束の基礎理論を提供する。

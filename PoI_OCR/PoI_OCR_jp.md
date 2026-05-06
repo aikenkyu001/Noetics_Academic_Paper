@@ -1,7 +1,7 @@
 # 物理的共鳴に基づく幾何学的文字識別  
 **PoI 理論における構造慣性と散逸の応用**
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** 2026年4月  
 **Repository:** [https://github.com/aikenkyu001/PoI_OCR](https://github.com/aikenkyu001/PoI_OCR)  
 **DOI:** [https://doi.org/10.5281/zenodo.19689520](https://doi.org/10.5281/zenodo.19689520)  

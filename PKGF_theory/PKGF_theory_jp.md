@@ -1,7 +1,7 @@
 # 並行鍵幾何流（PKGF）・逆PKGF・統一PKGF  
 **知能の構築・解体・代謝を記述する幾何学的理論体系**
 
-**著者:** Fumio Miyata  
+**著者:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **日付:** 2026年4月8日  
 **DOI:** [10.5281/zenodo.19481201](https://doi.org/10.5281/zenodo.19481201)  
 **Repository:** [github.com/aikenkyu001/PKGF_theory](https://github.com/aikenkyu001/PKGF_theory)  

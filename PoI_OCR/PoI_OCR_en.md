@@ -1,6 +1,6 @@
 # Geometric Character Recognition via Physical Resonance: Applications of Structural Inertia and Dissipation in the PoI Framework
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 2026  
 **Repository:** [https://github.com/aikenkyu001/PoI_OCR](https://github.com/aikenkyu001/PoI_OCR)  
 **DOI:** [https://doi.org/10.5281/zenodo.19689520](https://doi.org/10.5281/zenodo.19689520)

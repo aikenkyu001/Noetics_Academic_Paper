@@ -1,6 +1,6 @@
 # **Constructive Existence Proof and Numerical Verification of V‑PCM: A Virtual Photonic Computing Engine Based on Parallel Key Geometric Flow (PKGF) Theory**
 
-**Author**: Fumio Miyata
+**Author**: Fumio Miyata https://orcid.org/0009-0008-8797-5578
 **Date**: April 13, 2026
 **DOI**: [10.5281/zenodo.19549762](https://doi.org/10.5281/zenodo.19549762)
 

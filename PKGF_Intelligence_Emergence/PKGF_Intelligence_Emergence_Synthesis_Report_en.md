@@ -1,7 +1,7 @@
 # **PKGF Intelligence Emergence Project: Integrated Synthesis Report**
 **Comprehensive Analysis of Multi-Body Parallel Key Geometric Flow Dynamics**
 
-**Author: Fumio Miyata**  
+**Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **Date: March 27, 2026**  
 **Theoretical Foundation: Parallel Key Geometric Flow (PKGF)**
 

@@ -1,7 +1,7 @@
 # 12次元文脈歪曲多様体における並行鍵幾何流（PKGF）の数値的挙動：小規模シナリオによる初歩的観察報告
 **Numerical Observations of Parallel Key Geometric Flow (PKGF) in 12D Context-Warped Manifolds: A Preliminary Technical Report**
 
-**著者: Fumio Miyata**  
+**著者: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付: 2026年3月25日**
 
 全ての実験リソースはこのレポジトリで公開されています：https://github.com/aikenkyu001/PKGF

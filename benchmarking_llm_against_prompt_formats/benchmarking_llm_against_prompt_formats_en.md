@@ -1,6 +1,6 @@
 ---
 title: 'Benchmarking LLM Sensitivity to Prompt Formats: A Contamination-Free Approach'
-authors: 'Fumio Miyata'
+authors: 'Fumio Miyata https://orcid.org/0009-0008-8797-5578'
 abstract: |
   The evaluation of Large Language Models (LLMs) is complicated by prompt sensitivity and data contamination, obscuring the distinction between genuine reasoning and rote memorization. This paper introduces a reproducible, contamination-free benchmark to measure how LLM responses vary with the prompt's language, style, and syntactic format. Our methodology uses the constructed language Lojban—virtually absent from pre-training corpora—and a suite of novel symbolic prompting tasks to assess a model's ability to interpret unfamiliar formal systems. The results indicate three key findings: (1) prompt strictness can elicit latent capabilities, but its effectiveness is limited to familiar languages; (2) models exhibit a significant ceiling in algorithmic complexity, failing to produce bug-free code for novel tasks; and (3) performance appears more indicative of sophisticated pattern matching than abstract reasoning. This work provides a comprehensive dataset and a rigorous framework for evaluating the generalization and true reasoning abilities of LLMs. The accompanying code and data are archived on Zenodo (DOI: https://doi.org/10.5281/zenodo.18043860).
 ---

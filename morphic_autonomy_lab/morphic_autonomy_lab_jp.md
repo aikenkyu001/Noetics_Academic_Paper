@@ -1,6 +1,6 @@
 # 知能の幾何学的不変性：ユニバーサルカーネルによる自然言語・プログラミング言語・実行環境からの論理構造の分離
 
-**著者:** Fumio Miyata  
+**著者:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **所属:** 独立研究者  
 **日付:** 2026年3月11日  
 **DOI:** [10.5281/zenodo.18954335](https://doi.org/10.5281/zenodo.18954335)
@@ -191,4 +191,4 @@ $$\forall E_1, E_2 : \mathcal{K}_{E_1}(G, I) = \mathcal{K}_{E_2}(G, I)$$
 - Wittgenstein, L. (1921). *Tractatus Logico-Philosophicus*.
 
 ---
-**© 2026 Fumio Miyata. All Rights Reserved.**
+**© 2026 Fumio Miyata https://orcid.org/0009-0008-8797-5578. All Rights Reserved.**

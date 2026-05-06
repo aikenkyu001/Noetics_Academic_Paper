@@ -1,7 +1,7 @@
 # **PKGF: A Unified Geometric Framework for Deterministic and Non-deterministic Information Memory**
 **Parallel Key Geometric Flow as a Universal Structural Memory for Intelligence Emergence**
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 8, 2026  
 **DOI:** [10.5281/zenodo.19477743](https://doi.org/10.5281/zenodo.19477743)  
 **Repository:** [https://github.com/aikenkyu001/PKGF_nature_analysis](https://github.com/aikenkyu001/PKGF_nature_analysis)  

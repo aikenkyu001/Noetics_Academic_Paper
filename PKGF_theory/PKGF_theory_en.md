@@ -1,7 +1,7 @@
 # Parallel Key Geometric Flow (PKGF), Destructive PKGF, and Unified PKGF
 **A Geometric Theoretical Framework Describing the Construction, Deconstruction, and Metabolism of Intelligence**
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 8, 2026  
 **DOI:** [10.5281/zenodo.19481201](https://doi.org/10.5281/zenodo.19481201)  
 **Repository:** [github.com/aikenkyu001/PKGF_theory](https://github.com/aikenkyu001/PKGF_theory)  

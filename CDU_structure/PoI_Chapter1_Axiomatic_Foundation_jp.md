@@ -1,7 +1,7 @@
 # Physics of Intelligence: Substrate-Invariant Formalism and Verification of PKGF
 **（知能の物理学：並行鍵幾何流の媒体不変な定式化と実証）**
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** 2026年4月  
 **Correspondence:** [https://doi.org/10.5281/zenodo.19659376](https://doi.org/10.5281/zenodo.19659376)
 

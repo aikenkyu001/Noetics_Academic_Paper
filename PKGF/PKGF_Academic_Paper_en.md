@@ -1,6 +1,6 @@
 # Numerical Observations of Parallel Key Geometric Flow (PKGF) in 12D Context-Warped Manifolds: A Preliminary Technical Report
 
-**Author: Fumio Miyata**  
+**Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **Date: March 25, 2026**
 
 All experimental resources are published in this repository: https://github.com/aikenkyu001/PKGF

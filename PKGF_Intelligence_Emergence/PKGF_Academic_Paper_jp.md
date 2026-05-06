@@ -1,7 +1,7 @@
 # 多次元文脈歪曲多様体における多体並行鍵幾何流（PKGF）の集団動態と知能創発：数値的観察と提唱された定理
 **Collective Dynamics and Intelligence Emergence in Multi-Body Parallel Key Geometric Flow (PKGF) on Multi-Dimensional Context-Warped Manifolds: Numerical Observations and Postulated Theorems**
 
-**著者: Fumio Miyata**  
+**著者: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付: 2026年3月27日**  
 
 ---

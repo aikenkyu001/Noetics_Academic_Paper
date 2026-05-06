@@ -1,6 +1,6 @@
 # **A Systematic Approach to Deterministic Code Generation in Large Language Models: A Study on the Effectiveness of Scaffolding Strategies**
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **DOI:** [https://doi.org/10.5281/zenodo.18678188](https://doi.org/10.5281/zenodo.18678188)
 
 ---

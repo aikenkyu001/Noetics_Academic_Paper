@@ -1,6 +1,6 @@
 # Morphic Inner World: Achieving Language- and Platform-Invariant Deterministic Intelligence through Geometric Term-Algebraic Projection
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** March 10, 2026  
 **DOI:** https://doi.org/10.5281/zenodo.18905026  
 **Keywords:** Cognitive Architecture, Symbolic Reasoning, Term Algebra, Compositionality, Deterministic Inference, Language Invariance, Platform Invariance

@@ -1,6 +1,6 @@
 # Collective Dynamics and Intelligence Emergence in Multi-Body Parallel Key Geometric Flow (PKGF) on Multi-Dimensional Context-Warped Manifolds: Numerical Observations and Postulated Theorems
 
-**Author: Fumio Miyata**  
+**Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **Date: March 27, 2026**  
 
 ---

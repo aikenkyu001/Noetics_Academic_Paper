@@ -1,7 +1,7 @@
 # **Extended Mathematical Definition of Parallel Key Geometric Flow (PKGF)**
 **For Multi-Body Intelligence Emergence in Context-Warped Manifolds**
 
-**Author: Fumio Miyata**  
+**Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **Date: March 27, 2026**  
 
 This document defines the mathematical framework for Parallel Key Geometric Flow (PKGF), extending its original formulation of semantic transitions to coupled dynamical systems. It formalizes the process of intelligence emergence within multi-agent environments through differential geometry.

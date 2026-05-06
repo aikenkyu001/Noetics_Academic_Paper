@@ -1,6 +1,6 @@
 # 並行鍵幾何流（PKGF）公理体系
 
-**Author:** Fumio Miyata  
+**Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 8, 2026  
 **DOI:** [10.5281/zenodo.19481201](https://doi.org/10.5281/zenodo.19481201)  
 

@@ -1,6 +1,6 @@
 ---
 title: 'A Semantic Round-trip Benchmark and Dataset for Probing the Generalization Gap in Language Models'
-authors: 'Fumio Miyata'
+authors: 'Fumio Miyata https://orcid.org/0009-0008-8797-5578'
 abstract: |
   To facilitate research into the iterative reliability and generalization capabilities of language models, we introduce the "Semantic Round-trip," a novel benchmark designed to measure a model's ability to maintain semantic consistency through repeated transformations. We term this property "Iterative Stability." We applied this benchmark to 24 small language models (SLMs) across a set of diverse tasks, generating a comprehensive dataset of over 7,000 trial logs, which we release to the community as a primary contribution. Our analysis of this dataset reveals a striking finding: a significant performance gap between tasks with high prevalence in training data (e.g., FizzBuzz) and novel tasks of equivalent complexity. For some models, the success rate drops from over 60% to 0%, suggesting that high performance on common problems may not indicate true generalization. Our benchmark and dataset provide a valuable resource for future investigations into the gap between memorization and reasoning in language models, and we advocate for iterative stability as a critical metric for evaluation.
 ---

@@ -1,7 +1,7 @@
 # **並行鍵幾何流 (PKGF) 拡張数学定義書**
 **Extended Mathematical Definition of Parallel Key Geometric Flow for Multi-Body Intelligence Emergence**
 
-**著者: Fumio Miyata**  
+**著者: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付: 2026年3月27日**  
 
 本文書は、自然言語の意味論的遷移を記述する微分幾何学的枠組み「並行鍵幾何流 (PKGF)」を、多体エージェントの結合力学系における知能創発プロセスへと拡張した数理体系を定義するものである。

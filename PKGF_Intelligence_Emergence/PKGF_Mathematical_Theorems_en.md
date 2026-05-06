@@ -1,7 +1,7 @@
 # **Theorems of Intelligence Emergence in Parallel Key Geometric Flow (PKGF)**
 **Mathematical Foundations of Structural Preservation, Phase Transition, and Convergence**
 
-**Author: Fumio Miyata**  
+**Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **Date: March 27, 2026**  
 
 This document defines the mathematical theorems governing Parallel Key Geometric Flow (PKGF) and its coupled multi-body systems on a differentiable manifold $M$. These theorems provide the theoretical basis for structure preservation, phase transitions, and dimension-dependent convergence under geometric constraints.
