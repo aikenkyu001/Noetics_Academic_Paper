@@ -1,8 +1,8 @@
 # 知能の幾何学的不変性：ユニバーサルカーネルによる自然言語・プログラミング言語・実行環境からの論理構造の分離
 
 **著者:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
-**所属:** 独立研究者  
 **日付:** 2026年3月11日  
+**Keywords:** 決定論的知能, 幾何学的論理配列, WebAssembly, MQDB, 記号的AI, 不変性
 Supplementary Research Package: https://doi.org/10.5281/zenodo.18954335
 
 ---

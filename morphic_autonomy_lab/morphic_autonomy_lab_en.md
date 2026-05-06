@@ -1,8 +1,8 @@
 # Geometric Invariance of Intelligence: Decoupling Structural Logic from Linguistic and Execution Entropy via Universal Kernels
 
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
-**Affiliation:** Independent Researcher  
 **Date:** March 11, 2026  
+**Keywords:** Deterministic Intelligence, Geometric Logic Sequence, WebAssembly, MQDB, Symbolic AI, Invariance
 Supplementary Research Package: https://doi.org/10.5281/zenodo.18954335
 
 ---
