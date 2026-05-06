@@ -2,7 +2,7 @@
 
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** March 10, 2026  
-Supplementary Research Package: https://doi.org/10.5281/zenodo.18905026  
+Supplementary Research Package (Code, Benchmarks, Logs, and Materials): https://doi.org/10.5281/zenodo.18905026  
 **Keywords:** Cognitive Architecture, Symbolic Reasoning, Term Algebra, Compositionality, Deterministic Inference, Language Invariance, Platform Invariance
 
 ---
@@ -100,7 +100,7 @@ MIW demonstrates that compositional reasoning can be realized as a deterministic
 ---
 
 ## Data Availability Statement
-The full source code for the MIW kernels (Python and Modern Fortran), the benchmark suite, and execution logs are available at: [https://github.com/aikenkyu001/morphic_inner_world](https://github.com/aikenkyu001/morphic_inner_world). The dataset is archived via Zenodo (Supplementary Research Package: https://doi.org/10.5281/zenodo.18905026).
+The full source code for the MIW kernels (Python and Modern Fortran), the benchmark suite, and execution logs are available at: [https://github.com/aikenkyu001/morphic_inner_world](https://github.com/aikenkyu001/morphic_inner_world). The full supplementary research package—including source code, benchmark suite, execution logs, and platform-specific kernel implementations—is archived via Zenodo (DOI: 10.5281/zenodo.18905026).
 
 ---
 
