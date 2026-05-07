@@ -1,6 +1,7 @@
 import os
 import re
 import subprocess
+import glob
 
 def tex_escape(text):
     conv = {
@@ -16,6 +17,7 @@ def tex_escape(text):
         '—': r'---',
         '–': r'--'
     }
+    # Protect math mode
     parts = re.split(r'(\$\$.*?\$\$|\$.*?\$)', text, flags=re.DOTALL)
     res = ""
     for part in parts:
@@ -29,7 +31,7 @@ def tex_escape(text):
     return res
 
 def inline_format(text):
-    # real markdown link conversion first
+    # Markdown link conversion
     text = re.sub(r'\[(.*?)\]\((.*?)\)', lambda m: f"\\href{{{m.group(2)}}}{{{m.group(1)}}}", text)
     # Bold/Italic
     text = re.sub(r'\*\*\*(.*?)\*\*\*', r'\\textbf{\\textit{\1}}', text)
@@ -38,15 +40,13 @@ def inline_format(text):
     return text
 
 def clean_caption(caption):
-    # 1. Remove "Fig. 1:", "図 1:", etc., including surrounding stars
+    # Remove "Fig. 1:", "図 1:", etc.
     caption = re.sub(r'^(?:\*\*|)\s*(?:Fig\.|Figure|Fig|図)\s*\d+[:.：]?\s*(?:\*\*|)', '', caption, flags=re.IGNORECASE)
-    # 2. Aggressively remove any literal ** markers from the caption
     caption = caption.replace('**', '')
     return caption.strip().rstrip('.')
 
 def convert_table(lines):
     if len(lines) < 3: return ""
-    # Filter separator line |---|
     filtered_lines = [l for l in lines if not re.match(r'^\|[- :|]+\|$', l)]
     if not filtered_lines: return ""
     
@@ -74,31 +74,43 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
     with open(md_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Metadata (English/Japanese support)
-    title_m = re.search(r'^# (.*)', content, re.M)
-    title = title_m.group(1).strip() if title_m else "Untitled"
-    
-    author_m = re.search(r'\*\*(?:Author|著者):\*\* (.*)', content)
+    # Metadata extraction
+    title_m = re.search(r'^# (.*?)(?=\n\n|\n\*\*)', content, re.S)
+    title_raw = title_m.group(1).strip() if title_m else os.path.basename(md_path)
+    title_tex = tex_escape(title_raw).replace('\n', ' ')
+    if is_jp and "：" in title_tex:
+        title_tex = title_tex.replace("：", "：\\\\\\\\ ")
+
+    author_m = re.search(r'\*\*(?:Author|著者):\s*(.*?)\*\*', content)
+    if not author_m:
+        author_m = re.search(r'\*\*(?:Author|著者):\s*(.*)', content)
     author = author_m.group(1).strip() if author_m else ""
     
-    date_m = re.search(r'\*\*(?:Date|日付):\*\* (.*)', content)
+    date_m = re.search(r'\*\*(?:Date|日付):\s*(.*?)\*\*', content)
+    if not date_m:
+        date_m = re.search(r'\*\*(?:Date|日付):\s*(.*)', content)
     date = date_m.group(1).strip() if date_m else ""
     
-    keywords_m = re.search(r'\*\*(?:Keywords|キーワード):\*\* (.*)', content)
+    keywords_m = re.search(r'\*\*(?:Keywords|キーワード):\s*(.*?)\*\*', content)
+    if not keywords_m:
+        keywords_m = re.search(r'\*\*(?:Keywords|キーワード):\s*(.*)', content)
     keywords = keywords_m.group(1).strip() if keywords_m else ""
     
-    # Abstract / 概要
-    abstract_m = re.search(r'## (?:Abstract|概要)\s+(.*?)\s+(?:---|\n## )', content, re.S)
+    # Abstract
+    abstract_m = re.search(r'(?:##|# \*\*0\.\*\*)\s+(?:Abstract|概要.*?)\s+(.*?)\s+(?:---|\n# |\n## )', content, re.S)
     abstract = inline_format(tex_escape(abstract_m.group(1).strip())) if abstract_m else ""
 
-    # Body - start from Introduction / 緒言
-    body_start_match = re.search(r'## 1\. (?:Introduction|緒言)', content)
-    if body_start_match:
-        body_content = content[body_start_match.start():]
+    # Body
+    body_content = content
+    # Try to find the first real section
+    first_sec = re.search(r'^# (?!#)(?!0\.)', content, re.M)
+    if first_sec:
+        body_content = content[first_sec.start():]
     else:
-        # fallback
-        search_term = '## Abstract' if not is_jp else '## 概要'
-        body_content = content[content.find('---', content.find(search_term) + 10) + 3:]
+        # Fallback: skip metadata and abstract
+        idx = content.find('---')
+        if idx != -1:
+            body_content = content[content.find('---', idx + 3) + 3:]
 
     lines = body_content.split('\n')
     tex_body = []
@@ -106,16 +118,26 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
     in_table = False
     table_buffer = []
     in_refs = False
+    in_mermaid = False
 
     for i, line in enumerate(lines):
         trimmed = line.strip()
+        
+        # Mermaid handling
+        if trimmed.startswith('```mermaid'):
+            in_mermaid = True
+            continue
+        if in_mermaid:
+            if trimmed.startswith('```'):
+                in_mermaid = False
+            continue
+
         if not trimmed:
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
             if in_table: tex_body.append(convert_table(table_buffer)); table_buffer = []; in_table = False
             tex_body.append("\n")
             continue
         
-        # Table
         if trimmed.startswith('|'):
             in_table = True
             table_buffer.append(trimmed)
@@ -125,28 +147,30 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
             table_buffer = []
             in_table = False
 
-        # Separators
         if trimmed == "---": continue
 
         # Headers
-        if trimmed.startswith('## '):
+        if trimmed.startswith('# '):
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            h_text = trimmed[3:].strip()
-            # Remove leading numbers like "1. ", "2.1 " etc.
+            h_text = trimmed[2:].strip()
             h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
-            
-            if h_text.lower() in ["references", "参考文献"]:
+            if h_text.lower() in ["references", "参考文献", "bibliography"]:
                 in_refs = True
                 tex_body.append(r"\begin{thebibliography}{99}")
             else:
                 tex_body.append(f"\\section{{{inline_format(tex_escape(h_text))}}}")
             continue
+        elif trimmed.startswith('## '):
+            if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
+            h_text = trimmed[3:].strip()
+            h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
+            tex_body.append(f"\\subsection{{{inline_format(tex_escape(h_text))}}}")
+            continue
         elif trimmed.startswith('### '):
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
             h_text = trimmed[4:].strip()
-            # Remove leading numbers like "1.1 ", "2.1.1 " etc.
             h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
-            tex_body.append(f"\\subsection{{{inline_format(tex_escape(h_text))}}}")
+            tex_body.append(f"\\subsubsection{{{inline_format(tex_escape(h_text))}}}")
             continue
 
         # Image
@@ -155,7 +179,6 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
             m = re.match(r'!\[(.*?)\]\((.*?)\)', trimmed)
             if m:
                 cap_raw, path = m.groups()
-                if 'fig7_manifold.pdf' in path: path = path.replace('fig7_manifold.pdf', 'fig7_reduction.pdf')
                 desc = ""
                 found_desc = False
                 for j in range(i+1, min(i+4, len(lines))):
@@ -165,7 +188,7 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
                         lines[j] = "" 
                         found_desc = True
                         break
-                    if nl.startswith('##') or nl.startswith('!['): break
+                    if nl.startswith('#') or nl.startswith('!['): break
                 if not found_desc: desc = clean_caption(cap_raw)
                 tex_body.append(r"\begin{figure}[htbp]\centering")
                 tex_body.append(f"\\includegraphics[width=0.8\\textwidth,height=0.35\\textheight,keepaspectratio]{{{path}}}")
@@ -231,7 +254,7 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
 \geometry{margin=1in}
 \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
 
-\title{''' + tex_escape(title) + r'''}
+\title{''' + title_tex + r'''}
 \author{''' + tex_escape(author) + r'''}
 \date{''' + tex_escape(date) + r'''}
 
@@ -240,7 +263,6 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
 \maketitle
 
 \begin{abstract}
-''' + (r'\renewcommand{\abstractname}{概要}' if is_jp else "") + r'''
 ''' + abstract + r'''
 \end{abstract}
 
@@ -260,11 +282,12 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
     print(f"Successfully generated {output_pdf_name}")
 
 def main():
-    # 1. English conversion
-    process_markdown("morphic_inner_world_en.md", "morphic_inner_world.pdf", is_jp=False)
-    
-    # 2. Japanese conversion
-    process_markdown("morphic_inner_world_jp.md", "morphic_inner_world_jp.pdf", is_jp=True)
+    files = glob.glob("*.md")
+    for f in files:
+        is_jp = f.endswith("_jp.md")
+        base = f[:-6] if is_jp else f[:-3]
+        out_name = base + (".pdf" if not is_jp else "_jp.pdf")
+        process_markdown(f, out_name, is_jp=is_jp)
 
 if __name__ == "__main__":
     main()

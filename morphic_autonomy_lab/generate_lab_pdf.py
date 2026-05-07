@@ -29,33 +29,24 @@ def tex_escape(text):
     return res
 
 def inline_format(text):
-    parts = re.split(r'(\$\$.*?\$\$|\$.*?\$)', text, flags=re.DOTALL)
-    res_parts = []
-    for part in parts:
-        if part.startswith('$'):
-            res_parts.append(part)
-        else:
-            t = part
-            t = re.sub(r'\[(.*?)\]\((.*?)\)', lambda m: f"\\href{{{m.group(2)}}}{{{m.group(1)}}}", t)
-            t = re.sub(r'\*\*\*(.*?)\*\*\*', r'\\textbf{\\textit{\1}}', t)
-            t = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', t)
-            t = re.sub(r'\*(.*?)\*', r'\\textit{\1}', t)
-            res_parts.append(t)
-    return "".join(res_parts)
-
-def clean_header(text):
-    # Strictly remove manual numbering if it still exists
-    return re.sub(r'^[\d\.]+\s+', '', text).strip()
+    # real markdown link conversion first
+    text = re.sub(r'\[(.*?)\]\((.*?)\)', lambda m: f"\\href{{{m.group(2)}}}{{{m.group(1)}}}", text)
+    # Bold/Italic
+    text = re.sub(r'\*\*\*(.*?)\*\*\*', r'\\textbf{\\textit{\1}}', text)
+    text = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', text)
+    text = re.sub(r'\*(.*?)\*', r'\\textit{\1}', text)
+    return text
 
 def clean_caption(caption):
-    caption = re.sub(r'^[\*\s]*(?:\*\*|)\s*(?:Fig\.|Figure|Fig)\s*\d+[:.]?\s*(?:\*\*|)\s*', '', caption, flags=re.IGNORECASE)
-    caption = re.sub(r'\s*\*\*\s*$', '', caption)
-    caption = re.sub(r'^\*\[', '', caption)
-    caption = re.sub(r'\]\*$', '', caption)
+    # 1. Remove "Fig. 1:", "図 1:", etc., including surrounding stars
+    caption = re.sub(r'^(?:\*\*|)\s*(?:Fig\.|Figure|Fig|図)\s*\d+[:.：]?\s*(?:\*\*|)', '', caption, flags=re.IGNORECASE)
+    # 2. Aggressively remove any literal ** markers from the caption
+    caption = caption.replace('**', '')
     return caption.strip().rstrip('.')
 
 def convert_table(lines):
     if len(lines) < 3: return ""
+    # Filter separator line |---|
     filtered_lines = [l for l in lines if not re.match(r'^\|[- :|]+\|$', l)]
     if not filtered_lines: return ""
     
@@ -75,46 +66,45 @@ def convert_table(lines):
     tex.append(r"\end{table}")
     return "\n".join(tex)
 
-def main():
-    import sys
-    if len(sys.argv) > 1:
-        md_path = sys.argv[1]
-    else:
-        md_path = "morphic_autonomy_lab_en.md"
-        
+def process_markdown(md_path, output_pdf_name, is_jp=False):
     if not os.path.exists(md_path):
-        print(f"File not found: {md_path}")
+        print(f"Error: {md_path} not found.")
         return
 
     with open(md_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Metadata
+    # Metadata (English/Japanese support)
     title_m = re.search(r'^# (.*)', content, re.M)
-    title = clean_header(title_m.group(1)) if title_m else "Untitled"
-    author_m = re.search(r'\*\*Author:\*\* (.*)', content)
+    title_raw = title_m.group(1).strip() if title_m else "Untitled"
+    title_tex = tex_escape(title_raw)
+    if is_jp and "：" in title_tex:
+        # Break after colon for Japanese title to improve balance
+        title_tex = title_tex.replace("：", "：\\\\\\\\ ")
+    
+    author_m = re.search(r'\*\*(?:Author|著者):\*\* (.*)', content)
     author = author_m.group(1).strip() if author_m else ""
-    date_m = re.search(r'\*\*Date:\*\* (.*)', content)
+    
+    date_m = re.search(r'\*\*(?:Date|日付):\*\* (.*)', content)
     date = date_m.group(1).strip() if date_m else ""
-    keywords_m = re.search(r'\*\*Keywords:\*\* (.*)', content)
+    
+    keywords_m = re.search(r'\*\*(?:Keywords|キーワード):\*\* (.*)', content)
     keywords = keywords_m.group(1).strip() if keywords_m else ""
     
-    # Abstract
-    abstract_m = re.search(r'### (?:Abstract|概要 \(Abstract\))\s+(.*?)\s+(?:---|# )', content, re.S)
-    abstract_text = abstract_m.group(1).strip() if abstract_m else ""
-    # Remove any keywords line from abstract text
-    abstract_text = re.sub(r'^\s*\*\*Keywords:\*\*.*?\n', '', abstract_text, flags=re.MULTILINE | re.IGNORECASE)
-    abstract = inline_format(tex_escape(abstract_text))
+    # Abstract / 概要
+    abstract_m = re.search(r'### (?:Abstract|概要.*?)\s+(.*?)\s+(?:---|\n# )', content, re.S)
+    abstract = inline_format(tex_escape(abstract_m.group(1).strip())) if abstract_m else ""
 
-    # Body
-    body_start_match = re.search(r'^# [0-9]+\s+(?:Introduction|はじめに)', content, re.M | re.I)
+    # Body - start from Introduction / はじめに
+    body_start_match = re.search(r'# 1 (?:Introduction|はじめに)', content)
     if body_start_match:
         body_content = content[body_start_match.start():]
     else:
-        # Fallback: search for the first section after the first separator
-        sep_pos = content.find('---', content.find('Abstract') if 'Abstract' in content else 0)
-        if sep_pos != -1:
-            body_content = content[sep_pos + 3:]
+        # fallback
+        search_term = '### Abstract' if not is_jp else '### 概要'
+        idx = content.find('---', content.find(search_term) + 10)
+        if idx != -1:
+            body_content = content[idx + 3:]
         else:
             body_content = content
 
@@ -125,138 +115,169 @@ def main():
     table_buffer = []
     in_refs = False
 
-    i = 0
-    while i < len(lines):
-        line = lines[i]
+    for i, line in enumerate(lines):
         trimmed = line.strip()
         if not trimmed:
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
             if in_table: tex_body.append(convert_table(table_buffer)); table_buffer = []; in_table = False
             tex_body.append("\n")
-            i += 1
             continue
         
+        # Table
         if trimmed.startswith('|'):
             in_table = True
             table_buffer.append(trimmed)
-            i += 1
             continue
         elif in_table:
             tex_body.append(convert_table(table_buffer))
             table_buffer = []
             in_table = False
 
-        if trimmed == "---":
-            i += 1
-            continue
-        
-        if "©" in trimmed and "All Rights Reserved" in trimmed:
-            i += 1
-            continue
+        # Separators
+        if trimmed == "---": continue
 
+        # Headers
         if trimmed.startswith('# '):
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            h_text = clean_header(trimmed[2:])
-            if "References" in h_text or "参考文献" in h_text:
+            h_text = trimmed[2:].strip()
+            # Remove leading numbers like "1 ", "2.1 " etc.
+            h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
+            
+            if h_text.lower() in ["references", "参考文献"]:
                 in_refs = True
                 tex_body.append(r"\begin{thebibliography}{99}")
             else:
-                tex_body.append(f"\\section{{{tex_escape(h_text)}}}")
-            i += 1
+                tex_body.append(f"\\section{{{inline_format(tex_escape(h_text))}}}")
             continue
         elif trimmed.startswith('## '):
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            tex_body.append(f"\\subsection{{{tex_escape(clean_header(trimmed[3:]))}}}")
-            i += 1
+            h_text = trimmed[3:].strip()
+            # Remove leading numbers like "1.1 ", "2.1.1 " etc.
+            h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
+            tex_body.append(f"\\subsection{{{inline_format(tex_escape(h_text))}}}")
             continue
         elif trimmed.startswith('### '):
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            tex_body.append(f"\\subsubsection{{{tex_escape(clean_header(trimmed[4:]))}}}")
-            i += 1
+            h_text = trimmed[4:].strip()
+            # Remove leading numbers like "1.1.1 " etc.
+            h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
+            tex_body.append(f"\\subsubsection{{{inline_format(tex_escape(h_text))}}}")
             continue
 
+        # Image
         if trimmed.startswith('!['):
             if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
             m = re.match(r'!\[(.*?)\]\((.*?)\)', trimmed)
             if m:
                 cap_raw, path = m.groups()
-                pdf_path = path.replace('.png', '.pdf')
-                if os.path.exists(pdf_path): path = pdf_path
-                desc = clean_caption(cap_raw)
+                desc = ""
+                found_desc = False
+                for j in range(i+1, min(i+4, len(lines))):
+                    nl = lines[j].strip()
+                    if nl.startswith('**Fig') or nl.startswith('**図'):
+                        desc = clean_caption(nl)
+                        lines[j] = "" 
+                        found_desc = True
+                        break
+                    if nl.startswith('#') or nl.startswith('!['): break
+                if not found_desc: desc = clean_caption(cap_raw)
                 tex_body.append(r"\begin{figure}[htbp]\centering")
                 tex_body.append(f"\\includegraphics[width=0.8\\textwidth,height=0.35\\textheight,keepaspectratio]{{{path}}}")
-                tex_body.append(f"\\caption{{{tex_escape(desc)}}}")
+                tex_body.append(f"\\caption{{{inline_format(tex_escape(desc))}}}")
                 tex_body.append(r"\end{figure}")
-            i += 1
             continue
 
-        if re.match(r'^\d+\.\s+', trimmed) or trimmed.startswith('- ') or trimmed.startswith('* '):
-            list_type = 'enumerate' if re.match(r'^\d+\.\s+', trimmed) else 'itemize'
+        # Lists
+        if trimmed.startswith('- ') or trimmed.startswith('* '):
             if not in_refs:
-                if in_list != list_type:
+                if in_list != 'itemize':
                     if in_list: tex_body.append(f"\\end{{{in_list}}}")
-                    tex_body.append(f"\\begin{{{list_type}}}")
-                    in_list = list_type
+                    tex_body.append(r"\begin{itemize}")
+                    in_list = 'itemize'
             
-            content_text = re.sub(r'^(\d+\.\s+|- |\* )', '', trimmed)
+            content_text = trimmed[2:].strip()
             if in_refs:
                 key = "".join(filter(str.isalnum, content_text[:15])) + str(i)
                 tex_body.append(f"\\bibitem{{{key}}} {inline_format(tex_escape(content_text))}")
             else:
                 tex_body.append(f"\\item {inline_format(tex_escape(content_text))}")
-            i += 1
+            continue
+        elif re.match(r'^\d+\.\s+', trimmed):
+            if in_list != 'enumerate':
+                if in_list: tex_body.append(f"\\end{{{in_list}}}")
+                tex_body.append(r"\begin{enumerate}")
+                in_list = 'enumerate'
+            content_text = re.sub(r'^\d+\.\s+', '', trimmed)
+            tex_body.append(f"\\item {inline_format(tex_escape(content_text))}")
             continue
 
+        # Normal Paragraph
         tex_body.append(inline_format(tex_escape(trimmed)))
-        i += 1
 
     if in_list: tex_body.append(f"\\end{{{in_list}}}")
     if in_refs: tex_body.append(r"\end{thebibliography}")
+
+    # LaTeX Template
+    jp_preamble = r'''\usepackage{xeCJK}
+\setCJKmainfont{Hiragino Mincho ProN}''' if is_jp else ""
+    
+    localized_labels = r'''
+\renewcommand{\abstractname}{概要}
+\renewcommand{\figurename}{図}
+\renewcommand{\tablename}{表}
+\renewcommand{\refname}{参考文献}
+''' if is_jp else ""
 
     full_tex = r'''\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
-\usepackage{unicode-math}
-\usepackage{url}
-\usepackage{xurl}
 \usepackage{hyperref}
 \usepackage{geometry}
+\usepackage{url}
 \usepackage{enumitem}
 \usepackage{authblk}
+\usepackage{caption}
+\captionsetup{labelfont=bf,textfont=bf}
+''' + jp_preamble + r'''
 
 \geometry{margin=1in}
 \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
 
-\title{''' + tex_escape(title) + r'''}
+\title{''' + title_tex + r'''}
 \author{''' + tex_escape(author) + r'''}
 \date{''' + tex_escape(date) + r'''}
 
 \begin{document}
+''' + localized_labels + r'''
 \maketitle
 
 \begin{abstract}
 ''' + abstract + r'''
 \end{abstract}
 
-''' + (f"\\textbf{{Keywords:}} {tex_escape(keywords)}\n" if keywords else "") + r'''
+\textbf{''' + ("Keywords:" if not is_jp else "キーワード:") + r'''} ''' + inline_format(tex_escape(keywords)) + r'''
 
 ''' + '\n'.join(tex_body) + r'''
 
 \end{document}
 '''
-    base_name = os.path.splitext(md_path)[0]
-    # Strip language suffix for the output filename if present
-    out_base = re.sub(r'_(?:en|jp)$', '', base_name)
-    tex_file = f"{out_base}.tex"
-    with open(tex_file, "w", encoding='utf-8') as f:
+    tex_path = output_pdf_name.replace(".pdf", ".tex")
+    with open(tex_path, "w", encoding='utf-8') as f:
         f.write(full_tex)
 
-    print(f"Running xelatex on {tex_file}...")
-    subprocess.run(["xelatex", "-interaction=nonstopmode", tex_file], capture_output=True)
-    subprocess.run(["xelatex", "-interaction=nonstopmode", tex_file], capture_output=True)
-    print(f"Successfully generated {out_base}.pdf")
+    print(f"Running xelatex for {output_pdf_name}...")
+    subprocess.run(["xelatex", "-interaction=nonstopmode", tex_path], capture_output=True)
+    subprocess.run(["xelatex", "-interaction=nonstopmode", tex_path], capture_output=True)
+    print(f"Successfully generated {output_pdf_name}")
+
+def main():
+    # 1. English conversion
+    process_markdown("morphic_autonomy_lab_en.md", "morphic_autonomy_lab.pdf", is_jp=False)
+    
+    # 2. Japanese conversion
+    process_markdown("morphic_autonomy_lab_jp.md", "morphic_autonomy_lab_jp.pdf", is_jp=True)
 
 if __name__ == "__main__":
     main()
