@@ -4,6 +4,7 @@
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** 2026年4月  
 Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571  
+**キーワード:** 知能の物理学、PoI、並行鍵幾何流、PKGF、CDU サイクル、媒体不変性、幾何学的ダイナミクス  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  
 
 ---

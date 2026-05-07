@@ -3,6 +3,7 @@
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **Date:** April 2026 (Consolidated Final Edition)  
 Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571  
+**Keywords:** Physics of Intelligence, PoI, Parallel Key Geometric Flow, PKGF, CDU Cycle, Substrate Invariance, Geometric Dynamics  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  
 
 ---

@@ -4,6 +4,7 @@
 **著者：** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
 **日付：** 2026年4月  
 Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571  
+**キーワード:** 知能の物理学、ノエティクス、幾何学的ダイナミクス、自己組織化、構造再構築、媒体不変性  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  
 
 **基礎文献：**  

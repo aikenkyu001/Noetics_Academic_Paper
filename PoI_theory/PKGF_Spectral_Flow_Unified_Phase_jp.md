@@ -3,6 +3,7 @@
 **著者：Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付：2026年4月**
 Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571  
+**キーワード:** 並行鍵幾何流、PKGF、スペクトル流、統合相、フレドホルム作用素、作用素進化  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  
 
 **関連文献**：*Parallel Key Geometric Flow (PKGF): A Mathematical Infrastructure for Unified Conservative–Dissipative Systems*

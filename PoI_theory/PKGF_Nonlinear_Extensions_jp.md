@@ -4,6 +4,7 @@
 **著者：Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付：2026年4月**
 Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571  
+**キーワード:** 並行鍵幾何流、PKGF、非線形ダイナミクス、適正次、作用素論、安定性解析  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  
 
 **関連文献**：  
