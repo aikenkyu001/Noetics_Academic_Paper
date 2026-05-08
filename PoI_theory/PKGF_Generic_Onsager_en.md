@@ -1,4 +1,4 @@
-# **Energy Structure of the Parallel Key Geometric Flow and Its Comparison with the GENERIC and Onsager Frameworks**
+# Energy Structure of the Parallel Key Geometric Flow and Its Comparison with the GENERIC and Onsager Frameworks
 
 **Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **Date: April 2026**  
@@ -12,7 +12,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-## **Abstract**
+## Abstract
 
 This paper analyzes the **energy structure** of the Parallel Key Geometric Flow (PKGF) and compares it with two major frameworks in non-equilibrium thermodynamics: the **GENERIC** (General Equation for Non-Equilibrium Reversible–Irreversible Coupling) formalism and **Onsager’s linear response theory**.
 
@@ -22,7 +22,7 @@ The aim of this paper is to provide a **careful and mathematically grounded comp
 
 ---
 
-# **1. Introduction**
+# 1. Introduction
 
 The Parallel Key Geometric Flow (PKGF) is defined by the evolution equation
 
@@ -42,7 +42,7 @@ The purpose of this paper is to analyze the energy structure of PKGF and compare
 
 ---
 
-# **2. Energy Structure of PKGF**
+# 2. Energy Structure of PKGF
 
 The dissipative operator is defined by
 
@@ -58,7 +58,7 @@ and the full evolution is given by
 
 ---
 
-## **2.1 Energy Functional**
+## 2.1 Energy Functional
 
 We consider the energy functional
 
@@ -88,7 +88,7 @@ The mathematical consistency of such dissipative gradient flows and their struct
 
 ---
 
-# **3. Comparison with the GENERIC Framework**
+# 3. Comparison with the GENERIC Framework
 
 GENERIC is formulated as [Grmela 2025]
 
@@ -109,7 +109,7 @@ ensure energy conservation and entropy production.
 
 ---
 
-## **3.1 Structural Similarities**
+## 3.1 Structural Similarities
 
 | GENERIC | PKGF |
 |--------|-------|
@@ -125,9 +125,9 @@ Both frameworks exhibit:
 
 ---
 
-## **3.2 Essential Differences**
+## 3.2 Essential Differences
 
-### **(1) Hierarchical difference in dynamical variables**
+### (1) Hierarchical difference in dynamical variables
 
 - GENERIC: macroscopic **state variables** \(x\)  
 - PKGF: **operators** \(K\) describing structural dynamics
@@ -135,17 +135,17 @@ Both frameworks exhibit:
 Because PKGF operates at the operator level,  
 **Lie algebraic commutators** arise naturally instead of Poisson structures.
 
-### **(2) Poisson vs. Lie algebraic structure**
+### (2) Poisson vs. Lie algebraic structure
 
 GENERIC’s Poisson structure is rooted in symplectic geometry,  
 whereas PKGF’s commutator structure arises from operator algebra.
 
-### **(3) Absence of energy–entropy separation**
+### (3) Absence of energy–entropy separation
 
 GENERIC separates \(E\) and \(S\) explicitly.  
 PKGF’s \(E(K)\) is a structural norm and does not correspond to thermodynamic energy.
 
-### **(4) Degeneracy conditions do not hold**
+### (4) Degeneracy conditions do not hold
 
 GENERIC requires  
 \[
@@ -164,14 +164,14 @@ This reflects a fundamental feature of PKGF:
 > **structural dissipation directly reduces the structural amplitude**,  
 > consistent with the D-phase in Noetics.
 
-### **(5) Infinite-dimensional setting**
+### (5) Infinite-dimensional setting
 
 PKGF is formulated on infinite-dimensional Hilbert bundles,  
 while GENERIC is typically finite-dimensional.
 
 ---
 
-# **4. Comparison with Onsager Theory**
+# 4. Comparison with Onsager Theory
 
 Onsager’s linear response theory is given by
 
@@ -183,7 +183,7 @@ where \(L\) is symmetric and positive definite. Modern unsupervised operator lea
 
 ---
 
-## **4.1 Similarities**
+## 4.1 Similarities
 
 - PKGF’s dissipative operator \(\mathcal{D}\) is linear,  
   analogous to Onsager’s linear dissipation.  
@@ -191,7 +191,7 @@ where \(L\) is symmetric and positive definite. Modern unsupervised operator lea
 
 ---
 
-## **4.2 Differences**
+## 4.2 Differences
 
 Onsager reciprocity (symmetry of the response matrix) generally does not hold for PKGF [Fuchs et al. 2018].
 
@@ -201,7 +201,7 @@ In many intelligent or adaptive systems—such as control systems, learning syst
 
 ---
 
-# **5. Position of PKGF**
+# 5. Position of PKGF
 
 From the above comparisons, PKGF is neither:
 
@@ -220,7 +220,7 @@ but differs fundamentally in:
 
 ---
 
-# **6. Conclusion**
+# 6. Conclusion
 
 This paper has provided a mathematically grounded comparison between the energy structure of PKGF and the GENERIC and Onsager frameworks.
 
@@ -248,7 +248,7 @@ and a more refined perturbation theory in infinite dimensions.
 
 ---
 
-# **References**
+# References
 
 [Chang 2025] Chang, Z., Wen, Z., & Zhao, X. (2025). Unsupervised operator learning approach for dissipative equations via Onsager principle.  
 [Chen 2024] Chen, H., Liu, H., & Xu, X. (2024). The Onsager principle and structure preserving numerical schemes.  

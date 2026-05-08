@@ -1,4 +1,4 @@
-# **Parallel Key Geometric Flow におけるエネルギー構造と GENERIC / Onsager 形式との比較解析**
+# Parallel Key Geometric Flow におけるエネルギー構造と GENERIC / Onsager 形式との比較解析
 
 **著者：Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
 **日付：2026年4月**
@@ -12,7 +12,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-## **要旨（Abstract）**
+## 要旨（Abstract）
 
 本稿では、Parallel Key Geometric Flow（PKGF）における **エネルギー構造**を解析し、  
 非平衡熱力学の代表的枠組みである **GENERIC（General Equation for Non-Equilibrium Reversible–Irreversible Coupling）** および  
@@ -28,7 +28,7 @@ GENERIC や Onsager の理論に新たな結果を加えることではない。
 
 ---
 
-# **1. 序論**
+# 1. 序論
 
 Parallel Key Geometric Flow（PKGF）は、  
 - 保存的成分：\([\Omega, K]\)  
@@ -43,7 +43,7 @@ PKGF の特徴は、扱う変数が **状態そのものではなく、状態を
 
 ---
 
-# **2. PKGF のエネルギー構造**
+# 2. PKGF のエネルギー構造
 
 PKGF の散逸項は
 
@@ -61,7 +61,7 @@ PKGF の散逸項は
 
 ---
 
-## **2.1 エネルギー汎関数**
+## 2.1 エネルギー汎関数
 
 本稿で用いるエネルギー汎関数
 
@@ -86,7 +86,7 @@ E(K) = \frac{1}{2}\langle\!\langle K, K\rangle\!\rangle_{L^2}
 
 ---
 
-# **3. GENERIC との比較**
+# 3. GENERIC との比較
 
 GENERIC の基本構造 [Grmela 2025]：
 
@@ -104,7 +104,7 @@ GENERIC の基本構造 [Grmela 2025]：
 
 ---
 
-## **3.1 類似点**
+## 3.1 類似点
 
 | GENERIC | PKGF |
 |--------|-------|
@@ -120,9 +120,9 @@ GENERIC の基本構造 [Grmela 2025]：
 
 ---
 
-## **3.2 相違点**
+## 3.2 相違点
 
-### **(1) 変数の階層性の違い（重要）**
+### (1) 変数の階層性の違い（重要）
 
 - GENERIC の \(x\)：密度・運動量・温度などの **マクロ状態変数**  
 - PKGF の \(K\)：Hilbert 束上の **作用素（構造そのもの）**
@@ -130,18 +130,18 @@ GENERIC の基本構造 [Grmela 2025]：
 PKGF は **状態のダイナミクスではなく、構造のダイナミクス** を扱うため、  
 Poisson 構造ではなく **Lie 代数的交換子構造** が自然に現れる。
 
-### **(2) Poisson 構造 vs Lie 代数構造**
+### (2) Poisson 構造 vs Lie 代数構造
 
 GENERIC の Poisson 構造は symplectic 幾何に基づくが、  
 PKGF の交換子構造は作用素代数に基づく。
 
-### **(3) エネルギー・エントロピーの分離の不在**
+### (3) エネルギー・エントロピーの分離の不在
 
 GENERIC では \(E\) と \(S\) が明確に分離されるが、  
 PKGF の \(E(K)\) は構造ノルムであり、  
 エントロピー生成との直接対応はない。
 
-### **(4) degeneracy 条件の不成立**
+### (4) degeneracy 条件の不成立
 
 GENERIC の  
 \[
@@ -154,14 +154,14 @@ PKGF では一般に成立しない。
 **構造の散逸がそのままエネルギー減少に結びつく**  
 という Noetics 的特徴を反映している。
 
-### **(5) 無限次元性**
+### (5) 無限次元性
 
 PKGF は Hilbert 束上の無限次元作用素流であり、  
 GENERIC の有限次元形式とは解析的性質が異なる。
 
 ---
 
-# **4. Onsager 形式との比較**
+# 4. Onsager 形式との比較
 
 Onsager の線形応答理論：
 
@@ -173,14 +173,14 @@ Onsager の線形応答理論：
 
 ---
 
-## **4.1 類似点**
+## 4.1 類似点
 
 - PKGF の散逸項 \(\mathcal{D}\) は線形であり、Onsager の線形散逸と対応  
 - 強楕円性により正則化効果がある  
 
 ---
 
-## **4.2 相違点**
+## 4.2 相違点
 
 Onsager reciprocity（線形応答の対称性）は、  
 PKGF の散逸項 \(\mathcal{D}\) では一般に成立しない [Fuchs et al. 2018]。
@@ -192,7 +192,7 @@ PKGF の散逸構造はむしろその特徴を正確に反映している。
 
 ---
 
-# **5. PKGF の位置づけ**
+# 5. PKGF の位置づけ
 
 以上の比較から、PKGF は：
 
@@ -207,7 +207,7 @@ degeneracy 条件やエントロピー構造の扱いにおいて本質的に異
 
 ---
 
-# **6. 結論**
+# 6. 結論
 
 本稿では、PKGF のエネルギー構造を GENERIC および Onsager 形式と比較し、  
 類似点と相違点を数学的に整理した。
@@ -231,7 +231,7 @@ PKGF は非平衡熱力学の既存理論を置き換えるものではなく、
 
 ---
 
-# **参考文献**
+# 参考文献
 
 [Chang 2025] Chang, Z., Wen, Z., & Zhao, X. (2025). Unsupervised operator learning approach for dissipative equations via Onsager principle.  
 [Chen 2024] Chen, H., Liu, H., & Xu, X. (2024). The Onsager principle and structure preserving numerical schemes.  

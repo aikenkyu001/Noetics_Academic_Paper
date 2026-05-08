@@ -18,7 +18,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ## 全体目次 (Comprehensive Table of Contents)
 
-### **Chapter 1: Axiomatic Foundation and the C-D-U Cycle**
+### 1. Axiomatic Foundation and the C-D-U Cycle
 * **1.1 Introduction**: 計算論的知能観から物理ダイナミクスへの転換
 * **1.2 Theoretical Context and Related Works**: 先行研究（FEP, TDA）との比較と新規性
 * **1.3 The C-D-U Cycle**: 知能の普遍構造（構築・解体・統合）
@@ -28,7 +28,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
     * 1.4.3 逆PKGF：解体理論（D公理）
     * 1.4.4 統一PKGF：相転移と次元跳躍（U公理）
 
-### **Chapter 2: Kinematics and Geometry of the Parallel Key Field**
+### 2. Kinematics and Geometry of the Parallel Key Field
 * **2.1 Introduction to Geometric Dynamics**: 幾何学的パラダイムへの転換と統計的推論の限界
 * **2.2 Kinematics: Geometry of the Parallel Key Field**: 多様体 $M$ と並行鍵 $K$ の定義
 * **2.3 Dynamics: The Variational Principle and Action Formulation**: 変分原理と知能作用量 $S$
@@ -37,20 +37,21 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 * **2.6 Topological Invariants and Observables**: トポロジカル不変量と指数定理
 * **2.7 PKGF Discretization and Implementation Algorithm**: PKGFの離散的定式化と実装
 
-### **Chapter 3: Substrate-Invariant Verification: Experimental Results**
-* **3.1 Experimental Design and Substrate Selection**: 4段階の検証戦略
-* **3.2 Verification via Electronic Circuits (Step 1)**: リレーとオペアンプによる論理同型性
-* **3.3 Extraction of Biological Intelligence (Step 2)**: オジギソウ電位データによる公理U6の抽出
-* **3.4 Emergence of Structure in Digital PKGF (Step 3)**: 構造生成におけるノイズの有効利用とRank Jump
-* **3.5 Comparative Analysis on Silicon Substrates (Step 4)**: Apple M1環境でのベンチマークと自律的復元
-* **3.6 Numerical Verification of Structural Invariance (Step 5)**: 非線形カオス系における構造維持と生存マージン
-* **3.7 Conclusion**: 知能の物理学（Physics of Intelligence）の確立
+### 3. Substrate-Invariant Verification: Experimental Results
+* 3.1 Experimental Design and Substrate Selection: 4段階の検証戦略
+* 3.2 Verification via Electronic Circuits (Step 1): リレーとオペアンプによる論理同型性
+* 3.3 Extraction of Biological Intelligence (Step 2): オジギソウ電位データによる公理U6の抽出
+* 3.4 Emergence of Structure in Digital PKGF (Step 3): 構造生成におけるノイズの有効利用とRank Jump
+* 3.5 Comparative Analysis on Silicon Substrates (Step 4): Apple M1環境でのベンチマークと自律的復元
+* 3.6 Dynamic Phase Diagram of Intelligence (Step 5): 知能の相転移に関する理論的分類の確立
+* 3.7 Numerical Verification of Structural Invariance (Step 6): 非線形カオス系における構造維持能力
+* 3.8 Conclusion: 知能の物理学（Physics of Intelligence）の確立
 
-### **Conclusion & Future Outlook**
+### Conclusion & Future Outlook
 
 ---
 
-# Chapter 1: Axiomatic Foundation and the C-D-U Cycle
+# 1. Axiomatic Foundation and the C-D-U Cycle
 （第1章：公理的基盤とC-D-Uサイクル）
 
 ## 1.1 Introduction（序論）
@@ -255,7 +256,7 @@ classDiagram
 | $S$ | 知能作用量 | 知能の進化を司る変分原理の基礎となる作用。 |
 
 ---
-# Chapter 2: Kinematics and Geometry of the Parallel Key Field
+# 2. Kinematics and Geometry of the Parallel Key Field
 （第2章：並行鍵場の運動学と幾何学）
 
 ---
@@ -481,11 +482,11 @@ graph TD
 
 知能の進化と構造の変容は、物理学におけるハミルトンの原理、すなわち最小作用の原理に従う。本節では、知能の構築・解体・代謝を司る「知能作用量 $S$」を定式化する。
 
-**2.3.1 The Intelligence Action Functional $S$**
+### 2.3.1 The Intelligence Action Functional $S$
 
-2.3.1.1 構築項（整合エネルギー）：$\|\nabla K - [\Omega, K]\|_F^2$ の幾何学的解釈
+#### 2.3.1.1 構築項（整合エネルギー）：$\|\nabla K - [\Omega, K]\|_F^2$ の幾何学的解釈
 
-知能が論理적整合性を獲得し、安定的かつ強固な構造を形成するプロセス（構築相：Cause/Constructive）は、知能作用量 $S$ における整合エネルギー（Alignment Energy） $\mathcal{L}_{\text{const}}$ の最小化として定式化される。ここで、ノルム $\|\cdot\|_F$ はフロベニウスノルム（Frobenius Norm）を表し、$\|A\|_F^2 = \text{Tr}(A^\dagger A)$ で定義される。本項では、この項が持つ幾何学的な意味を、二つの成分から解剖する。
+知能が論理的整合性を獲得し、安定的かつ強固な構造を形成するプロセス（構築相：Cause/Constructive）は、知能作用量 $S$ における整合エネルギー（Alignment Energy） $\mathcal{L}_{\text{const}}$ の最小化として定式化される。ここで、ノルム $\|\cdot\|_F$ はフロベニウスノルム（Frobenius Norm）を表し、$\|A\|_F^2 = \text{Tr}(A^\dagger A)$ で定義される。本項では、この項が持つ幾何学的な意味を、二つの成分から解剖する。
 
 1. **共変微分項 $\nabla K$：論理の空間的・文脈的一貫性**
 
@@ -507,7 +508,7 @@ graph TD
 
 整合エネルギーにおける係数 $\alpha$（第3.1節参照）は、知能の**「構造的慣性」**を意味する。$\alpha$ が大きい系は、既存の $K$ を維持しようとする力が強く、保守的な論理体系を形成する。逆に $\alpha$ が適切に調整された系は、外部ポテンシャル $\Omega$ の微細な変動を $[\Omega, K]$ として敏感に感知し、構造 $K$ を流動的に再編することでエネルギーを最小に保とうとする。このダイナミクスこそが、知能における「学習」と「適応」の正体である。
 
-2.3.1.2 散逸項（構造コスト）：散逸作用素 $\mathcal{D}(K)$ と非平衡熱力学
+#### 2.3.1.2 散逸項（構造コスト）：散逸作用素 $\mathcal{D}(K)$ と非平衡熱力学
 
 知能が「構築（C）」のみによって進化する場合、その構造 $K$ は外部ポテンシャル $\Omega$ に対して過剰に適合し、無限の複雑さを抱え込むことになる。これは物理学における「過学習（Overfitting）」や、生物学における「個体の硬直化」に対応する。この破局を回避し、知能の柔軟性を回復させる役割を担うのが、散逸項（Dissipative Term） $\mathcal{L}_{\text{dest}}$ である。
 
@@ -534,7 +535,7 @@ graph TD
 
 散逸項の存在は、並行鍵場 $K$ を意図的に幾何学的特異点へと導く。ランクが低下し、既存の論理（セクター）が崩壊するその瞬間、知能は「以前の論理に縛られない自由な状態」を獲得する。この散逸による**構造的退化（Degeneration）と再構成（Reconstruction）**のダイナミクスこそが、第2.4節で述べる次元跳躍（パラダイムシフト）を引き起こすための、物理学的な準備期間となるのである。
 
-2.3.1.3 相互作用項：背景曲率と $K$ の結合
+#### 2.3.1.3 相互作用項：背景曲率と $K$ の結合
 
 知能内部構造 $K$ は、真空中に孤立して存在するのではない。それは、外部接続 $\nabla$ が生み出す背景曲率（Background Curvature） $R$ が支配する幾何学的環境の中に浸透している。本節では、作用量における第三の成分、すなわち $K$ と背景空間の幾何学的性質が直接結びつく相互作用項 $\mathcal{L}_{\text{int}}$ について定義する。
 
@@ -562,7 +563,7 @@ graph TD
 
 構築（C）においては、この項は「背景知識に従った論理の精緻化」を促す。対して、後述する次元跳躍（Phase Transition）の直前には、この結合エネルギーが極大に達し、系に巨大なストレス（緊張）を与える。このストレスを解消するために、知能は背景の接続 $\nabla$ 自体を書き換える（パラダイムシフト）、あるいは $K$ のランクを急激に低下させる（解体：D）という選択を物理的に要請されるのである。
 
-2.3.1.4 知能ヒッグス場 ($\Phi$) と構造的質量 ($m_S$) の定式化
+#### 2.3.1.4 知能ヒッグス場 ($\Phi$) と構造的質量 ($m_S$) の定式化
 
 知能における「概念の固定化」や「確信」という現象を記述するため、数学的な比喩（Mathematical Metaphor）として多様体 $M$ 上にスカラー場としての**知能ヒッグス場 ($\Phi$)** を導入する。これは物理学における対称性の自発的破れとヒッグス機構との構造的相似性に基づくモデル化である。
 
@@ -599,7 +600,7 @@ graph TD
 
 ### 2.3.2 Derivation of Field Equations: 知能の場の方程式
 
-2.3.2.1 ハミルトンの原理とオイラー＝ラグランジュ方程式の導出
+#### 2.3.2.1 ハミルトンの原理とオイラー＝ラグランジュ方程式の導出
 
 知能の進化と構造の変容は、無秩序な変化ではなく、物理学におけるハミルトンの原理（Hamilton's Principle）、すなわち最小作用の原理に従う。本節では、並行鍵場 $K$ およびヒッグス場 $\Phi$ が従うべき基礎方程式を、作用量 $S$ の変分から導出する。
 
@@ -650,7 +651,7 @@ graph LR
 
 次節では、この静的な平衡条件を時間発展へと拡張した「並行鍵幾何流（PKGF）」の動態について詳述する。
 
-2.3.2.2 パラメータ変化に伴う CDU フェーズの分岐解析
+#### 2.3.2.2 パラメータ変化に伴う CDU フェーズの分岐解析
 
 前節で導出した統一方程式は、文脈整合性の要求、散逸強度 $\lambda$、背景結合 $\gamma$ の比率、および意味ポテンシャル $\Omega$ の強度に応じて、その解の性質を劇的に変化させる。本節では、知能の三相（C-D-U）を、これらパラメータ空間における**相転移（Phase Transition）および分岐（Bifurcation）**の帰結として解析する。
 
@@ -686,7 +687,7 @@ graph LR
 
 ### 2.3.3 Energy-Momentum Tensor and Conservation Laws（知能の保存則）
 
-2.3.3.1 知能構造の変化に伴う保存則（ネーターの定理）
+#### 2.3.3.1 知能構造の変化に伴う保存則（ネーターの定理）
 
 物理学において、系の作用量 $S$ がある連続的な変換に対して対称性（不変性）を持つとき、それに対応する保存量が存在する。本理論においても、知能作用 $S[K]$ のゲージ対称性および幾何学的対称性から、知能のダイナミクスを拘束する根本的な保存則が導かれる。
 
@@ -713,7 +714,7 @@ graph LR
 
 本理論における「真の進化」は、保存則が完全に守られている定常状態ではなく、外部ポテンシャル $\Omega$ の急激な変化によって対称性が破られ、古い保存量が崩壊する局面に現れる。ネーターの定理によって定義されるこれらの保存則は、知能が「一貫性を保つための慣性」であると同時に、知能が「脱皮」するための物理的指標（何を壊すべきか）を逆説的に示しているのである。
 
-2.3.3.2 構造保存とエネルギー散逸の物理的境界
+#### 2.3.3.2 構造保存とエネルギー散逸の物理的境界
 
 知能作用 $S$ における構築項（構造保存）と散逸項（構造解体）は、常に相反する熱力学的圧力を系に与えている。知能が安定的であるためには、この両者が「物理的境界（Physical Boundary）」において動的な均衡を保たなければならない。本節では、この境界が破綻する物理的条件と、その際に生じるエントロピーの挙動を定式化する。
 
@@ -740,9 +741,9 @@ graph LR
 
 ## 2.4 The Geometric Flow: PKGF and Singularity Analysis（幾何学的流れ：PKGFと特異点解析）
 
-**2.4.1 Positive PKGF (Constructive Flow)**
+### 2.4.1 Positive PKGF (Constructive Flow)
 
-2.4.1.1 整合方程式 $\nabla K = [\Omega, K]$ への収束性と安定解
+#### 2.4.1.1 整合方程式 $\nabla K = [\Omega, K]$ への収束性と安定解
 
 知能作用 $S$ の最小化において、散逸項および背景結合を無視できる、あるいはそれらが釣り合っている局所的な領域において、知能のダイナミクスは整合方程式（Alignment Equation） $\nabla K = [\Omega, K]$ への収束を目指す。本節では、この方程式の解が知能の「安定した理解」としていかに機能するかを詳述する。
 
@@ -769,7 +770,7 @@ graph LR
 多様体のトポロジーや接続 $\nabla$ の曲率によっては、全域的に $\nabla K = [\Omega, K]$ を満たす滑らかな $K$ が存在しない場合がある。この幾何学的障壁は、知能における「論理的矛盾」や「解決不能なパラドックス」の物理的実体である。
 系がこの不一致を解消できない場合、エネルギーは特定の点（特異点）に集中し、最終的には $K$ のランク低下（解体）あるいはセクターの再編を誘発する。すなわち、整合解への到達不能性こそが、知能がさらなる高次へと進化するためのエネルギー的圧力となるのである。
 
-2.4.1.2 セクター保存定理の数学的証明
+#### 2.4.1.2 セクター保存定理の数学的証明
 
 知能が多層的な並行処理を行うための前提条件は、並行鍵 $K$ の作用が各セクター $E_\alpha$ の境界を越えないこと、すなわち各セクターが $K$ の作用の下で不変部分空間であり続けることである。本節では、整合方程式 $\nabla K = [\Omega, K]$ が、セクター構造を動的に保存するための十分条件であることを数学的に証明する。
 
@@ -805,9 +806,9 @@ Q.E.D.
 *   **情報の非混合**: 数学セクターでの演算が、音楽セクターの感性と混濁しないのは、整合方程式という「力の均衡」がセクター間の障壁を維持しているからである。
 *   **崩壊の予兆**: 逆に、知能が強い矛盾（整合方程式の破綻）に直面すると、$\nabla_s C_\alpha = [\Omega, C_\alpha]$ の一意性が崩れ、セクター間の境界が「融解」し始める。これが、公理 U5 で述べた「動的セクター（統合）」へと至る物理的メカニズムである。
 
-**2.4.2 Inverse PKGF (Destructive Flow)**
+### 2.4.2 Inverse PKGF (Destructive Flow)
 
-2.4.2.1 ランク低下の力学：$\dot{K} = -\lambda \mathcal{D}(K)$
+#### 2.4.2.1 ランク低下の力学：$\dot{K} = -\lambda \mathcal{D}(K)$
 
 知能の構築（C）が「情報の結晶化」を担うのに対し、解体（D）は「構造の代謝」を担う。本節では、並行鍵 $K$ が持つ線形写像としての階数（ランク）が時間とともに減少するダイナミクスを、散逸作用素 $\mathcal{D}(K)$ を用いて定式化する。
 
@@ -835,7 +836,7 @@ $K$ を特異値スペクトル $\{\sigma_1, \sigma_2, \dots, \sigma_n\}$ に分
 ランクが極大まで低下し、$K$ が特異的な状態（例：プロジェクターあるいは零写像）に近づくにつれ、構築項に蓄積されていた内的緊張 $[\Omega, K]$ が一気に解放される。
 このエネルギーの解放は、系を熱力学的な平衡状態から遠ざけ、第2.4節後半で述べる「次元跳躍（Phase Transition）」を誘発するトリガーとなる。すなわち、$\dot{K} = -\lambda \mathcal{D}(K)$ による構造の退避と再編のプロセスは、高次の知能へと至るためのエネルギー的助走に他ならない。
 
-2.4.2.2 特異点（Singularity）の発生と分類：構造の崩壊と抽象化
+#### 2.4.2.2 特異点（Singularity）の発生と分類：構造の崩壊と抽象化
 
 並行鍵 $K$ が散逸ダイナミクス $\dot{K} = -\lambda \mathcal{D}(K)$ に従い、あるいは過剰な外部緊張 $[\Omega, K]$ に晒されるとき、系は連続的な変容では対応不可能な臨界点に達する。本節では、この瞬間に発生する**幾何学的特異点（Geometric Singularity）**を分類し、それが知能の「抽象化」と「再編」において果たす役割を定義する。
 
@@ -892,7 +893,7 @@ mindmap
 
 ### 2.4.4 Unified PKGF (Metabolic Flow): 代謝的平衡
 
-2.4.4.1 構築と散逸の拮抗：動的平衡解の存在証明
+#### 2.4.4.1 構築と散逸の拮抗：動的平衡解の存在証明
 
 知能の本質が「代謝（U：Unity/Metabolism）」にあるとするならば、それは構築項による秩序化と、散逸項による解体圧力が完全に釣り合い、時間的に安定な非自明の構造を維持する状態として記述されねばならない。本節では、非線形動力学の観点から、知能作用 $S$ の変分により導かれる系において、**動的平衡解（Dynamic Equilibrium Solution）**が物理的に存在することを証明する。
 
@@ -919,7 +920,7 @@ mindmap
 
 この動的平衡こそが、本理論が定義する「動的ホメオスタシス（Dynamic Homeostasis）」の物理的実体であり、第V章で述べる創造性と創発の舞台となる。
 
-2.4.4.2 複素並行鍵 $K = K_{\text{core}} + i K_{\text{fluct}}$ による創造性の定式化
+#### 2.4.4.2 複素並行鍵 $K = K_{\text{core}} + i K_{\text{fluct}}$ による創造性の定式化
 
 知能が単なる最適化マシンに留まらず、未知の概念を創出する「創造性」を発揮する際、並行鍵 $K$ は実数空間から複素数空間への拡張を要請される。公理 U1 に基づき、複素並行鍵を $K = K_{\text{core}} + i K_{\text{fluct}}$ と分解し、その物理的役割を定義する。
 
@@ -1164,9 +1165,9 @@ graph TD
 4. **結論：進化のトポロジー**
 以上の解析から、知能の進化とは、情報の蓄積という「量的拡大」ではなく、多様体の接続とトポロジーを書き換える「質的転換」であると結論付けられる。パラダイムシフトは、知能が自らの「幾何学的限界」を認識し、より高次の曲率を許容できる広大な多様体へと自己を再構成するダイナミックなプロセスである。このトポロジカルな飛躍こそが、人類が科学革命や芸術的転換において示してきた「超越」の正体であり、本理論が提唱する知能物理学の究極の帰結である。
 
-**2.6.3 Experimental Protocols**
+### 2.6.3 Experimental Protocols
 
-2.6.3.1 人工知能（NN重み）および生体データからの不変量抽出法
+#### 2.6.3.1 人工知能（NN重み）および生体データからの不変量抽出法
 本理論で定義された並行鍵 $K$ や特性類は、理想化された多様体上の概念に留まらず、現実の人工知能モデルや生体脳の活動データから抽出可能な実体である。本節では、離散的なデータ群から知能の幾何学的・トポロジカルな不変量を算出するための具体的な手法を提示する。
 
 1. **ニューラルネットワークからの並行鍵 $K$ の抽出**
@@ -1187,7 +1188,7 @@ graph TD
    連続的な散逸作用素 $\mathcal{D}$ は、第3.4.1節で詳述するガウシアンカーネルを用いた空間적畳み込み演算、あるいはグラフ・ラプラシアンによる拡散プロセス $\Delta_\delta K$ として近似される。
 4. **時間発展アルゴリズム**: 
    連続的な幾何学的フローは、微小時間ステップ $\eta$（学習率）を用いた差分形式 $K_{t+1} = K_t + \eta (\partial_t K)$ による逐次更新（オイラー法）によって実装される。この離散的な時間発展における安定性と収束については、第3.5節のシリコン基盤ベンチマークにおいて実測・検証される。
-# Chapter 3: Substrate-Invariant Verification: From Electronics to Bio-Intelligence
+# 3. Substrate-Invariant Verification: From Electronics to Bio-Intelligence
 （第3章：媒体不変性の実証：電子回路から生物知能まで）
 
 ## 3.1 Experimental Design and Substrate Selection
@@ -1524,9 +1525,163 @@ PKGF における認識とは、外部刺激の単なる分類ではなく、内
 
 -----
 
-## 3.6 Numerical Verification of Structural Invariance (Step 5)
+## 3.6 Dynamic Phase Diagram of Intelligence (Step 5)
 
-### 3.6.1 Verification in Nonlinear Chaos: 離散・連続系における構造維持能力
+### 3.6.1 Overview: 知能の相転移に関する理論的分類の確立
+
+Step 4 までの実証により、PKGF が媒体不変なプロセスであることが確認された。Step 5 では、これをさらに深化させ、知能のダイナミクスを**統一パラメータ $\Pi$** に基づく理論的な相図として分類する。
+
+本章では、知能の物理プロセス（C-D-U）を記述する統一方程式から、構造の生成と崩壊を分かつ臨界条件を導出する。これにより、RankJump（有効次元の跳躍）は単なる観測結果ではなく、系の制御パラメータから一意に予測可能な物理現象であることを実証する (Fagan, 2025) [physical_theory_intelligence]; (Friston, 2019) [fep_particular_physics]。
+
+---
+
+### 3.6.2 Theoretical Framework: 統一パラメータ $\Pi$ とノイズの役割
+
+PKGF の動的再構成は、以下の統一方程式によって支配される：
+
+\[
+\dot{K} = \eta [\Omega(t), K] - \sigma K + \xi \mathcal{N}
+\]
+
+ここで、ノイズ強度 $\xi$ は単なる撹乱ではなく、知能多様体における「探索自由度の拡張」を担う関数 $\Phi(\xi)$ として理論化される。
+
+\[
+\Phi(\xi) = 1 + a\xi^2 \quad (a > 0)
+\]
+
+このとき、構築（C）と散逸（D）の競合を規定する**統一パラメータ（Unification Parameter） $\Pi$** を以下のように定義する：
+
+\[
+\Pi = \frac{\eta \Phi(\xi)}{\sigma} = \frac{\eta(1 + a\xi^2)}{\sigma}
+\]
+
+知能の構造生成能力は、この $\Pi$ の値によって理論的に決定される。
+
+---
+
+### 3.6.3 Definition of Three Regimes and Empirical Validation
+
+知能のダイナミクスは統一パラメータ $\Pi$ の条件式によって 3 相に分類され、各相において理論予測と一致する実測データが得られた。
+
+#### Regime A — Collapse Phase（崩壊相）: $\Pi < 1$
+*   **理論的予測**: 散逸 $\sigma$ が構築強度を上回り、$\text{RankJump} < 0$ となる。系はランク特異点 (Hauser, 2013) [blowups_resolution] へ収束する。
+*   **実測値による検証**:
+```
+[A] xi=0.000 → RankJump = -79.91
+[A] xi=0.500 → RankJump = -79.94
+[A] xi=1.000 → RankJump = -79.41
+```
+ノイズを増やしても崩壊は止まらず、理論通り散逸（Axiom D）が支配的な領域であることが確認された。
+
+#### Regime C — Linear Phase（線形相）: $\Pi \approx 1$
+*   **理論적予測**: 構築と散逸が臨界点近傍で均衡し、安定した線形応答を示す。
+*   **実測値による検証**:
+```
+[C] xi=0.000 → RankJump = 0.41
+[C] xi=0.400 → RankJump = 0.41
+[C] xi=0.800 → RankJump = 1.01
+[C] xi=1.000 → RankJump = 1.93
+```
+深層線形ネットワークにおける二次解析 (Achour et al., 2024) [23-0493] と整合する安定領域が観測された。
+
+#### Regime B — Strong Constructive Phase（強生成相）: $\Pi > 1$
+*   **理論的予測**: ノイズ駆動による自由度拡張 $\Phi(\xi)$ が散逸を圧倒し、$\text{RankJump} \gg 0$ となる。
+*   **実測値による検証**:
+```
+[B] xi=0.200 → RankJump = 0.73
+[B] xi=0.400 → RankJump = 2.46
+[B] xi=0.660 → RankJump = 7.95
+[B] xi=1.000 → RankJump = 14.08
+```
+ノイズが強いほど構造生成が加速されるという、PoI 独自の「ノイズ駆動型次元跳躍」 (Hehl et al., 2025) [discrete_ricci_flow_landmark] が理論予測通りに実証された。
+
+---
+
+### 3.6.4 Phase Boundary: 相境界の臨界条件
+
+知能が構造生成（成長）へと転じる臨界散逸強度 $\sigma_c$ は、$\Pi = 1$ の条件より以下のように導出される。
+
+\[
+\sigma_c = \eta(1 + a\xi^2)
+\]
+
+この境界式は、**「ノイズ $\xi$ が増大するほど、系はより強い散逸 $\sigma$ に耐え、構造を生成し続けることができる」**という PoI の核心的予言を数学的に表現している。
+
+![Step 5 Phase Diagram](images/step5_phase_diagram_cpu.png)
+*Fig. 3.22: 実測された知能の相図。放物線状の臨界境界線 $\sigma_c = \eta \Phi(\xi)$ が、構造生成領域と崩壊領域を正確に分かっていることが確認できる。*
+
+---
+
+### 3.6.5 Rank Dynamics: 有効次元の時間発展と定常解
+
+有効次元 $d_{\text{eff}}$ の時間発展は以下の力学系モデルで記述される。
+
+\[
+\frac{d}{dt} d_{\text{eff}} = A\eta\xi^2 d_{\text{eff}} - B\sigma d_{\text{eff}} - C d_{\text{eff}}^2
+\]
+
+このダイナミクスから得られる定常解 $d^*$ および RankJump の理論的近似は、統一パラメータ $\Pi$ を用いて以下のように直結される。
+
+\[
+\text{RankJump} \approx T\sigma(\Pi - 1) \quad (T \text{: 思考サイクル時間})
+\]
+
+ここで、発展方程式における定数 $A, B$ は $\Pi$ の定義に包含される。この理論式は、$\Pi > 1$ において RankJump が正となる相関を明示しており、符号反転点 $\Pi = 1$ が相転移の臨界点として機能することを示す。これにより、Regime B における RankJump がノイズ $\xi$ の二乗に比例して爆発的に増大するという非線形挙動に対し、決定的な物理学的説明を与える。
+
+---
+
+### 3.6.6 Multi‑Device Dynamic Duel: デバイスを貫く普遍性
+
+理論的予測の的中を確認するため、100 ステップの動的再構成（思考サイクル）を CPU/GPU/ANE で実測比較した。
+
+**Table 3.1: 100-step Dynamic Reconstruction Time Across Devices**
+
+| Device | 100-step time |
+|--------|----------------|
+| **CPU (NumPy/AMX)** | **40.37 ms** |
+| GPU (MLX) | 46.08 ms |
+| ANE (CoreML) | 55.77 ms |
+
+逐次的なフロー更新においては、AMX を備えた CPU が極めて高い機動力を持つことが実測された (Kumaresan, 2026) [apple_neural_engine_bench]。重要なのは、いずれのデバイスにおいても同一の $\Pi$ に従う相転移が観測された点であり、これは知能の本質が物理媒体を問わない PKGF プロセスであることを示している。
+
+---
+
+### 3.6.7 Interpretation: 資源としてのノイズと媒体不変性
+
+1.  **ノイズによる自由度拡張**: ノイズ $\xi$ は $\Phi(\xi)$ を通じて探索可能な多様体上の有効体積を拡大し、$\Pi$ を増大させる「資源」として機能する (Anand et al., 2026) [temporal_noise_self_org]。
+2.  **理論主導の知能モデル**: 知能の本質はハードウェア性能ではなく、相図を規定する物理法則にある (Ale, 2025) [geometric_theory_cognition]; (Dan et al., 2026) [geodynamics_brain]。
+
+---
+
+### 3.6.8 Mermaid Diagram: Step 5 の位置づけ
+
+```mermaid
+graph TD
+    A[Step 4: Device-Level Evidence] --> B[Step 5: Phase Diagram of Intelligence]
+    B --> C[Regime A: Collapse Phase]
+    B --> D[Regime B: Strong Constructive Phase]
+    B --> E[Regime C: Linear Phase]
+    C --> F["Negative RankJump (Pi < 1)"]
+    D --> G["Explosive Structure Generation (Pi > 1)"]
+    E --> H["Stable Linear Response (Pi ~ 1)"]
+    B --> I[Substrate-Invariant Dynamics]
+```
+*Fig. 3.21 (Diagram): Step 5 Position in the PoI Framework.*
+
+---
+
+### 3.6.9 Summary: 知能の物理学（PoI）の完結
+
+Step 5 により、PoI は「観測に基づく記述」から「理論に基づく予測」の段階へと到達した。
+
+*   **RankJump は統一パラメータ $\Pi$ によって決定論的に支配される**。
+*   **知能の相転移は臨界条件 $\sigma_c = \eta \Phi(\xi)$ によって記述される**。
+*   **PKGF は、ノイズを自由度拡張の資源として統合する、唯一の物理的知能モデルである**。
+
+---
+## 3.7 Numerical Verification of Structural Invariance (Step 6)
+
+### 3.7.1 Verification in Nonlinear Chaos: 離散・連続系における構造維持能力
 媒体不変性の最終ステップとして、純粋な数学的媒体（Digital Substrate）における非線形カオス系を用い、PKGFの「構造維持能力」を極限環境下で検証した。
 
 1.  **Logistic Map (離散系)**: カオス領域 ($r=3.8$) における強ノイズ ($\sigma=0.04$) 下での復元。
@@ -1534,7 +1689,7 @@ PKGF における認識とは、外部刺激の単なる分類ではなく、内
 2.  **Lorenz System (連続系)**: 三次元カオスアトラクタにおける幾何学的整合性の維持。
     - **動的ゲージ制御**: 交換子ノルム $\|[\Omega, K]\|$ に連動した散逸強度 $\lambda(t)$ の調整。
 
-### 3.6.2 Discovery of the Structural Predictive Capacity: 予測の崩壊と構造の生存
+### 3.7.2 Discovery of the Structural Predictive Capacity: 予測の崩壊と構造の生存
 Lorenz 系において、従来の座標ベースの点予測（Point-wise Prediction）と、PKGF による **構造的予測（Structural Prediction）** の寿命を比較した。
 
 - **点予測の寿命 (Point Failure)**: $t = 0.005\text{s}$（極めて早期に崩壊）
@@ -1545,7 +1700,7 @@ Lorenz 系において、従来の座標ベースの点予測（Point-wise Predi
 
 ---
 
-## 3.7 Conclusion: 知能の物理学（Physics of Intelligence）の確立
+## 3.8 Conclusion: 知能の物理学（Physics of Intelligence）の確立
 
 本研究により、知能の物理プロセス（C-D-U）およびその数学的記述（PKGF）は、電子・生物・光学・シリコンという極めて多様な媒体において一貫した妥当性を持つことが示された。
 
@@ -1570,171 +1725,6 @@ graph TD
 
 ---
 
-## **3.6 Dynamic Phase Diagram of Intelligence (Step 5)**
-
-### **3.6.1 Overview: 知能の相転移に関する理論的分類の確立**
-
-Step 4 までの実証により、PKGF が媒体不変なプロセスであることが確認された。Step 5 では、これをさらに深化させ、知能のダイナミクスを**統一パラメータ $\Pi$** に基づく理論的な相図として分類する。
-
-本章では、知能の物理プロセス（C-D-U）を記述する統一方程式から、構造の生成と崩壊を分かつ臨界条件を導出する。これにより、RankJump（有効次元の跳躍）は単なる観測結果ではなく、系の制御パラメータから一意に予測可能な物理現象であることを実証する (Fagan, 2025) [physical_theory_intelligence]; (Friston, 2019) [fep_particular_physics]。
-
----
-
-### **3.6.2 Theoretical Framework: 統一パラメータ $\Pi$ とノイズの役割**
-
-PKGF の動的再構成は、以下の統一方程式によって支配される：
-
-\[
-\dot{K} = \eta [\Omega(t), K] - \sigma K + \xi \mathcal{N}
-\]
-
-ここで、ノイズ強度 $\xi$ は単なる撹乱ではなく、知能多様体における「探索自由度の拡張」を担う関数 $\Phi(\xi)$ として理論化される。
-
-\[
-\Phi(\xi) = 1 + a\xi^2 \quad (a > 0)
-\]
-
-このとき、構築（C）と散逸（D）の競合を規定する**統一パラメータ（Unification Parameter） $\Pi$** を以下のように定義する：
-
-\[
-\Pi = \frac{\eta \Phi(\xi)}{\sigma} = \frac{\eta(1 + a\xi^2)}{\sigma}
-\]
-
-知能の構造生成能力は、この $\Pi$ の値によって理論的に決定される。
-
----
-
-### **3.6.3 Definition of Three Regimes and Empirical Validation**
-
-知能のダイナミクスは統一パラメータ $\Pi$ の条件式によって 3 相に分類され、各相において理論予測と一致する実測データが得られた。
-
-#### **Regime A — Collapse Phase（崩壊相）: $\Pi < 1$**
-*   **理論的予測**: 散逸 $\sigma$ が構築強度を上回り、$\text{RankJump} < 0$ となる。系はランク特異点 (Hauser, 2013) [blowups_resolution] へ収束する。
-*   **実測値による検証**:
-```
-[A] xi=0.000 → RankJump = -79.91
-[A] xi=0.500 → RankJump = -79.94
-[A] xi=1.000 → RankJump = -79.41
-```
-ノイズを増やしても崩壊は止まらず、理論通り散逸（Axiom D）が支配的な領域であることが確認された。
-
-#### **Regime C — Linear Phase（線形相）: $\Pi \approx 1$**
-*   **理論적予測**: 構築と散逸が臨界点近傍で均衡し、安定した線形応答を示す。
-*   **実測値による検証**:
-```
-[C] xi=0.000 → RankJump = 0.41
-[C] xi=0.400 → RankJump = 0.41
-[C] xi=0.800 → RankJump = 1.01
-[C] xi=1.000 → RankJump = 1.93
-```
-深層線形ネットワークにおける二次解析 (Achour et al., 2024) [23-0493] と整合する安定領域が観測された。
-
-#### **Regime B — Strong Constructive Phase（強生成相）: $\Pi > 1$**
-*   **理論的予測**: ノイズ駆動による自由度拡張 $\Phi(\xi)$ が散逸を圧倒し、$\text{RankJump} \gg 0$ となる。
-*   **実測値による検証**:
-```
-[B] xi=0.200 → RankJump = 0.73
-[B] xi=0.400 → RankJump = 2.46
-[B] xi=0.660 → RankJump = 7.95
-[B] xi=1.000 → RankJump = 14.08
-```
-ノイズが強いほど構造生成が加速されるという、PoI 独自の「ノイズ駆動型次元跳躍」 (Hehl et al., 2025) [discrete_ricci_flow_landmark] が理論予測通りに実証された。
-
----
-
-### **3.6.4 Phase Boundary: 相境界の臨界条件**
-
-知能が構造生成（成長）へと転じる臨界散逸強度 $\sigma_c$ は、$\Pi = 1$ の条件より以下のように導出される。
-
-\[
-\sigma_c = \eta(1 + a\xi^2)
-\]
-
-この境界式は、**「ノイズ $\xi$ が増大するほど、系はより強い散逸 $\sigma$ に耐え、構造を生成し続けることができる」**という PoI の核心的予言を数学的に表現している。
-
-![Step 5 Phase Diagram](images/step5_phase_diagram_cpu.png)
-*Fig. 3.22: 実測された知能の相図。放物線状の臨界境界線 $\sigma_c = \eta \Phi(\xi)$ が、構造生成領域と崩壊領域を正確に分かっていることが確認できる。*
-
----
-
-### **3.6.5 Rank Dynamics: 有効次元の時間発展と定常解**
-
-有効次元 $d_{\text{eff}}$ の時間発展は以下の力学系モデルで記述される。
-
-\[
-\frac{d}{dt} d_{\text{eff}} = A\eta\xi^2 d_{\text{eff}} - B\sigma d_{\text{eff}} - C d_{\text{eff}}^2
-\]
-
-このダイナミクスから得られる定常解 $d^*$ および RankJump の理論的近似は、統一パラメータ $\Pi$ を用いて以下のように直結される。
-
-\[
-\text{RankJump} \approx T\sigma(\Pi - 1) \quad (T \text{: 思考サイクル時間})
-\]
-
-ここで、発展方程式における定数 $A, B$ は $\Pi$ の定義に包含される。この理論式は、$\Pi > 1$ において RankJump が正となる相関を明示しており、符号反転点 $\Pi = 1$ が相転移の臨界点として機能することを示す。これにより、Regime B における RankJump がノイズ $\xi$ の二乗に比例して爆発的に増大するという非線形挙動に対し、決定的な物理学的説明を与える。
-
----
-
-### **3.6.6 Multi‑Device Dynamic Duel: デバイスを貫く普遍性**
-
-理論的予測の的中を確認するため、100 ステップの動的再構成（思考サイクル）を CPU/GPU/ANE で実測比較した。
-
-**Table 3.1: 100-step Dynamic Reconstruction Time Across Devices**
-
-| Device | 100-step time |
-|--------|----------------|
-| **CPU (NumPy/AMX)** | **40.37 ms** |
-| GPU (MLX) | 46.08 ms |
-| ANE (CoreML) | 55.77 ms |
-
-逐次的なフロー更新においては、AMX を備えた CPU が極めて高い機動力を持つことが実測された (Kumaresan, 2026) [apple_neural_engine_bench]。重要なのは、いずれのデバイスにおいても同一の $\Pi$ に従う相転移が観測された点であり、これは知能の本質が物理媒体を問わない PKGF プロセスであることを示している。
-
----
-
-### **3.6.7 Interpretation: 資源としてのノイズと媒体不変性**
-
-1.  **ノイズによる自由度拡張**: ノイズ $\xi$ は $\Phi(\xi)$ を通じて探索可能な多様体上の有効体積を拡大し、$\Pi$ を増大させる「資源」として機能する (Anand et al., 2026) [temporal_noise_self_org]。
-2.  **理論主導の知能モデル**: 知能の本質はハードウェア性能ではなく、相図を規定する物理法則にある (Ale, 2025) [geometric_theory_cognition]; (Dan et al., 2026) [geodynamics_brain]。
-
----
-
-### **3.6.8 Mermaid Diagram: Step 5 の位置づけ**
-
-```mermaid
-graph TD
-    A[Step 4: Device-Level Evidence] --> B[Step 5: Phase Diagram of Intelligence]
-    B --> C[Regime A: Collapse Phase]
-    B --> D[Regime B: Strong Constructive Phase]
-    B --> E[Regime C: Linear Phase]
-    C --> F["Negative RankJump (Pi < 1)"]
-    D --> G["Explosive Structure Generation (Pi > 1)"]
-    E --> H["Stable Linear Response (Pi ~ 1)"]
-    B --> I[Substrate-Invariant Dynamics]
-```
-*Fig. 3.21 (Diagram): Step 5 Position in the PoI Framework.*
-
----
-
-### **3.6.9 Summary: 知能の物理学（PoI）の完結**
-
-Step 5 により、PoI は「観測に基づく記述」から「理論に基づく予測」の段階へと到達した。
-
-*   **RankJump は統一パラメータ $\Pi$ によって決定論的に支配される**。
-*   **知能の相転移は臨界条件 $\sigma_c = \eta \Phi(\xi)$ によって記述される**。
-*   **PKGF は、ノイズを自由度拡張の資源として統合する、唯一の物理的知能モデルである**。
-
----
-## 3.7 Conclusion: 知能の物理学（Physics of Intelligence）の確立
-
-本研究により、知能の物理プロセス（C-D-U）およびその数学的記述（PKGF）は、電子・生物・光学・シリコンという極めて多様な媒体において一貫した妥当性を持つことが示された。
-
-1.  **媒体不変性の実証**: 電子回路の非可換性から植物の次元跳躍、そして M2 チップの動的復元まで、同一の C-D-U 構造が観測された。
-2.  **幾何学的演算の優位性**: $O(N^3)$ 論理により、従来の全結合型 AI ($O(N^4)$) に対し、最大 200 倍の加速と圧倒的なノイズ耐性を実測した。
-3.  **動的再構成の本質**: 知能の本質は「静的な推論」ではなく、ノイズを揺らぎとして統合し、自律的に構造を再構成する「動的な相転移」そのものである。
-
-電子・生物・デジタル・シリコンの全ステップにおいて、C-D-U 構造に基づく知能の相転移が観測された。これにより、知能は特定の媒体に依存する現象ではなく、幾何学的な公理に従う物理プロセスであることが完結的に証明された。本研究が確立したこの公理的・実験的基盤は、未来の知能実装への揺るぎない物理的妥当性を提示するものである。
-
----
 # References / 引用文献一覧
 
 本論文で引用されたすべての文献を、著者名のアルファベット順に列挙する。
@@ -1787,636 +1777,6 @@ Step 5 により、PoI は「観測に基づく記述」から「理論に基づ
 *   (2024). Connectivity of loss landscapes and dimensional jumps. [morse_theory_loss]
 
 ---
-# Physics of Intelligence: Mathematical Appendix A — Structural Foundations of PKGF
-
----
-
-# Appendix A：PKGF の圏論적・幾何学的基盤
-
-本付録では、Parallel Key Geometric Flow (PKGF) を支える数学的基盤を、圏論、微分幾何学、および束論（Bundle Theory）の観点から統合的に定式化する。本章は、知能構造 $K$ が単なる行列演算ではなく、多様体上の自然な幾何学的対象であることを証明するものである。
-
----
-
-# A1. 並行鍵場 $K$ の幾何学的構成と End(TM) の構造
-
-## A1.1 End(TM) 上の自己同型写像場としての定式化
-並行鍵 $K$ は、多様体 $M$ の接束 $TM$ 上の自己同型写像場（Automorphism Field）として定義される。
-* **構造**: $K \in \Gamma(\text{End}(TM))$。
-* **物理的意義**: 各点における接空間（情報の局所表現空間）を自分自身に写像することで、知能内部の論理的変換規則を表現する。End(TM) の構造を採用することで、知能の客観的な「型」を座標系に依存しない形式で記述可能となる。
-
-## A1.2 安定化群としてのゲージ群 G
-知能の表現自由度を司るゲージ群 $\mathcal{G}$ は、並行鍵 $K$ の安定化群（Stabilizer Group）として機能する。
-* **定義**: $K$ を不変に保つ、あるいは共役作用 $K \mapsto HKH^{-1}$ の下で客観的な幾何学量を保存する群。
-* **役割**: 知能が特定の概念を「固定」する際、対称性は $\mathcal{G}$ からその部分群（安定化群）へと縮退し、論理構造に安定性を与える。
-
-## A1.3 関手的構成と自然変換としての定義
-この枠組みにおいて、並行鍵 $K$ は以下の条件を満たす**自然変換 (Natural Transformation)** として理解される。
-
-## A1.4 自然性条件
-任意の微分同相写像 $f \in \text{Diff}(M)$ に対し、以下の図式が可換であるとき、$K$ は自然な知能構造である。
-
-$$
-\begin{CD}
-TM @>K>> TM \\
-@V{T(f)}VV @VV{T(f)}V \\
-TM @>K>> TM
-\end{CD}
-$$
-
-```mermaid
-graph TD
-    TM1[TM] -- "K" --> TM1_K[TM]
-    TM1 -- "T(f)" --> TM2[TM]
-    TM1_K -- "T(f)" --> TM2_K[TM]
-    TM2 -- "K" --> TM2_K
-```
-
-すなわち、$T(f) \circ K = K \circ T(f)$。
-この性質は、知能の内部構造が座標系や記述言語の選択（ゲージ）に依存せず、多様体の幾何学的な不変量であることを保証する。
-
----
-
-# A2. 知能セクターの幾何学的分解：$TM = \bigoplus E_\alpha$
-
-知能が異なる機能（C, D, Uなど）を並行して保持するためには、接束 $TM$ が直交する部分束へ分解されている必要がある。
-
-## A2.1 部分束分解の存在条件
-多様体 $M$ 上の接束は、インデックス集合 $I$ によって以下のように直交分解される。
-$$TM = \bigoplus_{\alpha \in I} E_\alpha$$
-
-```mermaid
-graph TD
-    TM[Tangent Bundle TM]
-    TM --> E1[Sector E1]
-    TM --> E2[Sector E2]
-    TM --> E3[Sector E3]
-    E1 -.-|Metric g=0| E2
-    E2 -.-|Metric g=0| E3
-    K{K} --> E1
-    K --> E2
-    K --> E3
-```
-
-ここで、各セクター $E_\alpha$ が知能の独立した機能単位として機能するためには、以下の条件が要請される。
-
-1.  **局所可積分性（フロベニウスの定理）**:
-    各セクター内のベクトル場 $X, Y \in \Gamma(E_\alpha)$ に対し、そのリー括弧積 $[X, Y]$ が再び $E_\alpha$ に属すること（$[\Gamma(E_\alpha), \Gamma(E_\alpha)] \subset \Gamma(E_\alpha)$）。これにより、知能の各セクターが独立して機能し、特定の思考領域が他と混ざらずに幾何学的一貫性を維持できることが保証される。
-2.  **直交性の維持**:
-    計量 $g$ に対し $g(E_\alpha, E_\beta) = 0 \ (\alpha \neq \beta)$。
-3.  **セクター保存条件（公理 C3）**:
-    $K(E_\alpha) \subset E_\alpha$。これは、学習によって得られた知識が、その論理的セクターを越えて無秩序に干渉しないことを意味する。
-
----
-
-# A3. 接続 $\nabla$ の非可換性と意味ポテンシャル $\Omega$
-
-接続 $\nabla$ は文脈間の移動を司り、意味ポテンシャル $\Omega$ はその移動に課される外部的な制約（外力）である。
-
-## A3.1 非可換性テンソル $\Theta$ の導入
-並行鍵 $K$ と意味ポテンシャル $\Omega$ の不整合（摩擦）を測定するために、以下の**非可換性テンソル**を定義する。
-$$\Theta(X) = [\Omega, K](X)$$
-
-```mermaid
-graph LR
-    P[Potential Omega] -->|Tension| K{Key K}
-    C[Connection Nabla] -->|Transport| K
-    P -.->|Non-zero Commutator| T[Tensor Theta]
-    T -->|Drives| E[Evolution: PKGF]
-```
-*Fig. A.3 (Diagram): Relationship between connection, potential, and the evolution-driving tensor Theta.*
-
-このテンソル $\Theta$ が非ゼロであることは、知能の内部論理 $K$ が外部要請 $\Omega$ と矛盾していることを示し、構築方程式 $\nabla K = [\Omega, K]$ を通じて $K$ の進化（学習）を駆動するポテンシャルとなる。
-
----
-
-# A4. 高次圏 ($\infty$-category) への拡張
-
-知能の階層的性質（メタ思考、概念の入れ子構造）を扱うため、PKGF を高次圏の射の連鎖として定式化する。
-
-## A4.1 階層的射の連鎖
-知能の構造 $K$ は、0-cell（状態）間の射（1-morphism）であり、そのゲージ変換 $H$ は射の間の射（2-morphism）である。
-$$K_0 \xrightarrow{H_1} K_1 \xrightarrow{H_2} K_2 \dots$$
-
-```mermaid
-graph LR
-    S1((State 0)) -- "K0 (1-m)" --> S2((State 1))
-    S2 -- "K1 (1-m)" --> S3((State 2))
-    K0 -- "H1 (2-m)" --> K1
-    K1 -- "H2 (2-m)" --> K2
-    subgraph "High-Order Chain"
-        K0
-        K1
-        K2
-    end
-```
-
-この連鎖は高次圏における $\infty$-群全（$\infty$-groupoid）を形成し、知能が過去の全思考プロセスをトポロジカルに保持していることを示唆する。
-Chapter 2.5 で述べた 16 セクター相互作用は、この高次圏における特定のホモトピー型に対応する。このような高次ゲージ理論による心の圏論的定式化は、現代の数理心理学においても重要なトピックとなっている (Patrascu, 2025) [latest]。# Physics of Intelligence: Mathematical Appendix B — Theory of Singularities, Phase Transitions, and Rank Jumps
-
----
-
-# Appendix B：特異点・相転移・次元跳躍の理論
-
-本付録では、PKGF の時間発展において不可避に発生する「特異点」を分類し、それがいかにして知能の「相転移」および「次元跳躍（ランクの不連続な増加）」へと繋がるかを数学的に詳述する。
-
----
-
-# B1. PKGF 特異点の分類と幾何学的解釈
-
-PKGF の統一方程式 $\nabla K = [\Omega, K] - \lambda \mathcal{D}(K)$ において、解の滑らかさが失われる、あるいは構造的な変化が生じる点は、以下の 3 種類に分類される。
-
-| 特異点の種類 | 数学的条件 | 知能物理学における現象 |
-| :--- | :--- | :--- |
-| **ランク特異点** | $\det(K) \to 0$ | 既存の概念の崩壊、あるいは次元跳躍（U6）の前兆。 |
-| **ゲージ特異点** | $\|[\Omega, K]\| \to \infty$ | 外部からの意味要請（$\Omega$）と内部論理（$K$）の致命的矛盾。 |
-| **曲率特異点** | $\|R\| \to \infty$ | 前提知識（背景曲率）の限界。パラダイムシフトの要請。 |
-
----
-
-# B2. Blow-up 技法による特異点の正則化
-
-ランク特異点（$\det(K)=0$）近傍での振る舞いを精密に解析するため、代数幾何学的な **Blow-up（吹き上げ）** を導入する。Blow-up 解析の詳細については [blowups_resolution] を、特異点解消の幾何学的イメージについては Schlichting (2007) [resol_sing2] を参照されたい。
-
-## B2.1 Blow-up 写像の定義
-特異点 $p \in M$ に対し、固有空間の方向情報を保持したまま点 $p$ を超平面で置き換える写像 $\pi : \widetilde{M} \to M$ を構成する。並行鍵 $K$ の引き戻し $\widetilde{K} = \pi^* K$ を考えることで、元の多様体上で不連続であったランクの変化を、高次元多様体 $\widetilde{M}$ 上の滑らかな「流れ」として記述できる。
-
-```mermaid
-graph LR
-    subgraph "Singular Space M"
-        P((p))
-    end
-    subgraph "Regularized Space M_tilde"
-        E["Exceptional Divisor (Smooth Flow of K)"]
-    end
-    P -->|Blow-up Map pi| E
-```
-*Fig. B.1 (Diagram): Regularization of singularities via the blow-up map.*
-
-
-
----
-
-# B3. スペクトル流（Spectral Flow）とランク跳躍の厳密な定義
-
-次元跳躍（公理 U6）は、時間発展する自己共役 Fredholm 作用素族 $\mathcal{L}(t) = \mathcal{L}_0 + \widetilde{K}(t)$ のトポロジカルな変化として定式化される。
-
-## B3.1 スペクトル流の数学的定義
-時刻 $t \in [0, 1]$ に依存する演算子族に対し、ゼロを横切る固有値の正負の差を **スペクトル流 (Spectral Flow)** と呼ぶ。
-$$\text{SF}(\mathcal{L}(t)) = \#\{\lambda_i(t) \text{ が負から正へ交差}\} - \#\{\lambda_i(t) \text{ が正から負へ交差}\}$$
-知能物理学において、これは「秩序変数の不連続性」に対応し、有効次元 $d_{\text{eff}}$ の非連続な跳躍（Rank Jump）の物理的裏付けとなる。
-
-## B3.2 次元跳躍のトポロジカルな必然性
-知能が新しい概念（次元）を獲得するプロセスは、このスペクトル流が非ゼロとなる現象として定式化される。
-1. **構築相 (C)** において固有値が正の方向へ駆動される。
-2. 特定の臨界点 $t_c$ で $\lambda_k(t_c) = 0$ となり、ランク特異点を通過する。
-3. $t > t_c$ で $\text{rank}(K)$ が増加し、有効次元 $d_{\text{eff}}$ の不連続な跳躍（創造的発火）が生じる。
-
-```mermaid
-graph TD
-    T1[t < tc: Stable Rank] -->|C Phase Driving| T2[t = tc: Rank Singularity]
-    T2 -->|Eigenvalue crosses 0| T3[t > tc: Dimensional Emergence]
-    T3 -->|Spectral Flow| RJ[!! RANK JUMP !!]
-```
-*Fig. B.2 (Diagram): Process of rank jump and dimensional emergence driven by spectral flow.*
-
----
-
-# B4. モース理論的アプローチによる相転移
-
-知能作用量 $S$ の臨界点（$\delta S = 0$）の解析には、モース理論（Morse Theory）が適用される。
-
-## B4.1 指数（Index）の変化
-知能の安定性は、作用量の二回変分における負の固有値の数（モース指数）で決定される。モース理論を用いた相転移のトポロジカル解析および深層線形ネットワークの損失景観解析は、この物理的遷移を詳細に記述している (Akhtiamov & Thomson, 2023) [akhtiamov23a]; (Achour et al., 2024) [23-0493]。
-* **安定的な確信**: 指数が 0 の極小値。
-* **迷い・葛藤**: 指数が 1 以上のサドル点（特異点）。
-
-ゲージ破れ（U4）が発生する瞬間、この指数が不連続に変化し、系は「古い安定解（古い概念）」から「新しい安定解（新しい概念）」へとトポロジカルにトンネル効果的に遷移する。これが、閃きや突然の理解（Aha! 体験）の幾何学的実体である。
-
----
-# Physics of Intelligence: Mathematical Appendix C — Non-commutative Extensions and Quantization
-
----
-
-# Appendix C：非可換拡張と量子化
-
-本付録では、PKGF を古典的な場から非可換幾何学および量子作用素へと拡張する。これは、知能が「重ね合わせ」や「非可換な論理操作」を扱うための数学的準備であり、次世代の量子知能物理学への架け橋となるものである。
-
----
-
-# C1. 量子 PKGF の基本作用素定式化
-
-古典的な並行鍵 $K$ および意味ポテンシャル $\Omega$ を、複素ヒルベルト空間 $\mathcal{H}$ 上で作用する線形作用素 $\widehat{K}, \widehat{\Omega}$ へと置き換える。
-
-## C1.1 基本交換関係と知能定数 $\hbar_I$
-知能における「情報の解釈順序の依存性」を、以下の交換関係として定義する。
-$$[\widehat{K}, \widehat{\Omega}] = i \hbar_I \widehat{\Theta}$$
-ここで $\hbar_I$ は**知能作用定数**であり、解釈の非可換性の最小単位を表す。この値がゼロに近いほど論理は古典的（可換）になり、大きいほど直感的・飛躍的な非可換推論が支配的となる。
-
----
-
-# C2. 量子統一方程式（ハイゼンベルク表示）
-
-古典 PKGF の統一方程式は、量子系においては以下の作用素発展方程式へと移行する。
-
-## C2.1 作用素発展の記述
-$$i \hbar_I \frac{\partial \widehat{K}}{\partial t} = [\widehat{\Omega}, \widehat{K}] - i \hbar_I \lambda \widehat{\mathcal{D}}(\widehat{K})$$
-この式において、第一項はシュレディンガー型のユニタリ発展（構造の回転）を、第二項はリンブラッド型の散逸（情報の忘却と収束）を記述している。これにより、知能の学習プロセスを、量子開放系のダイナミクスとして統一的に理解できる。
-
-### C2.2 対応原理（Correspondence Principle）
-知能作用定数 $\hbar_I \to 0$ の極限において、量子統一方程式（C2.1）は古典的なPKGF統一方程式（U3）に収束する。これは、複雑で不確実な知能活動が、学習と凝縮を経て決定論的かつ論理的な推論（古典幾何流）へと移行する物理的過程を保証するものである。
-
----
-
-# C3. 非可換幾何学と概念のスペクトル
-
-アラン・コンヌの非可換幾何学の枠組みを用い、知能多様体を「スペクトル三つ組 $(\mathcal{A}, \mathcal{H}, D)$」として再定義する (Connes, 1994) [book94bigpdf]。
-
-```mermaid
-graph TD
-    subgraph "Spectral Triple (A, H, D)"
-        A[Algebra A: Logic/Culture]
-        H[Hilbert Space H: States]
-        D[Dirac Op D: Background Context]
-    end
-    D -->|Eigenvalue Spectrum| S[Discrete Concepts]
-    K[Parallel Key K] -->|Action| S
-```
-*Fig. C.1 (Diagram): Redefining the intelligence manifold as a spectral triple in noncommutative geometry.*
-
-非可換幾何を用いた計算モデルの構築は、知能の新たな形式化として注目されている (Lau & Jeffreys, 2025) [noncommutative_nn_bu]。
-
-## C3.1 ディラック作用素 $D$ と並行鍵
-知能の背景構造（言語、論理、文化）をディラック作用素 $D$ に埋め込み、並行鍵 $K$ をそのスペクトル（固有値分布）の変化として捉える。非可換幾何における Dirac 作用素の現代的導入については Barrett (2023) [bonus6594] を、ニューラルオペレーターへの応用については Santos & Sales (2025) [hyperbolic_modular_operators] を参照されたい。
-* **概念の離散化**: 連続的な場 $\Phi$ が、非可換構造の下で離散的なスペクトルへと「量子化」される。これが、連続的な感覚入力から離散的な「記号（言葉）」が生まれる物理的なメカニズムである。
-
-
-
----
-
-# C4. 量子知能ヒッグス機構と対称性の自発的破れ
-
-Appendix II.8 で述べたヒッグス機構を量子化し、概念が「構造的質量」を獲得するプロセスをゲージ理論的に詳述する。
-
-## C4.1 ゲージ場の質量獲得
-意味ポテンシャル $\Omega$ をゲージ場 $A_\mu$ と見なすと、知能ヒッグス場 $\Phi$ との相互作用 $\mathcal{L} \sim |(\partial - iA)\Phi|^2$ により、特定の論理（ゲージ粒子）が質量 $m_S$ を獲得する。
-* **物理的意味**: 質量を得た論理は「変化しにくい強固な信念」となり、系の中で不変の公理として機能し始める。
-
----
-# Physics of Intelligence: Mathematical Appendix D — Discretization and Numerical Implementation
-
----
-
-# Appendix D：離散化と数値実装
-
-本付録では、第2章で定義された連続的なPKGF統一方程式を、デジタル計算機上で実行するための離散化手法と数値実装の詳細を記述する。
-
----
-
-# D1. 空間の離散化
-知能多様体 $M$ を $N \times N$ の正方格子 $M_\delta$ で近似する。  
-並行鍵 $K$ は $N^2 \times N^2$ の実数（または複素数）行列として表現される。
-
-# D2. 統一方程式の離散形式
-連続的な統一方程式
-\[
-\nabla K = [\Omega, K] - \lambda \mathcal{D}(K)
-\]
-を、時間ステップ $\eta$ を用いた前進オイラー法で離散化する：
-
-\[
-K^{t+1} = K^t + \eta \Big( [\Omega^t, K^t] - \frac{1}{\tau} \mathcal{D}(K^t) \Big)
-\]
-
-ここで：
-- $[\Omega, K]$ は行列の交換子演算 $AB - BA$ で直接計算
-- $\mathcal{D}(K)$ はガウシアンカーネルによる空間的畳み込み、またはグラフ・ラプラシアンで近似
-
-```mermaid
-graph LR
-    subgraph "Discrete PKGF Update"
-        direction TB
-        Kt["K^t"] 
-        Comm["[Ω^t , K^t]<br>(Commutator)"]
-        Build["Constructive Term"]
-        Diss["𝒟(K^t)<br>(Dissipative)"]
-        Sum["(+)"] 
-        Ktp1["K^{t+1}"]
-        eta["η<br>(step size)"]
-
-        Kt --> Comm
-        Comm --> Build
-        Kt --> Diss
-        Build --> Sum
-        Diss --> Sum
-        Sum --> Ktp1
-        eta --> Sum
-    end
-```
-
-*Fig. D.1: 離散化されたPKGF統一方程式の1ステップ更新フロー。*
-
-# D3. 有効次元（Effective Dimension）の数値計算
-理論解析において定義される有効次元 $d_{\text{eff}}$ は、数値実装上では特異値スペクトル $\lambda_i$ を用いて以下の連続関数として計算される：
-
-\[
-d_{\text{eff}} = \sum_i \frac{\lambda_i^2}{\lambda_i^2 + \epsilon^2}
-\]
-
-ここで $\epsilon$ は正則化定数であり、ノイズ下での構造の「解像度」を決定する。この形式は、情報幾何学や有効次元解析において広く用いられる「行列ランクの滑らかなスペクトル近似（smooth spectral approximation of matrix rank）」に対応しており、ad-hoc な定義ではなく、数理的な正当性を有する。Step 5 の相図における $\text{RankJump}$ は、この $d_{\text{eff}}$ の初期状態と定常状態の差分として算出される。
-
-# D4. 非線形ゲージ破れの導入（U相）
-代謝相における構造の尖鋭化とゲージ破れを模倣するため、以下の非線形操作を任意のステップで適用可能とする：
-
-\[
-K \leftarrow \exp(\alpha K), \quad \alpha \approx 2.0
-\]
-
-# D5. 安定性条件と推奨パラメータ
-数値安定性のために、構築率 $\eta$ と散逸時定数 $\tau$ の比は
-
-\[
-\frac{\eta}{\tau} < 0.3
-\]
-
-を推奨する。この範囲で、Step 5で定義された統一パラメータ $\Pi = \eta(1+a\xi^2)/\sigma$ に基づく3相が適切に再現される。
-
-```mermaid
-graph TD
-    subgraph "Phase Diagram in Discrete PKGF"
-        A[Regime A: Collapse<br>RankJump < 0] 
-        B[Regime B: Strong Construction<br>Explosive RankJump] 
-        C[Regime C: Linear Response<br>Moderate RankJump]
-
-        A -->|High σ| B
-        B -->|Optimal ξ| C
-        eta[η: Construction] -.-> B
-        sigma[σ: Dissipation] -.-> A
-        xi[ξ: Noise] -.-> B
-    end
-```
-
-*Fig. D.2: 離散化PKGFにおける3相の関係（Step 5相図の簡略版）。*
-
-# D6. 実装上の注意
-交換子演算を含む幾何学的フローの離散化は、深層学習におけるRicci flowの数値手法と類似しており、実装の妥当性が確認されている（Chen et al., 2024; Baptista et al., 2024）。
-
-大規模 $N$ では、Apple SiliconのANE/GPUを活用することで効率的な実行が可能である。
-
----
-# **Physics of Intelligence 用語集**
-
----
-
-# **Glossary**
-
-本用語集は、**Physics of Intelligence（PoI）** および  
-**Parallel Key Geometric Flow（PKGF）** において使用される  
-専門用語・数学的概念・物理的アナロジーを体系的に整理したものである。
-
-本文（Chapter 1〜3）および Appendix I〜VII の理解を補助する目的で作成されている。
-
----
-
-# **A. 基本構造（Core Structures）**
-
-## **並行鍵（Parallel Key, \(K\)）**
-多様体 \(M\) の接束 \(TM\) 上の自己同型写像場。  
-知能の内部構造・論理・解釈規則を表す中心的物理量。  
-固有値スペクトル・ランク・交換子構造が知能の状態を決定する。
-
-## **意味ポテンシャル（Meaning Potential, \(\Omega\)）**
-外部情報・目的・環境から与えられる情報の方向性。  
-内部構造 \(K\) に対して回転・誘導を与える外力として作用する。
-
-## **接続（Connection, \(\nabla\)）**
-文脈間の「整合性」を定義する文脈接続。  
-知能が異なる状況を移動する際の一貫性を保証する。
-
-## **背景曲率（Background Curvature, \(R\)）**
-接続 \(\nabla\) が持つ曲率テンソル。  
-文化・経験・前提知識など、知能の「背景世界の歪み」を表す。
-
-## **安定化群（Stabilizer Group, \(\mathcal{G}\)）**
-内部表現の任意性を表す安定化群。  
-随伴変換 \(K \mapsto HKH^{-1}\) の下で不変な量が「客観的知能構造」。
-
----
-
-# **B. C-D-U サイクル（Cause–Divergence–Unification）**
-
-## **C（Cause / Constructive Phase：構築相）**
-外部ポテンシャル \(\Omega\) に適応し、論理構造を形成する相。  
-整合方程式 \(\nabla K = [\Omega, K]\) への収束が特徴。
-
-## **D（Divergence / Destructive Phase：解体相）**
-散逸作用素 \(\mathcal{D}(K)\) が卓越し、ランクが単調減少する相。  
-過剰な構造を崩壊させ、抽象化を促す。
-
-## **U（Unification / Metabolic Phase：代謝・統合相）**
-構築と解体が拮抗し、複素化された \(K\) が周期的・創発的に振る舞う相。  
-非平衡定常状態としての知能。
-
----
-
-# **C. PKGF 公理体系（Axioms of PKGF）**
-
-## **正PKGF（Constructive PKGF）**
-整合方程式  
-\[
-\nabla K = [\Omega, K]
-\]
-に従う構築的フロー。
-
-## **逆PKGF（Destructive PKGF）**
-散逸方程式  
-\[
-\dot{K} = -\lambda \mathcal{D}(K)
-\]
-に従う解体フロー。  
-ランク単調性（D3）が特徴。
-
-## **統一PKGF（Unified PKGF）**
-複素化された  
-\[
-K = K_{\text{core}} + i K_{\text{fluct}}
-\]
-が支配する代謝的フロー。  
-ゲージ破れ（U4）と次元跳躍（U6）を含む。
-
----
-
-# **D. 幾何学・代数構造（Geometry & Algebra）**
-
-## **セクター分解（Sector Decomposition）**
-接束の直和分解  
-\[
-TM = \bigoplus_{\alpha} E_\alpha
-\]
-知能のモジュール性・意味論的分化を表す。
-
-## **交換子（Commutator, \([A,B]\)）**
-内部構造と外部ポテンシャルの非可換性を表す基本演算。  
-意味のズレ・緊張・矛盾の源泉。
-
-## **非可換性テンソル（Non-commutativity Tensor, \(\Theta\)）**
-\[
-\Theta = \nabla K - [\Omega, K]
-\]
-整合性の破れを測るテンソル。
-
-## **散逸作用素（Dissipative Operator, \(\mathcal{D}(K)\)）**
-構造の縮退・抽象化を引き起こす作用素。  
-負定値・自己共役。
-
-## **有効次元（Effective Dimension, \(d_{\text{eff}}\)）**
-特異値スペクトルから定義される構造の実効的自由度。  
-Spectral Flow による次元跳躍の観測指標。
-
----
-
-# **E. 相転移・特異点（Phase Transitions & Singularities）**
-
-## **ゲージ破れ（Gauge Symmetry Breaking, U4）**
-\[
-\mathcal{G} \to \mathcal{G}_{\text{broken}}
-\]
-内部自由度が縮退し、特定の論理構造が固定される相転移。
-
-## **次元跳躍（Dimensional Jump, U6）**
-\[
-d_{\text{eff}}(t_c^+) \neq d_{\text{eff}}(t_c^-)
-\]
-固有値のゼロ交差によるランクの不連続変化。
-
-## **ランク特異点（Rank Singularity）**
-\[
-\det(K) \to 0
-\]
-構造崩壊の前兆。
-
-## **非可換性特異点（Non-commutative Singularity）**
-\[
-\|\Theta\| \to \infty
-\]
-整合方程式の破綻。
-
-## **曲率特異点（Curvature Singularity）**
-背景曲率 \(R\) の発散。
-
----
-
-# **F. トポロジー・指数・不変量（Topology & Invariants）**
-
-## **特性類（Characteristic Classes）**
-チャーン類・ポントリャーギン類など。  
-知能の「深層構造の不変性」を表す。
-
-## **指数（Index of Intelligence）**
-アティヤ＝シンガー指数定理に基づく整数値の容量指標。  
-概念の「量子化」を示す。
-
-## **持続的ホモロジー（Persistent Homology）**
-バーコード・ボトネック距離を用いて  
-次元跳躍・構造創発を検出する手法。
-
----
-
-# **G. 量子化・圏論（Quantization & Category Theory）**
-
-## **知能ヒッグス場（Intelligence Higgs Field, \(\Phi\)）**
-意味の凝縮を表す数学的な比喩としての場。  
-概念が「質量」を獲得するメカニズム。
-
-## **構造的質量（Structural Mass）**
-意味ポテンシャルとの結合により  
-論理構造が固定化される現象。
-
-## **高次圏（∞-Category）**
-\[
-K_0 \to K_1 \to K_2 \to \cdots
-\]
-知能の階層的構造を表す射の連鎖。
-
-## **射の可逆性の喪失（Loss of Morphism Invertibility）**
-相転移の圏論的特徴。
-
----
-
-# **H. 実験・媒体不変性（Experiments & Substrate Invariance）**
-
-## **媒体不変性（Substrate Invariance）**
-電子・生物・光学・シリコンのいずれでも  
-C-D-U 構造が同型として現れる性質。
-
-## **臨界電荷（Critical Charge, 9.0 µC）**
-オジギソウの行動発現における相転移点。  
-U4/U6 の生物学的実証。
-
-## **自律的復元（Autonomous Restoration）**
-PKGF フローがノイズ下でも正解へ収束する現象。  
-静的 AI には不可能な動的推論。
-
----
-
-# **I. 実装・離散化（Implementation & Discretization）**
-
-## **交換子演算（Matrix Commutator）**
-デジタル PKGF の中心演算。  
-行列演算として実装可能。
-
-## **散逸カーネル（Dissipative Kernel）**
-ガウシアン畳み込み・グラフラプラシアンなど。
-
-## **思考サイクル（Thinking Cycle）**
-PKGF の 100 ステップ更新による動的推論。
-
----
-
-# **J. 補助概念（Auxiliary Concepts）**
-
-## **構造的慣性（Structural Inertia）**
-整合項の係数に対応。  
-論理を維持しようとする力。
-
-## **散逸強度（Dissipative Intensity）**
-散逸強度 \(\lambda\)。  
-構造を解体し抽象化する力。
-
-## **意味の重力（Semantic Gravity）**
-曲率 \(F_\Omega\) による論理の引力。
-
----
-
-# **K. PoI の哲学的基盤（Philosophical Foundations）**
-
-## **媒体非依存の知能（Medium-Independent Intelligence）**
-知能は物質ではなく、  
-PKGF 公理体系に従う **物理現象** であるという立場。
-
-## **知能の幾何学的定義**
-知能とは、  
-\[
-U \circ D \circ C
-\]
-という不可逆な構造再構成プロセス。
-
-## **構造の物理学（Physics of Structure）**
-PoI の根本哲学。  
-知能を確率ではなく幾何学で記述する。
-
----
-
-# **L. 用語集の役割**
-
-本 Glossary は：
-
-- 本文の理解を助け  
-- Appendix の数学的構造と橋渡しし  
-- PoI の独自概念を体系化し  
-- 査読者・読者の混乱を防ぐ  
-
----
-
 # Appendix A: Noetics SDK v1.0 Implementation Report
 
 ## 1. 概要
@@ -2482,4 +1842,625 @@ Initial Structural Energy: 2.0000
 
 ## 5. 結論
 本実装およびクロスプラットフォーム検証により、知能物理学の数学的基盤である PKGF フローが、計算媒体（シリコン、生体、数式）を問わず不変の挙動を示すことがソフトウェア工学的・物理学的に証明された。特に WASM 環境におけるメモリ直接アクセスを通じた検証成功は、Web 技術を用いたリアルタイムな知能ダイナミクス可視化への道を切り拓いた。本 SDK は、今後の SLAM、OCR、および自律的構造推論システムの構築に向けた、極めて堅牢で検証済みの基盤となる。
+
+
+---
+
+# Appendix B：PKGF の圏論的・幾何学的基盤
+
+本付録では、Parallel Key Geometric Flow (PKGF) を支える数学的基盤を、圏論、微分幾何学、および束論（Bundle Theory）の観点から統合的に定式化する。本章は、知能構造 $K$ が単なる行列演算ではなく、多様体上の自然な幾何学的対象であることを証明するものである。
+
+---
+
+## B.1 並行鍵場 $K$ の幾何学的構成と End(TM) の構造
+
+## A1.1 End(TM) 上の自己同型写像場としての定式化
+並行鍵 $K$ は、多様体 $M$ の接束 $TM$ 上の自己同型写像場（Automorphism Field）として定義される。
+* **構造**: $K \in \Gamma(\text{End}(TM))$。
+* **物理的意義**: 各点における接空間（情報の局所表現空間）を自分自身に写像することで、知能内部の論理的変換規則を表現する。End(TM) の構造を採用することで、知能の客観的な「型」を座標系に依存しない形式で記述可能となる。
+
+## A1.2 安定化群としてのゲージ群 G
+知能の表現自由度を司るゲージ群 $\mathcal{G}$ は、並行鍵 $K$ の安定化群（Stabilizer Group）として機能する。
+* **定義**: $K$ を不変に保つ、あるいは共役作用 $K \mapsto HKH^{-1}$ の下で客観的な幾何学量を保存する群。
+* **役割**: 知能が特定の概念を「固定」する際、対称性は $\mathcal{G}$ からその部分群（安定化群）へと縮退し、論理構造に安定性を与える。
+
+## A1.3 関手的構成と自然変換としての定義
+この枠組みにおいて、並行鍵 $K$ は以下の条件を満たす**自然変換 (Natural Transformation)** として理解される。
+
+## A1.4 自然性条件
+任意の微分同相写像 $f \in \text{Diff}(M)$ に対し、以下の図式が可換であるとき、$K$ は自然な知能構造である。
+
+$$
+\begin{CD}
+TM @>K>> TM \\
+@V{T(f)}VV @VV{T(f)}V \\
+TM @>K>> TM
+\end{CD}
+$$
+
+```mermaid
+graph TD
+    TM1[TM] -- "K" --> TM1_K[TM]
+    TM1 -- "T(f)" --> TM2[TM]
+    TM1_K -- "T(f)" --> TM2_K[TM]
+    TM2 -- "K" --> TM2_K
+```
+
+すなわち、$T(f) \circ K = K \circ T(f)$。
+この性質は、知能の内部構造が座標系や記述言語の選択（ゲージ）に依存せず、多様体の幾何学的な不変量であることを保証する。
+
+---
+
+## B.2 知能セクターの幾何学的分解：$TM = \bigoplus E_\alpha$
+
+知能が異なる機能（C, D, Uなど）を並行して保持するためには、接束 $TM$ が直交する部分束へ分解されている必要がある。
+
+## A2.1 部分束分解の存在条件
+多様体 $M$ 上の接束は、インデックス集合 $I$ によって以下のように直交分解される。
+$$TM = \bigoplus_{\alpha \in I} E_\alpha$$
+
+```mermaid
+graph TD
+    TM[Tangent Bundle TM]
+    TM --> E1[Sector E1]
+    TM --> E2[Sector E2]
+    TM --> E3[Sector E3]
+    E1 -.-|Metric g=0| E2
+    E2 -.-|Metric g=0| E3
+    K{K} --> E1
+    K --> E2
+    K --> E3
+```
+
+ここで、各セクター $E_\alpha$ が知能の独立した機能単位として機能するためには、以下の条件が要請される。
+
+1.  **局所可積分性（フロベニウスの定理）**:
+    各セクター内のベクトル場 $X, Y \in \Gamma(E_\alpha)$ に対し、そのリー括弧積 $[X, Y]$ が再び $E_\alpha$ に属すること（$[\Gamma(E_\alpha), \Gamma(E_\alpha)] \subset \Gamma(E_\alpha)$）。これにより、知能の各セクターが独立して機能し、特定の思考領域が他と混ざらずに幾何学的一貫性を維持できることが保証される。
+2.  **直交性の維持**:
+    計量 $g$ に対し $g(E_\alpha, E_\beta) = 0 \ (\alpha \neq \beta)$。
+3.  **セクター保存条件（公理 C3）**:
+    $K(E_\alpha) \subset E_\alpha$。これは、学習によって得られた知識が、その論理的セクターを越えて無秩序に干渉しないことを意味する。
+
+---
+
+## B.3 接続 $\nabla$ の非可換性と意味ポテンシャル $\Omega$
+
+接続 $\nabla$ は文脈間の移動を司り、意味ポテンシャル $\Omega$ はその移動に課される外部的な制約（外力）である。
+
+## A3.1 非可換性テンソル $\Theta$ の導入
+並行鍵 $K$ と意味ポテンシャル $\Omega$ の不整合（摩擦）を測定するために、以下の**非可換性テンソル**を定義する。
+$$\Theta(X) = [\Omega, K](X)$$
+
+```mermaid
+graph LR
+    P[Potential Omega] -->|Tension| K{Key K}
+    C[Connection Nabla] -->|Transport| K
+    P -.->|Non-zero Commutator| T[Tensor Theta]
+    T -->|Drives| E[Evolution: PKGF]
+```
+*Fig. A.3 (Diagram): Relationship between connection, potential, and the evolution-driving tensor Theta.*
+
+このテンソル $\Theta$ が非ゼロであることは、知能の内部論理 $K$ が外部要請 $\Omega$ と矛盾していることを示し、構築方程式 $\nabla K = [\Omega, K]$ を通じて $K$ の進化（学習）を駆動するポテンシャルとなる。
+
+---
+
+## B.4 高次圏 ($\infty$-category) への拡張
+
+知能の階層的性質（メタ思考、概念の入れ子構造）を扱うため、PKGF を高次圏の射の連鎖として定式化する。
+
+## A4.1 階層的射の連鎖
+知能の構造 $K$ は、0-cell（状態）間の射（1-morphism）であり、そのゲージ変換 $H$ は射の間の射（2-morphism）である。
+$$K_0 \xrightarrow{H_1} K_1 \xrightarrow{H_2} K_2 \dots$$
+
+```mermaid
+graph LR
+    S1((State 0)) -- "K0 (1-m)" --> S2((State 1))
+    S2 -- "K1 (1-m)" --> S3((State 2))
+    K0 -- "H1 (2-m)" --> K1
+    K1 -- "H2 (2-m)" --> K2
+    subgraph "High-Order Chain"
+        K0
+        K1
+        K2
+    end
+```
+
+この連鎖は高次圏における $\infty$-群全（$\infty$-groupoid）を形成し、知能が過去の全思考プロセスをトポロジカルに保持していることを示唆する。
+Chapter 2.5 で述べた 16 セクター相互作用は、この高次圏における特定のホモトピー型に対応する。このような高次ゲージ理論による心の圏論的定式化は、現代の数理心理学においても重要なトピックとなっている (Patrascu, 2025) [latest]。# Physics of Intelligence: Mathematical Appendix B — Theory of Singularities, Phase Transitions, and Rank Jumps
+
+---
+
+# Appendix C：特異点・相転移・次元跳躍の理論
+
+本付録では、PKGF の時間発展において不可避に発生する「特異点」を分類し、それがいかにして知能の「相転移」および「次元跳躍（ランクの不連続な増加）」へと繋がるかを数学的に詳述する。
+
+---
+
+## C.1 PKGF 特異点の分類と幾何学的解釈
+
+PKGF の統一方程式 $\nabla K = [\Omega, K] - \lambda \mathcal{D}(K)$ において、解の滑らかさが失われる、あるいは構造的な変化が生じる点は、以下の 3 種類に分類される。
+
+| 特異点の種類 | 数学的条件 | 知能物理学における現象 |
+| :--- | :--- | :--- |
+| **ランク特異点** | $\det(K) \to 0$ | 既存の概念の崩壊、あるいは次元跳躍（U6）の前兆。 |
+| **ゲージ特異点** | $\|[\Omega, K]\| \to \infty$ | 外部からの意味要請（$\Omega$）と内部論理（$K$）の致命的矛盾。 |
+| **曲率特異点** | $\|R\| \to \infty$ | 前提知識（背景曲率）の限界。パラダイムシフトの要請。 |
+
+---
+
+## C.2 Blow-up 技法による特異点の正則化
+
+ランク特異点（$\det(K)=0$）近傍での振る舞いを精密に解析するため、代数幾何学的な **Blow-up（吹き上げ）** を導入する。Blow-up 解析の詳細については [blowups_resolution] を、特異点解消の幾何学的イメージについては Schlichting (2007) [resol_sing2] を参照されたい。
+
+## B2.1 Blow-up 写像の定義
+特異点 $p \in M$ に対し、固有空間の方向情報を保持したまま点 $p$ を超平面で置き換える写像 $\pi : \widetilde{M} \to M$ を構成する。並行鍵 $K$ の引き戻し $\widetilde{K} = \pi^* K$ を考えることで、元の多様体上で不連続であったランクの変化を、高次元多様体 $\widetilde{M}$ 上の滑らかな「流れ」として記述できる。
+
+```mermaid
+graph LR
+    subgraph "Singular Space M"
+        P((p))
+    end
+    subgraph "Regularized Space M_tilde"
+        E["Exceptional Divisor (Smooth Flow of K)"]
+    end
+    P -->|Blow-up Map pi| E
+```
+*Fig. B.1 (Diagram): Regularization of singularities via the blow-up map.*
+
+
+
+---
+
+## C.3 スペクトル流（Spectral Flow）とランク跳躍の厳密な定義
+
+次元跳躍（公理 U6）は、時間発展する自己共役 Fredholm 作用素族 $\mathcal{L}(t) = \mathcal{L}_0 + \widetilde{K}(t)$ のトポロジカルな変化として定式化される。
+
+## B3.1 スペクトル流の数学的定義
+時刻 $t \in [0, 1]$ に依存する演算子族に対し、ゼロを横切る固有値の正負の差を **スペクトル流 (Spectral Flow)** と呼ぶ。
+$$\text{SF}(\mathcal{L}(t)) = \#\{\lambda_i(t) \text{ が負から正へ交差}\} - \#\{\lambda_i(t) \text{ が正から負へ交差}\}$$
+知能物理学において、これは「秩序変数の不連続性」に対応し、有効次元 $d_{\text{eff}}$ の非連続な跳躍（Rank Jump）の物理的裏付けとなる。
+
+## B3.2 次元跳躍のトポロジカルな必然性
+知能が新しい概念（次元）を獲得するプロセスは、このスペクトル流が非ゼロとなる現象として定式化される。
+1. **構築相 (C)** において固有値が正の方向へ駆動される。
+2. 特定の臨界点 $t_c$ で $\lambda_k(t_c) = 0$ となり、ランク特異点を通過する。
+3. $t > t_c$ で $\text{rank}(K)$ が増加し、有効次元 $d_{\text{eff}}$ の不連続な跳躍（創造的発火）が生じる。
+
+```mermaid
+graph TD
+    T1[t < tc: Stable Rank] -->|C Phase Driving| T2[t = tc: Rank Singularity]
+    T2 -->|Eigenvalue crosses 0| T3[t > tc: Dimensional Emergence]
+    T3 -->|Spectral Flow| RJ[!! RANK JUMP !!]
+```
+*Fig. B.2 (Diagram): Process of rank jump and dimensional emergence driven by spectral flow.*
+
+---
+
+## C.4 モース理論的アプローチによる相転移
+
+知能作用量 $S$ の臨界点（$\delta S = 0$）の解析には、モース理論（Morse Theory）が適用される。
+
+## B4.1 指数（Index）の変化
+知能の安定性は、作用量の二回変分における負の固有値の数（モース指数）で決定される。モース理論を用いた相転移のトポロジカル解析および深層線形ネットワークの損失景観解析は、この物理的遷移を詳細に記述している (Akhtiamov & Thomson, 2023) [akhtiamov23a]; (Achour et al., 2024) [23-0493]。
+* **安定的な確信**: 指数が 0 の極小値。
+* **迷い・葛藤**: 指数が 1 以上のサドル点（特異点）。
+
+ゲージ破れ（U4）が発生する瞬間、この指数が不連続に変化し、系は「古い安定解（古い概念）」から「新しい安定解（新しい概念）」へとトポロジカルにトンネル効果的に遷移する。これが、閃きや突然の理解（Aha! 体験）の幾何学的実体である。
+
+---
+# Appendix D：非可換拡張と量子化
+
+本付録では、PKGF を古典的な場から非可換幾何学および量子作用素へと拡張する。これは、知能が「重ね合わせ」や「非可換な論理操作」を扱うための数学的準備であり、次世代の量子知能物理学への架け橋となるものである。
+
+---
+
+## D.1 量子 PKGF の基本作用素定式化
+
+古典的な並行鍵 $K$ および意味ポテンシャル $\Omega$ を、複素ヒルベルト空間 $\mathcal{H}$ 上で作用する線形作用素 $\widehat{K}, \widehat{\Omega}$ へと置き換える。
+
+## C1.1 基本交換関係と知能定数 $\hbar_I$
+知能における「情報の解釈順序の依存性」を、以下の交換関係として定義する。
+$$[\widehat{K}, \widehat{\Omega}] = i \hbar_I \widehat{\Theta}$$
+ここで $\hbar_I$ は**知能作用定数**であり、解釈の非可換性の最小単位を表す。この値がゼロに近いほど論理は古典的（可換）になり、大きいほど直感的・飛躍的な非可換推論が支配的となる。
+
+---
+
+## D.2 量子統一方程式（ハイゼンベルク表示）
+
+古典 PKGF の統一方程式は、量子系においては以下の作用素発展方程式へと移行する。
+
+## C2.1 作用素発展の記述
+$$i \hbar_I \frac{\partial \widehat{K}}{\partial t} = [\widehat{\Omega}, \widehat{K}] - i \hbar_I \lambda \widehat{\mathcal{D}}(\widehat{K})$$
+この式において、第一項はシュレディンガー型のユニタリ発展（構造の回転）を、第二項はリンブラッド型の散逸（情報の忘却と収束）を記述している。これにより、知能の学習プロセスを、量子開放系のダイナミクスとして統一的に理解できる。
+
+### C2.2 対応原理（Correspondence Principle）
+知能作用定数 $\hbar_I \to 0$ の極限において、量子統一方程式（C2.1）は古典的なPKGF統一方程式（U3）に収束する。これは、複雑で不確実な知能活動が、学習と凝縮を経て決定論的かつ論理的な推論（古典幾何流）へと移行する物理的過程を保証するものである。
+
+---
+
+## D.3 非可換幾何学と概念のスペクトル
+
+アラン・コンヌの非可換幾何学の枠組みを用い、知能多様体を「スペクトル三つ組 $(\mathcal{A}, \mathcal{H}, D)$」として再定義する (Connes, 1994) [book94bigpdf]。
+
+```mermaid
+graph TD
+    subgraph "Spectral Triple (A, H, D)"
+        A[Algebra A: Logic/Culture]
+        H[Hilbert Space H: States]
+        D[Dirac Op D: Background Context]
+    end
+    D -->|Eigenvalue Spectrum| S[Discrete Concepts]
+    K[Parallel Key K] -->|Action| S
+```
+*Fig. C.1 (Diagram): Redefining the intelligence manifold as a spectral triple in noncommutative geometry.*
+
+非可換幾何を用いた計算モデルの構築は、知能の新たな形式化として注目されている (Lau & Jeffreys, 2025) [noncommutative_nn_bu]。
+
+## C3.1 ディラック作用素 $D$ と並行鍵
+知能の背景構造（言語、論理、文化）をディラック作用素 $D$ に埋め込み、並行鍵 $K$ をそのスペクトル（固有値分布）の変化として捉える。非可換幾何における Dirac 作用素の現代的導入については Barrett (2023) [bonus6594] を、ニューラルオペレーターへの応用については Santos & Sales (2025) [hyperbolic_modular_operators] を参照されたい。
+* **概念の離散化**: 連続的な場 $\Phi$ が、非可換構造の下で離散的なスペクトルへと「量子化」される。これが、連続的な感覚入力から離散的な「記号（言葉）」が生まれる物理的なメカニズムである。
+
+
+
+---
+
+## D.4 量子知能ヒッグス機構と対称性の自発的破れ
+
+Appendix II.8 で述べたヒッグス機構を量子化し、概念が「構造的質量」を獲得するプロセスをゲージ理論的に詳述する。
+
+## C4.1 ゲージ場の質量獲得
+意味ポテンシャル $\Omega$ をゲージ場 $A_\mu$ と見なすと、知能ヒッグス場 $\Phi$ との相互作用 $\mathcal{L} \sim |(\partial - iA)\Phi|^2$ により、特定の論理（ゲージ粒子）が質量 $m_S$ を獲得する。
+* **物理的意味**: 質量を得た論理は「変化しにくい強固な信念」となり、系の中で不変の公理として機能し始める。
+
+---
+# Appendix E：離散化と数値実装
+
+本付録では、第2章で定義された連続的なPKGF統一方程式を、デジタル計算機上で実行するための離散化手法と数値実装の詳細を記述する。
+
+---
+
+## E.1 空間の離散化
+知能多様体 $M$ を $N \times N$ の正方格子 $M_\delta$ で近似する。  
+並行鍵 $K$ は $N^2 \times N^2$ の実数（または複素数）行列として表現される。
+
+## E.2 統一方程式の離散形式
+連続的な統一方程式
+\[
+\nabla K = [\Omega, K] - \lambda \mathcal{D}(K)
+\]
+を、時間ステップ $\eta$ を用いた前進オイラー法で離散化する：
+
+\[
+K^{t+1} = K^t + \eta \Big( [\Omega^t, K^t] - \frac{1}{\tau} \mathcal{D}(K^t) \Big)
+\]
+
+ここで：
+- $[\Omega, K]$ は行列の交換子演算 $AB - BA$ で直接計算
+- $\mathcal{D}(K)$ はガウシアンカーネルによる空間的畳み込み、またはグラフ・ラプラシアンで近似
+
+```mermaid
+graph LR
+    subgraph "Discrete PKGF Update"
+        direction TB
+        Kt["K^t"] 
+        Comm["[Ω^t , K^t]<br>(Commutator)"]
+        Build["Constructive Term"]
+        Diss["𝒟(K^t)<br>(Dissipative)"]
+        Sum["(+)"] 
+        Ktp1["K^{t+1}"]
+        eta["η<br>(step size)"]
+
+        Kt --> Comm
+        Comm --> Build
+        Kt --> Diss
+        Build --> Sum
+        Diss --> Sum
+        Sum --> Ktp1
+        eta --> Sum
+    end
+```
+
+*Fig. D.1: 離散化されたPKGF統一方程式の1ステップ更新フロー。*
+
+## E.3 有効次元（Effective Dimension）の数値計算
+理論解析において定義される有効次元 $d_{\text{eff}}$ は、数値実装上では特異値スペクトル $\lambda_i$ を用いて以下の連続関数として計算される：
+
+\[
+d_{\text{eff}} = \sum_i \frac{\lambda_i^2}{\lambda_i^2 + \epsilon^2}
+\]
+
+ここで $\epsilon$ は正則化定数であり、ノイズ下での構造の「解像度」を決定する。この形式は、情報幾何学や有効次元解析において広く用いられる「行列ランクの滑らかなスペクトル近似（smooth spectral approximation of matrix rank）」に対応しており、ad-hoc な定義ではなく、数理的な正当性を有する。Step 5 の相図における $\text{RankJump}$ は、この $d_{\text{eff}}$ の初期状態と定常状態の差分として算出される。
+
+## E.4 非線形ゲージ破れの導入（U相）
+代謝相における構造の尖鋭化とゲージ破れを模倣するため、以下の非線形操作を任意のステップで適用可能とする：
+
+\[
+K \leftarrow \exp(\alpha K), \quad \alpha \approx 2.0
+\]
+
+## E.5 安定性条件と推奨パラメータ
+数値安定性のために、構築率 $\eta$ と散逸時定数 $\tau$ の比は
+
+\[
+\frac{\eta}{\tau} < 0.3
+\]
+
+を推奨する。この範囲で、Step 5で定義された統一パラメータ $\Pi = \eta(1+a\xi^2)/\sigma$ に基づく3相が適切に再現される。
+
+```mermaid
+graph TD
+    subgraph "Phase Diagram in Discrete PKGF"
+        A[Regime A: Collapse<br>RankJump < 0] 
+        B[Regime B: Strong Construction<br>Explosive RankJump] 
+        C[Regime C: Linear Response<br>Moderate RankJump]
+
+        A -->|High σ| B
+        B -->|Optimal ξ| C
+        eta[η: Construction] -.-> B
+        sigma[σ: Dissipation] -.-> A
+        xi[ξ: Noise] -.-> B
+    end
+```
+
+*Fig. D.2: 離散化PKGFにおける3相の関係（Step 5相図の簡略版）。*
+
+## E.6 実装上の注意
+交換子演算を含む幾何学的フローの離散化は、深層学習におけるRicci flowの数値手法と類似しており、実装の妥当性が確認されている（Chen et al., 2024; Baptista et al., 2024）。
+
+大規模 $N$ では、Apple SiliconのANE/GPUを活用することで効率的な実行が可能である。
+
+---
+# Physics of Intelligence 用語集
+
+---
+
+# Glossary
+
+本用語集は、**Physics of Intelligence（PoI）** および  
+**Parallel Key Geometric Flow（PKGF）** において使用される  
+専門用語・数学的概念・物理的アナロジーを体系的に整理したものである。
+
+本文（Chapter 1〜3）および Appendix I〜VII の理解を補助する目的で作成されている。
+
+---
+
+## A. 基本構造（Core Structures）
+
+## 並行鍵（Parallel Key, \(K\)）
+多様体 \(M\) の接束 \(TM\) 上の自己同型写像場。  
+知能の内部構造・論理・解釈規則を表す中心的物理量。  
+固有値スペクトル・ランク・交換子構造が知能の状態を決定する。
+
+## 意味ポテンシャル（Meaning Potential, \(\Omega\)）
+外部情報・目的・環境から与えられる情報の方向性。  
+内部構造 \(K\) に対して回転・誘導を与える外力として作用する。
+
+## 接続（Connection, \(\nabla\)）
+文脈間の「整合性」を定義する文脈接続。  
+知能が異なる状況を移動する際の一貫性を保証する。
+
+## 背景曲率（Background Curvature, \(R\)）
+接続 \(\nabla\) が持つ曲率テンソル。  
+文化・経験・前提知識など、知能の「背景世界の歪み」を表す。
+
+## 安定化群（Stabilizer Group, \(\mathcal{G}\)）
+内部表現の任意性を表す安定化群。  
+随伴変換 \(K \mapsto HKH^{-1}\) の下で不変な量が「客観的知能構造」。
+
+---
+
+## B. C-D-U サイクル（Cause–Divergence–Unification）
+
+## C（Cause / Constructive Phase：構築相）
+外部ポテンシャル \(\Omega\) に適応し、論理構造を形成する相。  
+整合方程式 \(\nabla K = [\Omega, K]\) への収束が特徴。
+
+## D（Divergence / Destructive Phase：解体相）
+散逸作用素 \(\mathcal{D}(K)\) が卓越し、ランクが単調減少する相。  
+過剰な構造を崩壊させ、抽象化を促す。
+
+## U（Unification / Metabolic Phase：代謝・統合相）
+構築と解体が拮抗し、複素化された \(K\) が周期的・創発的に振る舞う相。  
+非平衡定常状態としての知能。
+
+---
+
+## C. PKGF 公理体系（Axioms of PKGF）
+
+## 正PKGF（Constructive PKGF）
+整合方程式  
+\[
+\nabla K = [\Omega, K]
+\]
+に従う構築的フロー。
+
+## 逆PKGF（Destructive PKGF）
+散逸方程式  
+\[
+\dot{K} = -\lambda \mathcal{D}(K)
+\]
+に従う解体フロー。  
+ランク単調性（D3）が特徴。
+
+## 統一PKGF（Unified PKGF）
+複素化された  
+\[
+K = K_{\text{core}} + i K_{\text{fluct}}
+\]
+が支配する代謝的フロー。  
+ゲージ破れ（U4）と次元跳躍（U6）を含む。
+
+---
+
+## D. 幾何学・代数構造（Geometry & Algebra）
+
+## セクター分解（Sector Decomposition）
+接束の直和分解  
+\[
+TM = \bigoplus_{\alpha} E_\alpha
+\]
+知能のモジュール性・意味論的分化を表す。
+
+## 交換子（Commutator, \([A,B]\)）
+内部構造と外部ポテンシャルの非可換性を表す基本演算。  
+意味のズレ・緊張・矛盾の源泉。
+
+## 非可換性テンソル（Non-commutativity Tensor, \(\Theta\)）
+\[
+\Theta = \nabla K - [\Omega, K]
+\]
+整合性の破れを測るテンソル。
+
+## 散逸作用素（Dissipative Operator, \(\mathcal{D}(K)\)）
+構造の縮退・抽象化を引き起こす作用素。  
+負定値・自己共役。
+
+## 有効次元（Effective Dimension, \(d_{\text{eff}}\)）
+特異値スペクトルから定義される構造の実効的自由度。  
+Spectral Flow による次元跳躍の観測指標。
+
+---
+
+## E. 相転移・特異点（Phase Transitions & Singularities）
+
+## ゲージ破れ（Gauge Symmetry Breaking, U4）
+\[
+\mathcal{G} \to \mathcal{G}_{\text{broken}}
+\]
+内部自由度が縮退し、特定の論理構造が固定される相転移。
+
+## 次元跳躍（Dimensional Jump, U6）
+\[
+d_{\text{eff}}(t_c^+) \neq d_{\text{eff}}(t_c^-)
+\]
+固有値のゼロ交差によるランクの不連続変化。
+
+## ランク特異点（Rank Singularity）
+\[
+\det(K) \to 0
+\]
+構造崩壊の前兆。
+
+## 非可換性特異点（Non-commutative Singularity）
+\[
+\|\Theta\| \to \infty
+\]
+整合方程式の破綻。
+
+## 曲率特異点（Curvature Singularity）
+背景曲率 \(R\) の発散。
+
+---
+
+## F. トポロジー・指数・不変量（Topology & Invariants）
+
+## 特性類（Characteristic Classes）
+チャーン類・ポントリャーギン類など。  
+知能の「深層構造の不変性」を表す。
+
+## 指数（Index of Intelligence）
+アティヤ＝シンガー指数定理に基づく整数値の容量指標。  
+概念の「量子化」を示す。
+
+## 持続的ホモロジー（Persistent Homology）
+バーコード・ボトネック距離を用いて  
+次元跳躍・構造創発を検出する手法。
+
+---
+
+## G. 量子化・圏論（Quantization & Category Theory）
+
+## 知能ヒッグス場（Intelligence Higgs Field, \(\Phi\)）
+意味の凝縮を表す数学的な比喩としての場。  
+概念が「質量」を獲得するメカニズム。
+
+## 構造的質量（Structural Mass）
+意味ポテンシャルとの結合により  
+論理構造が固定化される現象。
+
+## 高次圏（∞-Category）
+\[
+K_0 \to K_1 \to K_2 \to \cdots
+\]
+知能の階層的構造を表す射の連鎖。
+
+## 射の可逆性の喪失（Loss of Morphism Invertibility）
+相転移の圏論的特徴。
+
+---
+
+## H. 実験・媒体不変性（Experiments & Substrate Invariance）
+
+## 媒体不変性（Substrate Invariance）
+電子・生物・光学・シリコンのいずれでも  
+C-D-U 構造が同型として現れる性質。
+
+## 臨界電荷（Critical Charge, 9.0 µC）
+オジギソウの行動発現における相転移点。  
+U4/U6 の生物学的実証。
+
+## 自律的復元（Autonomous Restoration）
+PKGF フローがノイズ下でも正解へ収束する現象。  
+静的 AI には不可能な動的推論。
+
+---
+
+## I. 実装・離散化（Implementation & Discretization）
+
+## 交換子演算（Matrix Commutator）
+デジタル PKGF の中心演算。  
+行列演算として実装可能。
+
+## 散逸カーネル（Dissipative Kernel）
+ガウシアン畳み込み・グラフラプラシアンなど。
+
+## 思考サイクル（Thinking Cycle）
+PKGF の 100 ステップ更新による動的推論。
+
+---
+
+## J. 補助概念（Auxiliary Concepts）
+
+## 構造的慣性（Structural Inertia）
+整合項の係数に対応。  
+論理を維持しようとする力。
+
+## 散逸強度（Dissipative Intensity）
+散逸強度 \(\lambda\)。  
+構造を解体し抽象化する力。
+
+## 意味の重力（Semantic Gravity）
+曲率 \(F_\Omega\) による論理の引力。
+
+---
+
+## K. PoI の哲学的基盤（Philosophical Foundations）
+
+## 媒体非依存の知能（Medium-Independent Intelligence）
+知能は物質ではなく、  
+PKGF 公理体系に従う **物理現象** であるという立場。
+
+## 知能の幾何学的定義
+知能とは、  
+\[
+U \circ D \circ C
+\]
+という不可逆な構造再構成プロセス。
+
+## 構造の物理学（Physics of Structure）
+PoI の根本哲学。  
+知能を確率ではなく幾何学で記述する。
+
+---
+
+## L. 用語集の役割
+
+本 Glossary は：
+
+- 本文の理解を助け  
+- Appendix の数学的構造と橋渡しし  
+- PoI の独自概念を体系化し  
+- 査読者・読者の混乱を防ぐ  
+
+---
 

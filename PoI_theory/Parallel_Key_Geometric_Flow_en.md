@@ -9,7 +9,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-# **0. Abstract**
+# 0. Abstract
 
 This paper provides a rigorous formulation of Parallel Key Geometric Flow (PKGF), a framework for unifying conservative and dissipative flows arising from the temporal evolution of operators on finite-dimensional vector bundles. 
 
@@ -102,7 +102,7 @@ flowchart TB
 
 ---
 
-# **Table of Contents**
+# Table of Contents
 
 0. Abstract  
 1. Mathematical Framework  
@@ -126,7 +126,7 @@ flowchart TB
 
 ---
 
-# **1. Mathematical Framework**
+# 1. Mathematical Framework
 
 PKGF is constructed upon established mathematical frameworks, including:
 - Vector bundles over Riemannian manifolds.
@@ -139,7 +139,7 @@ The goal of PKGF is not to extend these theories, but to **reorganize them into 
 
 ---
 
-## **1.1 Manifolds and Vector Bundles**
+## 1.1 Manifolds and Vector Bundles
 
 - $M$: A finite-dimensional, compact Riemannian manifold.
 - $E \to M$: A real or complex vector bundle of rank $n < \infty$.
@@ -148,7 +148,7 @@ This setup provides the minimum necessary prerequisites to apply Sobolev embeddi
 
 ---
 
-## **1.2 Endomorphism Bundles and Section Spaces**
+## 1.2 Endomorphism Bundles and Section Spaces
 
 Endomorphism Bundle:
 \[
@@ -163,7 +163,7 @@ is an infinite-dimensional linear space. The temporal evolution of operators def
 
 ---
 
-## **1.3 Hilbert–Schmidt and Global $L^2$ Inner Products**
+## 1.3 Hilbert–Schmidt and Global $L^2$ Inner Products
 
 Local Hilbert–Schmidt inner product:
 \[
@@ -179,7 +179,7 @@ These define the common Hilbert space structure required to handle conservative,
 
 ---
 
-## **1.4 Notation**
+## 1.4 Notation
 
 The primary notation used in this paper is summarized as follows:
 
@@ -197,7 +197,7 @@ The primary notation used in this paper is summarized as follows:
 
 ---
 
-## **1.5 Physical Motivation**
+## 1.5 Physical Motivation
 
 In many modern physical systems—particularly non-equilibrium and open systems—conservative (reversible) dynamics, dissipative (irreversible) processes, and topological invariants often manifest simultaneously.
 
@@ -210,14 +210,14 @@ each belong to distinct theoretical backgrounds and have traditionally been trea
 
 ---
 
-# **2. Axiomatic Framework**
+# 2. Axiomatic Framework
 ― Structural Prerequisites for Integrated Theory ―
 
 The axioms of PKGF are not intended to introduce new mathematical objects but are designed as the **minimal set of prerequisites for reorganizing existing geometric and algebraic structures into a unified flow framework**.
 
 In this section, we present the **Structural Layer**, which defines the geometric and algebraic configuration independently of analytical hypotheses. This establishes the logical basis for handling conservative, dissipative, unified, and spectral flows without contradiction.
 
-### **2.1 Structural Dependency (DAG) — Visualization of the Three-Layer Philosophy**
+### 2.1 Structural Dependency (DAG) — Visualization of the Three-Layer Philosophy
 
 We visualize the "Structure → Analysis → Conclusion" philosophy of PKGF below.
 
@@ -273,7 +273,7 @@ flowchart TD
 
 ---
 
-## **A1 (Manifold)**
+## A1 (Manifold)
 
 \[
 M \text{ is a finite-dimensional, compact Riemannian manifold.}
@@ -283,7 +283,7 @@ This is the minimal geometric prerequisite for applying standard analytical tool
 
 ---
 
-## **A2 (Orthogonal Decomposition)**
+## A2 (Orthogonal Decomposition)
 
 If necessary, the vector bundle $E$ admits an orthogonal direct sum decomposition:
 \[
@@ -293,7 +293,7 @@ This decomposition is a standard framework for handling **subspace invariance** 
 
 ---
 
-## **A3 (Initial Parallel Key Properties)**
+## A3 (Initial Parallel Key Properties)
 
 At the initial time $t=0$, the section
 \[
@@ -307,7 +307,7 @@ This condition is a canonical requirement for **unambiguously defining the zero-
 
 ---
 
-## **A3' (Complexification for U-phase)**
+## A3' (Complexification for U-phase)
 
 The conservative and dissipative components are integrated via complexification:
 \[
@@ -317,7 +317,7 @@ Complexification is a **canonical operation to handle conservative (Lie algebrai
 
 ---
 
-## **A4 (Gauge Group)**
+## A4 (Gauge Group)
 
 Let 
 \[
@@ -327,7 +327,7 @@ be the unitary (or orthogonal) gauge group. This provides the canonical framewor
 
 ---
 
-## **A5 (Connection)**
+## A5 (Connection)
 
 \[
 \nabla \text{ is a connection compatible with the bundle metric.}
@@ -336,7 +336,7 @@ This ensures a **common differential structure** for both conservative and dissi
 
 ---
 
-## **A6 (Potential)**
+## A6 (Potential)
 
 \[
 \Omega \in \Gamma(\mathrm{End}(E)) \quad \text{is self-adjoint.}
@@ -345,7 +345,7 @@ This is the canonical requirement to utilize existing Lie algebraic structures a
 
 ---
 
-## **Role of the Axiomatic Layer**
+## Role of the Axiomatic Layer
 
 Axioms A1–A6 are independent of analytical hypotheses (H-mD, H-reg, etc.) and form a **Structural Layer** that defines the geometric and algebraic prerequisites. This separation ensures that:
 - Conservative flows (Lie algebraic)
@@ -357,14 +357,14 @@ can be integrated into a logically consistent framework without mutual interfere
 
 ---
 
-# **3. Conservative Flow (C-phase)**
+# 3. Conservative Flow (C-phase)
 ― Reorganization of Lie Algebraic Structures ―
 
 The Conservative Flow (C-phase) handles the temporal evolution based on the **Lie algebraic adjoint action** on bundle endomorphisms. This structure has been utilized in quantum mechanics, gauge theory, and matrix mechanics for decades; PKGF positions it as the **conservative component** within its unified framework.
 
 ---
 
-## **3.1 C1 (Conservative Equation)**
+## 3.1 C1 (Conservative Equation)
 
 The conservative flow is defined by the adjoint action of a self-adjoint potential $\Omega$:
 \[
@@ -380,7 +380,7 @@ which is the canonical representation of Lie group adjoint actions. Thus, the C-
 
 ---
 
-## **3.2 C2 (Gauge Covariance)**
+## 3.2 C2 (Gauge Covariance)
 
 The conservative flow is invariant under gauge transformations:
 \[
@@ -394,7 +394,7 @@ maintaining the form of the adjoint action. This is a classical result demonstra
 
 ---
 
-## **3.3 C3 (Conservation of Orthogonal Decomposition)**
+## 3.3 C3 (Conservation of Orthogonal Decomposition)
 
 Given an orthogonal decomposition $E = \bigoplus_{\alpha=1}^N E_\alpha$, if the projection $\Pi_\alpha$ satisfies $[K, \Pi_\alpha] = 0$, then the conservative flow preserves the subspaces:
 \[
@@ -404,7 +404,7 @@ This utilizes the textbook linear algebraic result that adjoint actions preserve
 
 ---
 
-## **3.4 Preserved and Destroyed Quantities**
+## 3.4 Preserved and Destroyed Quantities
 ― Delineating the Roles of C-phase and D-phase ―
 
 A key feature of PKGF is the explicit separation of conservative and dissipative components, delineating which quantities each component preserves or alters.
@@ -417,7 +417,7 @@ A key feature of PKGF is the explicit separation of conservative and dissipative
 | **$L^2$-norm** | Preserved | Decays |
 | **Energy $E$** | Preserved | Monotonically Decreases |
 
-### **Quantities Preserved by C-phase**
+### Quantities Preserved by C-phase
 The flow $\partial_t K = [\Omega, K]$ preserves:
 - Eigenvalue multiplicity.
 - Signature.
@@ -429,7 +429,7 @@ These are all canonical properties of adjoint actions.
 
 ---
 
-### **Quantities Altered by D-phase**
+### Quantities Altered by D-phase
 Conversely, the dissipative flow $\partial_t K = \lambda \mathcal{D}(K)$ generally does not preserve:
 - Gauge covariance.
 - Eigenvalue structure.
@@ -439,7 +439,7 @@ This is a direct consequence of the **dissipativity** inherent in parabolic PDEs
 
 ---
 
-## **3.5 Role of the C-phase**
+## 3.5 Role of the C-phase
 
 The conservative flow handles:
 - Geometric symmetry.
@@ -451,19 +451,19 @@ It provides the **conservative baseline** against which dissipative and unified 
 
 ---
 
-### **Proposition (Abstract Structure of Conservative Flows)**
+### Proposition (Abstract Structure of Conservative Flows)
 The C-phase possesses the same structure as the generation of unitary groups by skew-adjoint operators on Hilbert spaces. Thus, this flow is essentially an abstraction of Hamiltonian-type systems.
 
 ---
 
-# **4. Dissipative Flow (D-phase)**
+# 4. Dissipative Flow (D-phase)
 ― Integration of Canonical Parabolic PDE Theory ―
 
 The Dissipative Flow (D-phase) utilizes the canonical theory of **semilinear (specifically linear) parabolic partial differential equations**. PKGF does not invent new operators but reorganizes established elliptic operator theory, Sobolev space theory, and energy methods into a unified architecture.
 
 ---
 
-## **4.1 Definition of the Dissipative Operator**
+## 4.1 Definition of the Dissipative Operator
 
 The dissipative operator $\mathcal{D}$ is defined as:
 \[
@@ -478,7 +478,7 @@ PKGF adopts the structure of these **classical elliptic operators** without modi
 
 ---
 
-## **4.2 D1 (Negative Definiteness in Global $L^2$)**
+## 4.2 D1 (Negative Definiteness in Global $L^2$)
 
 The dissipative operator satisfies the following with respect to the global $L^2$ inner product:
 \[
@@ -488,7 +488,7 @@ This is the **canonical dissipativity** obtained when combining strongly ellipti
 
 ---
 
-## **4.3 D2 (The Dissipative Equation: Canonical Parabolic PDE)**
+## 4.3 D2 (The Dissipative Equation: Canonical Parabolic PDE)
 
 The dissipative flow is given by:
 \[
@@ -502,13 +502,13 @@ PKGF adopts this form to facilitate future non-linear extensions, though the pre
 
 ---
 
-## **4.4 Eigenvalue Behavior in Infinite Dimensions**
+## 4.4 Eigenvalue Behavior in Infinite Dimensions
 
 While dissipative terms can cause monotonic eigenvalue decay in 0-dimensional models (matrix ODEs), **eigenvalue monotonicity generally fails in infinite-dimensional PDEs** due to eigenvalue mixing. This is a standard fact in PDE theory, not a new discovery of PKGF.
 
 ---
 
-## **4.5 D5 (Relative Compactness of the Fixed-point Set)**
+## 4.5 D5 (Relative Compactness of the Fixed-point Set)
 
 We hypothesize that the set of fixed points 
 \[
@@ -518,7 +518,7 @@ is relatively compact. This is a **canonical auxiliary hypothesis** required to 
 
 ---
 
-## **4.6 Role of the D-phase**
+## 4.6 Role of the D-phase
 
 The dissipative flow handles:
 - Energy decay.
@@ -530,19 +530,19 @@ While the C-phase preserves symmetry, the D-phase embodies the PDE-based propert
 
 ---
 
-### **Proposition (Relationship to Semigroup Theory)**
+### Proposition (Relationship to Semigroup Theory)
 The operator $\mathcal{D}$ is assumed to be m-dissipative, and thus generates a strongly continuous contraction semigroup on $L^2$. This is perfectly consistent with the framework of canonical linear parabolic equations.
 
 ---
 
-# **5. Unified Flow (U-phase)**
+# 5. Unified Flow (U-phase)
 ― Integration via Complex Linear Combination of Conservative and Dissipative Flows ―
 
 The Unified Flow (U-phase) is a framework that **integrates conservative structures (Lie algebraic) and dissipative structures (Parabolic PDE)** via a complex linear combination. PKGF reorganizes these existing structures to handle them as a single, consistent flow through the process of complexification.
 
 ---
 
-## **5.1 U1 (Complexification via Existing Hilbert Space Structures)**
+## 5.1 U1 (Complexification via Existing Hilbert Space Structures)
 
 We complexify the conservative component $K_{\mathrm{core}}$ and the dissipative component $K_{\mathrm{fluct}}$ as:
 \[
@@ -577,7 +577,7 @@ flowchart TD
 
 ---
 
-## **5.2 U2 (Initial Orthogonality)**
+## 5.2 U2 (Initial Orthogonality)
 
 To prevent the initial mixing of complexified components, we assume at the initial time:
 \[
@@ -587,14 +587,14 @@ To prevent the initial mixing of complexified components, we assume at the initi
 
 ---
 
-## **5.3 U3 (The Unified Equation)**
+## 5.3 U3 (The Unified Equation)
 
 The Unified Flow is defined as:
 \[
 \partial_t \widetilde{K} = [\Omega, \widetilde{K}] + \lambda \mathcal{D}(\widetilde{K})
 \]
 
-### **Lemma (Linearity of U-phase)**
+### Lemma (Linearity of U-phase)
 The unified flow equation $\partial_t \widetilde{K} = [\Omega, \widetilde{K}] + \lambda \mathcal{D}(\widetilde{K})$ is strictly linear with respect to the variable $\widetilde{K}$.
 
 **Proof:**
@@ -612,7 +612,7 @@ Thus, the U-phase is a flow **naturally defined as a linear combination of exist
 
 ---
 
-## **5.4 Persistence of Analytical Hypotheses after Complexification**
+## 5.4 Persistence of Analytical Hypotheses after Complexification
 
 Complexification preserves all relevant analytical properties:
 - $\nabla^*\nabla$ remains strongly elliptic as a complex linear operator.
@@ -625,7 +625,7 @@ Thus, complexification is guaranteed to be a **canonical operation that does not
 
 ---
 
-## **5.5 Role of the U-phase**
+## 5.5 Role of the U-phase
 
 The Unified Flow forms the **integration layer** that treats:
 - Conservative structures (Symmetry/Adjoint action)
@@ -635,7 +635,7 @@ as a single evolution. PKGF's contribution is the explicit demonstration that th
 
 ---
 
-### **Proposition (Definition and Notation of Unified Operators)**
+### Proposition (Definition and Notation of Unified Operators)
 Given a conservative component $K_{\mathrm{core}}$ and a dissipative component $K_{\mathrm{fluct}}$, we define the unified operator as:
 \[
 \widetilde{K} = K_{\mathrm{core}} + i K_{\mathrm{fluct}}
@@ -644,7 +644,7 @@ Henceforth, unless otherwise specified, $\widetilde{K}$ refers to this complexif
 
 ---
 
-### **5.6 Physical Interpretation (Reversible/Irreversible Decomposition)**
+### 5.6 Physical Interpretation (Reversible/Irreversible Decomposition)
 
 The Unified Flow can be interpreted as a decomposition into:
 - **Conservative component**: Reversible dynamics.
@@ -654,7 +654,7 @@ This structure formally corresponds to the **reversible-irreversible decompositi
 
 ---
 
-# **6. Spectral Flow (SF-phase)**
+# 6. Spectral Flow (SF-phase)
 ― Integrating Canonical Elliptic Theory into the PKGF Context ―
 
 Spectral flow (SF) is a **classical concept in elliptic operator theory** since Atiyah–Patodi–Singer and is not a new introduction by PKGF. The role of PKGF is to provide the **correct positioning to handle spectral flow consistently** within the context of conservative, dissipative, and unified flows.
@@ -666,7 +666,7 @@ Crucially, PKGF clarifies that:
 
 ---
 
-## **6.1 Introduction of Fredholm Operators**
+## 6.1 Introduction of Fredholm Operators
 ― Why realized on Elliptic Operators rather than $\widetilde{K}(t)$ alone ―
 
 ```mermaid
@@ -693,7 +693,7 @@ Consequently, **spectral flow cannot be defined directly on $\widetilde{K}(t)$**
 
 ---
 
-### **Definition (Integrated Elliptic Operator: Utilizing Existing Theory)**
+### Definition (Integrated Elliptic Operator: Utilizing Existing Theory)
 
 Given a fixed self-adjoint elliptic operator $\mathcal{L}_0$, we define:
 \[
@@ -707,7 +707,7 @@ This construction is a canonical technique in elliptic theory. Under this setup,
 
 ---
 
-## **6.2 Definition of Spectral Flow (Canonical Definition)**
+## 6.2 Definition of Spectral Flow (Canonical Definition)
 
 For a family of self-adjoint Fredholm operators $\{\mathcal{L}(t)\}_{t \in [0,1]}$, the spectral flow is defined as:
 \[
@@ -717,7 +717,7 @@ which counts the signed net number of eigenvalues crossing zero (see [Bär & Zie
 
 ---
 
-## **6.3 Relationship to Signature Jumps (Realigning Classical Results)**
+## 6.3 Relationship to Signature Jumps (Realigning Classical Results)
 
 Since the eigenspaces of $\mathcal{L}(t)$ are finite-dimensional, the signature $\sigma(t) = n_+(t) - n_-(t)$ takes finite values. A classical result states:
 \[
@@ -727,13 +727,13 @@ PKGF integrates this existing relationship into the context of conservative and 
 
 ---
 
-## **6.4 Necessity of Lifting to Elliptic Operators**
+## 6.4 Necessity of Lifting to Elliptic Operators
 
 The multiplication operator $\widetilde{K}(t)$ fails to meet the minimum requirements for defining spectral flow because of its infinite-dimensional eigenspaces and pure essential spectrum. Thus, PKGF adopts the classical approach of **lifting $\widetilde{K}(t)$ as a potential onto an elliptic operator (elliptic realization)**.
 
 ---
 
-## **6.5 Independence of H-Fred and SF-Op**
+## 6.5 Independence of H-Fred and SF-Op
 ― Preventing Misapplication of Existing Theory ―
 
 To handle spectral flow, two conditions must be distinguished:
@@ -748,7 +748,7 @@ PKGF explicitly separates these conditions, which were often used implicitly in 
 
 ---
 
-## **6.6 Role of the SF-phase**
+## 6.6 Role of the SF-phase
 
 The SF-phase provides **topological, integer-valued invariants** for the evolution of the unified flow $\widetilde{K}(t)$. Crucially, spectral flow is a topological quantity associated with the **family of elliptic operators** $\mathcal{L}(t) = \mathcal{L}_0 + \widetilde{K}(t)$, enabling:
 - Stable description of zero-crossings even in mixed conservative/dissipative systems.
@@ -759,7 +759,7 @@ Thus, the SF-phase functions as a layer that extracts **topological information 
 
 ---
 
-## **6.7 Physical Role (Interpretation as a Topological Indicator)**
+## 6.7 Physical Role (Interpretation as a Topological Indicator)
 
 Spectral flow measures the number of zero-crossings, which physically corresponds to:
 - Creation/annihilation of zero modes.
@@ -770,19 +770,19 @@ In the evolution of the unified flow, spectral flow captures the **topological t
 
 ---
 
-## **6.8 Pitfalls and Misapplications of Spectral Flow**
+## 6.8 Pitfalls and Misapplications of Spectral Flow
 
 We summarize common misapplications of spectral flow in the context of geometric flows:
 
-#### **Attempting to define SF directly on multiplication operators**
+#### Attempting to define SF directly on multiplication operators
 A frequent error in the literature is attempting to define spectral flow directly on time-dependent zeroth-order bundle maps $\widetilde{K}(t) : L^2 \to L^2$. This is **theoretically impossible** because multiplication operators lack the finite-dimensional eigenspaces and essential spectrum gaps required for SF. PKGF mandates **elliptic realization** to avoid this.
 
-#### **Assuming norm-resolvent continuity from time-continuity alone**
+#### Assuming norm-resolvent continuity from time-continuity alone
 $L^2$-continuity of a PDE solution $\widetilde{K}(t)$ is often mistaken for norm-resolvent continuity of $t \mapsto \mathcal{L}(t)$. Norm-resolvent continuity is a far stronger condition and does not follow automatically from temporal regularity. PKGF avoids this pitfall by treating H-Fred and SF-Op independently.
 
 ---
 
-# **7. Existence and Well-posedness (Semigroup Theory)**
+# 7. Existence and Well-posedness (Semigroup Theory)
 ― Proper Integration of Canonical Semilinear Parabolic PDE Theory ―
 
 The Unified Flow (U-phase)
@@ -793,25 +793,25 @@ integrates conservative (Lie algebraic) and dissipative (parabolic PDE) structur
 
 ---
 
-## **7.1 Assumption: Elliptic (Strong Ellipticity)**
+## 7.1 Assumption: Elliptic (Strong Ellipticity)
 
 We assume that $\nabla^*\nabla$ is a strongly elliptic operator. This is the **classical and minimal prerequisite** for applying analytic semigroup theory.
 
 ---
 
-## **7.2 Hypothesis: H-mD (m-dissipativity)**
+## 7.2 Hypothesis: H-mD (m-dissipativity)
 
 We hypothesize that the dissipative operator $\mathcal{D}$ is **m-dissipative (maximal dissipative)** on an appropriate Sobolev space. This is the **canonical condition** for applying the Hille–Yosida theorem and is not a hypothesis unique to PKGF (see [Brezis 2011], [Cheng 2024]).
 
 ---
 
-## **7.3 Hypothesis: H-dom (Conservation of Domain)**
+## 7.3 Hypothesis: H-dom (Conservation of Domain)
 
 We hypothesize that the solution $\widetilde{K}(t)$ satisfies $\widetilde{K}(t) \in \mathrm{Dom}(\mathcal{D})$ for all $t \ge 0$. This is a **canonical requirement** to ensure the solution does not exit the operator's domain.
 
 ---
 
-## **7.4 Hypothesis: H-reg (Regularity for the Energy Identity)**
+## 7.4 Hypothesis: H-reg (Regularity for the Energy Identity)
 
 We hypothesize that the solution satisfies:
 \[
@@ -821,7 +821,7 @@ We hypothesize that the solution satisfies:
 
 ---
 
-## **7.5 Local Existence of the Unified Flow (Canonical Semigroup Result)**
+## 7.5 Local Existence of the Unified Flow (Canonical Semigroup Result)
 
 Under these hypotheses, the unified flow $\partial_t \widetilde{K} = A\widetilde{K} + F(\widetilde{K})$ possesses a **unique local solution** by canonical results of analytic semigroup theory. In the current scope, the term $F(\widetilde{K}) = [\Omega, \widetilde{K}]$ is a bounded linear operator on $\widetilde{K}$, rendering the equation fully linear and covered by classical linear theory.
 
@@ -831,7 +831,7 @@ Here:
 
 ---
 
-## **7.6 Role of PKGF in the Existence Theory of U-phase**
+## 7.6 Role of PKGF in the Existence Theory of U-phase
 
 PKGF's contribution is not a new proof of existence but the **structural organization required to logically integrate**:
 - Conservative structures.
@@ -844,14 +844,20 @@ into a form where existing analytic semigroup theory can be applied without cont
 
 ---
 
-# **8. Model Classes (Ensuring Non-vacuousness)**
+### Proposition (Relationship to Existing Theories)
+
+This result demonstrates that the coupling of conservative and dissipative flows is fully contained within the theory of canonical linear parabolic equations.
+
+---
+
+# 8. Model Classes (Ensuring Non-vacuousness)
 ― Utilizing Existing Galerkin Approximation Methods ―
 
 PKGF is a **structural framework for integration**, not a builder of new mathematical theories. Thus, it is vital to demonstrate that its axioms (A1–A6) and analytical hypotheses (H-mD, H-reg, etc.) can be **satisfied simultaneously and consistently by concrete examples (Model Classes)**. This chapter ensures that the PKGF framework is **non-vacuous**.
 
 ---
 
-## **8.1 Example (Finite-Dimensional Galerkin Approximation Model)**
+## 8.1 Example (Finite-Dimensional Galerkin Approximation Model)
 
 Galerkin approximation is a classical technique for projecting infinite-dimensional PDEs onto finite-dimensional ODEs. We approximate the section space $\Gamma(\mathrm{End}(E))$ with a finite-dimensional subspace $V_N$ and use the projection $P_N$:
 \[
@@ -872,47 +878,47 @@ Specifically, because the spectrum of a finite-dimensional matrix does not posse
 
 ---
 
-## **8.2 Minimal Non-trivial PKGF PDE Model**
+## 8.2 Minimal Non-trivial PKGF PDE Model
 
 We construct a **Minimal Model** where conservative, dissipative, unified, and spectral flows all manifest non-trivially in a minimal setting. This model is "minimal" in the sense that it uses a trivial bundle over a compact manifold but retains the full operator-theoretic structure.
 
-### **8.2.1 Geometric Setup**
+### 8.2.1 Geometric Setup
 - $M$: A compact Riemannian manifold without boundary.
 - $E = M \times \mathbb{C}^n$: A trivial complex vector bundle.
 - State variable: $K(t, x) \in \mathrm{Herm}(n)$.
 - Hilbert space: $H = L^2(M, \mathrm{Herm}(n))$.
 - Inner product: $\langle\!\langle K_1, K_2\rangle\!\rangle = \int_M \mathrm{tr}(K_1(x) K_2(x)) \, \mathrm{dvol}(x)$.
 
-### **8.2.2 Conservative Flow (C-phase)**
+### 8.2.2 Conservative Flow (C-phase)
 Fix a constant self-adjoint matrix $\Omega_0 \in \mathrm{Herm}(n)$:
 \[
 \partial_t K = [\Omega_0, K]
 \]
 This yields a finite-dimensional matrix ODE at each point $x \in M$, preserving eigenvalue multiplicities, signatures, and the $L^2$-norm.
 
-### **8.2.3 Dissipative Flow (D-phase)**
+### 8.2.3 Dissipative Flow (D-phase)
 The trivial bundle allows $\nabla = d$. Using a positive function $v(x) \ge c > 0$, let $V(x) = v(x) I_n$. The dissipative operator is:
 \[
 \mathcal{D}(K) = \Delta K - 2v(x) K.
 \]
 Dissipative flow: $\partial_t K = \lambda (\Delta K - 2v(x) K)$, with energy decay $\frac{d}{dt} \frac{1}{2} \|K(t)\|_{L^2}^2 \le 0$.
 
-### **8.2.4 Unified Flow (U-phase)**
+### 8.2.4 Unified Flow (U-phase)
 Complex linear integration yields:
 \[
 \partial_t K = [\Omega_0, K] + \lambda (\Delta K - 2v(x) K)
 \]
 The operator $A = \mathrm{ad}_{\Omega_0} + \lambda (\Delta - 2v)$ is m-dissipative (sum of a bounded skew-adjoint and a self-adjoint strongly elliptic operator), generating a unique mild solution.
 
-### **8.2.5 Spectral Flow (SF-phase)**
+### 8.2.5 Spectral Flow (SF-phase)
 To define SF, we lift the multiplication operator $K(t)$ to an elliptic operator $L(t) = L_0 + K(t)$ where $L_0 = -\Delta + I$ is the base self-adjoint Fredholm operator. Since $K(t)$ is bounded and norm-continuous, $\mathrm{sf}(L(t))$ is well-defined provided A3 and H-Fred are satisfied by the initial data.
 
-### **8.2.6 Significance of the Model**
+### 8.2.6 Significance of the Model
 This model serves as a **non-trivial PDE example** that completely realizes the PKGF structure (Conservation, Dissipation, Integration, SF, Existence, and Asymptotics) in a minimal setting.
 
 ---
 
-## **8.3 Role of Finite-Dimensional Models (Ensuring Non-vacuousness)**
+## 8.3 Role of Finite-Dimensional Models (Ensuring Non-vacuousness)
 
 The Galerkin models are vital for:
 1. Demonstrating that the axioms (A1–A6) are mutually consistent.
@@ -924,7 +930,7 @@ However, these do not encompass all infinite-dimensional PDE cases. Requirements
 
 ---
 
-## **8.4 Infinite-Dimensional Linear Model**
+## 8.4 Infinite-Dimensional Linear Model
 
 Beyond Galerkin approximations, the **linear heat equation with a zeroth-order potential** serves as an infinite-dimensional case where PKGF hypotheses hold non-trivially.
 For $\partial_t K = -\nabla^*\nabla K - VK - KV$ with $V \ge cI > 0$:
@@ -934,38 +940,38 @@ For $\partial_t K = -\nabla^*\nabla K - VK - KV$ with $V \ge cI > 0$:
 
 ---
 
-## **8.5 Positioning of Model Classes in PKGF**
+## 8.5 Positioning of Model Classes in PKGF
 
 Models serve as **consistency checks** to prove that the PKGF axioms have no internal contradictions and align with existing theory. The ultimate purpose of PKGF is not finite-dimensional modeling, but providing a **unified infrastructure for infinite-dimensional geometric flows**.
 
 ---
 
-# **9. Long-time Behavior of Dissipative Components**
+# 9. Long-time Behavior of Dissipative Components
 ― Structural Organization for Extending LaSalle Arguments to Infinite Dimensions ―
 
 Dissipative flows $\partial_t K = \lambda \mathcal{D}(K)$ are typical dissipative systems with energy decay within the parabolic PDE framework. However, a classical problem exists: **LaSalle's Invariance Principle cannot be applied directly in infinite dimensions**. PKGF's contribution is the **systematic organization and explicit introduction of the hypotheses required to resolve this problem**.
 
 ---
 
-## **9.1 Hypothesis: H-orbit (Relative Compactness of Orbits)**
+## 9.1 Hypothesis: H-orbit (Relative Compactness of Orbits)
 ― Auxiliary Hypothesis for LaSalle in Infinite Dimensions ―
 
 We hypothesize that for the dissipative solution $\widetilde{K}(t)$, the orbit $\{\widetilde{K}(t) \mid t \ge 0\}$ is **relatively compact** in $L^2(M)$ (or $H^k(M)$). Such compactness assumptions are standard and generally unavoidable in infinite-dimensional dynamical systems (see [Mei & Bullo 2017]). This is not a new invention of PKGF, but an **explicit organization of conditions used implicitly in the literature** to obtain LaSalle-type conclusions.
 
 ---
 
-## **9.2 Proposition (Sufficient Condition for H-orbit: Utilizing Sobolev Embeddings)**
+## 9.2 Proposition (Sufficient Condition for H-orbit: Utilizing Sobolev Embeddings)
 
 If the solution $K(t)$ satisfies $\|K(t)\|_{H^2} \le C$ for all $t \ge 0$, then the orbit is relatively compact in $L^2(M)$.
 
-### **Proof (Utilizing Classical Sobolev Embeddings)**
+### Proof (Utilizing Classical Sobolev Embeddings)
 - $M$ is compact.
 - The Sobolev embedding $H^2(M) \hookrightarrow L^2(M)$ is classically compact.
 - Since $\{K(t)\}$ is an $H^2$-bounded set, its image is relatively compact in $L^2$. $\square$
 
 ---
 
-## **9.3 Theorem ($\omega$-limit Sets: A Weak LaSalle-type Conclusion)**
+## 9.3 Theorem ($\omega$-limit Sets: A Weak LaSalle-type Conclusion)
 
 Assume: Elliptic, H-mD, H-dom, H-reg, D1 (Energy decay), D5 (Compact fixed-points), and H-orbit. Then the $\omega$-limit set of the dissipative solution $K(t)$ satisfies:
 \[
@@ -975,20 +981,20 @@ This is the **weak conclusion corresponding to the infinite-dimensional version 
 
 ---
 
-## **9.4 Role of PKGF in Long-time Analysis**
+## 9.4 Role of PKGF in Long-time Analysis
 
 PKGF provides a framework to **logically decouple and position** the requirements for LaSalle-type arguments (D5, H-orbit, D1, H-reg), enabling the consistent application of these arguments in infinite dimensions.
 
 ---
 
-# **10. Energy Structure (Gradient-like Structure)**
+# 10. Energy Structure (Gradient-like Structure)
 ― Integrating Canonical Energy Methods into PKGF ―
 
 Dissipative flows in PKGF possess a **gradient-like structure with energy decay**, similar to classical semilinear parabolic PDEs. PKGF does not introduce new energy functions but correctly integrates **canonical energy methods based on elliptic theory and Sobolev spaces** into its unified framework.
 
 ---
 
-## **10.1 The Energy Functional (Canonical Form)**
+## 10.1 The Energy Functional (Canonical Form)
 
 We define the natural energy functional associated with $\mathcal{D}$ as:
 \[
@@ -1014,7 +1020,7 @@ flowchart TD
 
 ---
 
-## **10.2 Proposition (Rigorous Energy Identity)**
+## 10.2 Proposition (Rigorous Energy Identity)
 ― Clarifying the Necessity of H-reg ―
 
 Assuming Elliptic, H-dom, and H-reg, if the dissipative solution satisfies $\partial_t K = \lambda \mathcal{D}(K)$, then:
@@ -1025,7 +1031,7 @@ This is a canonical calculation in energy methods. PKGF's role is to **explicitl
 
 ---
 
-## **10.3 Proposition (Energy Decay for Mild Solutions)**
+## 10.3 Proposition (Energy Decay for Mild Solutions)
 
 For mild solutions not satisfying H-reg, the energy identity holds as an inequality:
 \[
@@ -1035,7 +1041,7 @@ This is a **canonical energy decay property** in PDE theory.
 
 ---
 
-## **10.4 Gradient-like Properties of Dissipative Flows**
+## 10.4 Gradient-like Properties of Dissipative Flows
 
 The energy identity implies:
 - Monotonic decay of $E(K(t))$.
@@ -1046,18 +1052,18 @@ Furthermore, if the energy functional is analytic, **Łojasiewicz–Simon type a
 
 ---
 
-## **10.5 Role of H-reg: Distinguishing Strong and Mild Solutions**
+## 10.5 Role of H-reg: Distinguishing Strong and Mild Solutions
 
 H-reg ($K \in H^2, \partial_t K \in L^2$) is the **established Sobolev regularity condition** for making the energy identity rigorous. PKGF explicitly positions this condition within the analysis of dissipative flows, energy structures, and long-time behavior.
 
 ---
 
-### **Proposition (Relationship to Gradient Flows)**
+### Proposition (Relationship to Gradient Flows)
 Dissipative flows possess the same structure as gradient flows with respect to energy $E$. Thus, the framework is understood as a coupling of gradient flows and conservative flows.
 
 ---
 
-# **11. Main Theorem**
+# 11. Main Theorem
 ― Integrated Well-posedness, Energy Structure, Spectral Flow, and Asymptotics ―
 
 ```mermaid
@@ -1098,7 +1104,7 @@ flowchart LR
 
 This chapter synthesizes the previously introduced axioms (A1–A6) and analytical hypotheses into a single theorem describing the primary mathematical properties of the Unified Flow (U-phase).
 
-### **11.1 Classification and Role of Hypotheses**
+### 11.1 Classification and Role of Hypotheses
 
 | Hypothesis | Role | Necessity | Description |
 | :--- | :--- | :--- | :--- |
@@ -1113,7 +1119,7 @@ This chapter synthesizes the previously introduced axioms (A1–A6) and analytic
 
 ---
 
-### **11.2 Main Theorem Structure**
+### 11.2 Main Theorem Structure
 
 | Conclusion | Required Hypotheses | Content |
 | :--- | :--- | :--- |
@@ -1124,43 +1130,43 @@ This chapter synthesizes the previously introduced axioms (A1–A6) and analytic
 
 ---
 
-## **Main Theorem (Unified Well-posedness and Structural Consistency of PKGF)**
+## Main Theorem (Unified Well-posedness and Structural Consistency of PKGF)
 
 Assume Axioms A1–A6 and Hypotheses H-mD, H-dom, H-reg, H-Fred, SF-Op, D5, and H-orbit are satisfied. Then the following hold:
 
 ---
 
-## **(1) Well-posedness of the Unified Flow (U-phase)**
+## (1) Well-posedness of the Unified Flow (U-phase)
 
 The Unified Flow $\partial_t \widetilde{K} = [\Omega, \widetilde{K}] + \lambda \mathcal{D}(\widetilde{K})$ possesses a **unique mild solution** in $L^2(M,\mathrm{End}(E))$, and a **unique strong solution** if H-reg holds. The solution remains in the domain for all $t \ge 0$ (H-dom).
 
 ---
 
-## **(2) Energy Structure (Gradient-like Properties)**
+## (2) Energy Structure (Gradient-like Properties)
 
 The energy functional $E(K) = \|\nabla K\|_{L^2}^2 + 2\int_M \operatorname{tr}(V K^2)$ decreases monotonically due to the dissipative component. For strong solutions, the energy identity $\frac{d}{dt}E(K(t)) = -2\lambda \|\mathcal{D}(K(t))\|_{L^2}^2$ holds rigorously. For mild solutions, it holds as an inequality.
 
 ---
 
-## **(3) Well-definedness of Spectral Flow**
+## (3) Well-definedness of Spectral Flow
 
 The family of elliptic operators $\mathcal{L}(t) = \mathcal{L}_0 + \widetilde{K}(t)$ is self-adjoint Fredholm for all $t$ (H-Fred) and satisfies norm-resolvent continuity (SF-Op). Consequently, the **Spectral Flow $\mathrm{SF}(\mathcal{L}(t))$ is well-defined** as an integer invariant. Zero-crossings, signature jumps, and topological transitions remain stable even in mixed conservative/dissipative regimes.
 
 ---
 
-## **(4) Long-time Behavior (LaSalle-type Asymptotics)**
+## (4) Long-time Behavior (LaSalle-type Asymptotics)
 
 Under H-orbit and D5, the dissipative component satisfies the LaSalle-type conclusion: the $\omega$-limit set satisfies $\omega(\widetilde{K}) \subset \{K \mid \mathcal{D}(K)=0\}$. The dissipative component asymptotically approaches the fixed-point set over time.
 
 ---
 
-## **(5) Consistency with Conservative Structures**
+## (5) Consistency with Conservative Structures
 
 The conservative component $[\Omega, \widetilde{K}]$ preserves gauge covariance, eigenvalue multiplicities, signatures, and the $L^2$-norm. The unified flow integrates these two structures complex-linearly, ensuring the **coexistence of conservative symmetry and dissipative decay without contradiction**.
 
 ---
 
-## **(6) Structural Consistency (Consistency Theorem)**
+## (6) Structural Consistency (Consistency Theorem)
 
 Synthesis of (1)–(5) guarantees that:
 - Axioms and Hypotheses are mutually consistent.
@@ -1171,13 +1177,13 @@ Synthesis of (1)–(5) guarantees that:
 
 ---
 
-# **Remark (Significance of the Theorem)**
+# Remark (Significance of the Theorem)
 
 The Main Theorem ensures that PKGF positions existing theories (Lie algebras, elliptic operators, semigroups, energy methods, spectral flow) within a **framework that decoupled and reintegrated them logically**. PKGF's uniqueness lies in demonstrating the consistent coexistence of reversible (conservative), irreversible (dissipative), and topological (spectral flow) structures within a single evolution.
 
 ---
 
-# **12. Conclusion**
+# 12. Conclusion
 ― Summary and Mathematical Significance of PKGF ―
 
 This paper has reconstructed conservative, dissipative, unified, and spectral flows for bundle endomorphisms into a **single, consistent framework: Parallel Key Geometric Flow (PKGF)**. 
@@ -1194,20 +1200,20 @@ PKGF stands as a **canonical framework for the safe and consistent handling of c
 
 ---
 
-# **13. Future Directions**
+# 13. Future Directions
 ― Potential for Mathematical and Physical Development ―
 
 PKGF is an infrastructure for integrating theory, and its significance lies in its **broad applicability**. Future directions include:
 
 ---
 
-## **(1) Convergence Analysis via Łojasiewicz–Simon Inequalities**
+## (1) Convergence Analysis via Łojasiewicz–Simon Inequalities
 
 The clarified energy structure allows the application of the **Łojasiewicz–Simon inequality** to analyze convergence rates (exponential vs. algebraic), stability of critical points, and uniqueness of limits (see [Simon 1983], [Mantegazza & Pozzetta 2020]).
 
 ---
 
-## **(2) Connection to Gauge Theory and Geometric Flows**
+## (2) Connection to Gauge Theory and Geometric Flows
 
 The "partial gauge symmetry" of PKGF—where C-phase is covariant and D-phase is gauge-fixing—parallels structures in:
 - Yang–Mills flow.
@@ -1217,31 +1223,31 @@ PKGF provides a platform to compare and integrate these flows under a common fra
 
 ---
 
-## **(3) Analysis of SF-Op (Norm-resolvent Continuity) in Infinite Dimensions**
+## (3) Analysis of SF-Op (Norm-resolvent Continuity) in Infinite Dimensions
 
 Verifying the sufficient conditions for norm-resolvent continuity in unified PDE solutions remains a non-trivial challenge. Future research into the temporal regularity of resolvents based on elliptic theory and interactions with conservative flows is required, potentially utilizing the stability results for unbounded operators in [Booss-Bavnbek et al. 2005].
 
 ---
 
-## **(4) Analysis of H-orbit Criteria in Infinite Dimensions**
+## (4) Analysis of H-orbit Criteria in Infinite Dimensions
 
 Establishing conditions for H-orbit (e.g., uniform $H^2$ boundedness, regularity effects of dissipative operators) is essential for LaSalle arguments. PKGF provides the foundation to systematically organize these conditions.
 
 ---
 
-## **(5) Extensions to Non-linear PKGF**
+## (5) Extensions to Non-linear PKGF
 
 While the current paper focuses on linear settings, extending unified flows to include non-linear terms $F(K)$ (e.g., in reaction-diffusion systems, non-linear gauge theories, or non-linear eigenvalue problems) is a natural progression. Furthermore, integrating **higher-order spectral flow** [Dai & Zhang 1998] or **K-theoretic computations** [Aoki et al. 2025] could describe more complex topological phase transitions.
 
 ---
 
-## **(6) Synthesis of Mathematical Significance**
+## (6) Synthesis of Mathematical Significance
 
 PKGF serves as a foundation to logically decouple, integrate, and analyze existing theories within a common geometric flow framework. It functions as a **robust analytical infrastructure** rather than a new mathematical object.
 
 ---
 
-# **References**
+# References
 
 - **[Aoki et al. 2025]** Aoki, S., Fukaya, H., Furuta, M., Matsuo, S., Onogi, T., & Yamaguchi, S. "K-theoretic computation of the Atiyah(-Patodi)-Singer index of lattice Dirac operators." *arXiv:2503.23921*, 2025.
 - **[Bär & Ziemke 2025]** Bär, C., & Ziemke, R. "Spectral flow and the Atiyah-Patodi-Singer index theorem." *arXiv:2512.04968*, 2025.

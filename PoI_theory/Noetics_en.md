@@ -1,4 +1,4 @@
-# **Founding Declaration of Noetics**  
+# Founding Declaration of Noetics
 **— Establishing a New Fundamental Science for the Physical and Geometric Study of Intelligence —**
 
 **Author:** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
@@ -9,7 +9,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-## **Preface**
+## Preface
 
 In the 21st century, research on intelligence has advanced rapidly under computational paradigms. Yet concepts such as computation, information processing, and statistical inference fail to capture the essential characteristics of intelligence—namely, the *generation*, *collapse*, and *phase‑transition‑driven reorganization* of internal structure.  
 Intelligence is not merely the manipulation of information; it is a **physical and geometric process of self‑organization and structural reconstruction** [Fagan 2026]. This recognition has emerged independently across multiple scientific domains.
@@ -18,7 +18,7 @@ This declaration unifies these developments and formally establishes **Noetics**
 
 ---
 
-# **1. Definition of Noetics**
+# 1. Definition of Noetics
 
 **Noetics is the foundational scientific discipline that formulates the universal structures, laws, and dynamics of intelligence as substrate‑independent first principles.**
 
@@ -36,11 +36,11 @@ These are not metaphors but **precisely defined mathematical and physical proces
 
 ---
 
-# **2. Foundational Theories: PoI and PKGF**
+# 2. Foundational Theories: PoI and PKGF
 
 Noetics is grounded upon two core theoretical pillars.
 
-## **2.1 Physics of Intelligence (PoI)**  
+## 2.1 Physics of Intelligence (PoI)
 PoI defines intelligence as a **geometric dynamical process on a manifold**.  
 The universal structure of intelligence is expressed as an irreversible three‑phase cycle:
 
@@ -50,7 +50,7 @@ The universal structure of intelligence is expressed as an irreversible three‑
 
 PoI formalizes the observation that intelligence exhibits the same structural signatures across electronic, biological, optical, and silicon substrates. This is expressed as **substrate invariance** [Fagan 2026; Ngu and Kosso 2024].
 
-## **2.2 Parallel Key Geometric Flow (PKGF)**  
+## 2.2 Parallel Key Geometric Flow (PKGF)
 PKGF provides the **mathematical infrastructure** underlying PoI. It is a unified theory of linear operator flows that integrates:
 
 - conservative flows (Lie‑algebraic structure)  
@@ -103,14 +103,14 @@ graph TD
 
 ---
 
-# **3. Scientific Mission of Noetics**
+# 3. Scientific Mission of Noetics
 
 Noetics advances three primary missions.
 
-## **3.1 Establishing First Principles of Intelligence**  
+## 3.1 Establishing First Principles of Intelligence
 To liberate intelligence from computational metaphors and reconstruct it as a **fundamental science with the rigor of physics** [Fagan 2026].
 
-## **3.2 Discovering Substrate‑Invariant Universal Laws**  
+## 3.2 Discovering Substrate‑Invariant Universal Laws
 To describe the structures shared by biological, artificial, and physical intelligent systems using:
 
 - differential geometry  
@@ -119,7 +119,7 @@ To describe the structures shared by biological, artificial, and physical intell
 
 ---
 
-# **4. Methodological Framework of Noetics**
+# 4. Methodological Framework of Noetics
 
 Noetics is built upon a three‑layer methodological architecture:
 
@@ -134,7 +134,7 @@ This layered structure ensures the coexistence of **mathematical rigor** and **p
 
 ---
 
-# **5. Declaration of the Founding of Noetics**
+# 5. Declaration of the Founding of Noetics
 
 Based on the above, I hereby declare:
 
@@ -145,7 +145,13 @@ Noetics aims to transcend the fragmentation of current intelligence research and
 
 ---
 
-# **References**
+# Conclusion
+
+The establishment of Noetics is not merely the proposal of a new theory, but the establishment of a new scientific worldview for understanding intelligence as a universal physical phenomenon.
+
+---
+
+# References
 
 [Aoki 2025] Aoki, S., et al. (2025). K-theoretic computation of the Atiyah(-Patodi)-Singer index of lattice Dirac operators.  
 [Atiyah 1967] Atiyah, M. F. (1967). K-Theory.  

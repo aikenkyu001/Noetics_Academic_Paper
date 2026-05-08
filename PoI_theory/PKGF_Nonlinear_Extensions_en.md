@@ -1,4 +1,4 @@
-# Nonlinear Extensions of the Parallel Key Geometric Flow:  
+# Nonlinear Extensions of the Parallel Key Geometric Flow:
 **Well-posedness, Energy Structure, and Operator-Theoretic Stability**
 
 **Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
@@ -14,7 +14,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-## **Abstract**
+## Abstract
 
 This paper investigates **nonlinear extensions** of the Parallel Key Geometric Flow (PKGF), a framework that integrates conservative commutator-type dynamics with dissipative elliptic dynamics through complexification. While previous work has focused on the linear PKGF and its analytical and structural properties, many applications—particularly those related to Noetics, structural dynamics, and operator-theoretic models of intelligence—require nonlinear interactions. Contemporary physical theories of intelligence also emphasize the role of non-equilibrium irreversible processes in shaping cognitive structures [Fagan 2026].
 
@@ -28,7 +28,7 @@ The results rely on monotone operator theory, nonlinear semigroup methods, and o
 
 ---
 
-# **1. Introduction**
+# 1. Introduction
 
 The Parallel Key Geometric Flow (PKGF) provides a unified operator evolution equation combining:
 
@@ -54,7 +54,7 @@ The goal of this paper is to provide a rigorous analytical foundation for such n
 
 ---
 
-# **2. Mathematical Setting**
+# 2. Mathematical Setting
 
 Let \(M\) be a compact Riemannian manifold,  
 \(E \to M\) a finite-rank vector bundle,  
@@ -82,7 +82,7 @@ These assumptions are standard in nonlinear operator theory.
 
 ---
 
-# **3. Nonlinear PKGF Equation**
+# 3. Nonlinear PKGF Equation
 
 We study the nonlinear unified flow:
 
@@ -102,11 +102,11 @@ The main analytical challenge is that:
 
 ---
 
-# **4. Well-posedness**
+# 4. Well-posedness
 
 We use the Crandall–Liggett theorem and nonlinear semigroup theory.
 
-### **Theorem 4.1 (Existence of Mild Solutions)**  
+### Theorem 4.1 (Existence of Mild Solutions)
 Assume:
 
 1. \(\mathcal{D}\) is m-dissipative on \(L^2\),  
@@ -121,7 +121,7 @@ Then the nonlinear PKGF equation admits a unique mild solution
 K \in C([0,T]; L^2(M,\mathrm{End}(E))).
 \]
 
-### **Theorem 4.2 (Strong Solutions)**  
+### Theorem 4.2 (Strong Solutions)
 If in addition:
 
 - \(\mathcal{N}\) maps \(H^1\) to \(L^2\),  
@@ -135,7 +135,7 @@ K \in C([0,T]; H^1) \cap C^1([0,T]; L^2).
 
 ---
 
-# **5. Energy Structure**
+# 5. Energy Structure
 
 Define the structural energy:
 
@@ -156,7 +156,7 @@ The commutator term vanishes:
 \langle [\Omega(K), K], K\rangle = 0.
 \]
 
-### **Energy Decay Condition**
+### Energy Decay Condition
 
 If  
 \[
@@ -171,11 +171,11 @@ This stability is mathematically consistent with structure-preserving numerical 
 
 ---
 
-# **6. Stability and Long-time Behavior**
+# 6. Stability and Long-time Behavior
 
 Using LaSalle-type arguments [Mei and Bullo 2020]:
 
-### **Theorem 6.1 (Asymptotic Stability)**  
+### Theorem 6.1 (Asymptotic Stability)
 If the fixed-point set  
 \[
 \mathcal{F} = \{K : \mathcal{D}(K) + \mathcal{N}(K) = 0\}
@@ -187,13 +187,13 @@ is compact, then every solution satisfies:
 \]
 The rate of convergence may be characterized by Lojasiewicz–Simon gradient inequalities [Feehan and Maridakis 2019]. This corresponds to **structural collapse / abstraction** (D-phase).
 
-### **Theorem 6.2 (Attractor Existence)**  
+### Theorem 6.2 (Attractor Existence)
 If \(\mathcal{N}\) is dissipative and compact,  
 the nonlinear PKGF admits a global attractor.
 
 ---
 
-# **7. Examples**
+# 7. Examples
 
 We present several nonlinear PKGF models:
 
@@ -216,15 +216,15 @@ Each satisfies the assumptions of the main theorems.
 
 ---
 
-# **8. Numerical Verification: Nonlinear Dynamics and Structural Restoration**
+# 8. Numerical Verification: Nonlinear Dynamics and Structural Restoration
 
 The theoretical framework for nonlinear PKGF has been empirically verified using the Noetics SDK v1.0, employing standard benchmarks in chaos theory: the Logistic Map and the Lorenz System.
 
-## **8.1 Discrete Nonlinear Systems: Structural Restoration in the Logistic Map**
+## 8.1 Discrete Nonlinear Systems: Structural Restoration in the Logistic Map
 
 We evaluated the PKGF model's ability to maintain structural integrity in a 1D Logistic Map operating in a chaotic regime ($r=3.8$) under high Gaussian noise ($\sigma=0.04$). The system was embedded as the primary component in a 4-dimensional Hermitian operator space.
 
-### **Numerical Metrics**
+### Numerical Metrics
 
 | Metric | Standard Model (1D) | PKGF Model (4D) |
 | :--- | :--- | :--- |
@@ -235,17 +235,17 @@ We evaluated the PKGF model's ability to maintain structural integrity in a 1D L
 - **Mechanism of Restoration**: While the standard 1D map collapsed into erratic noise, the PKGF model utilized the dissipative term $\mathcal{D}(K)$ to isolate and eliminate noise as high-frequency components that do not contribute to the underlying structure.
 - **Significance**: Autonomously maintaining an **Effective Dimension of 1.0** under high perturbation demonstrates the physical realizability of "Structural Invariance" in nonlinear systems.
 
-## **8.2 Continuous Chaotic Systems: Lorenz Attractor and Structural Predictive Capacity**
+## 8.2 Continuous Chaotic Systems: Lorenz Attractor and Structural Predictive Capacity
 
 We analyzed the decoupling between "Sensitive Dependence on Initial Conditions (Butterfly Effect)" and "Structural Integrity" in the Lorenz system to verify the **Structural Predictive Capacity** of the Noetics framework.
 
-### **Observed Temporal Dynamics and Predictive Decoupling**
+### Observed Temporal Dynamics and Predictive Decoupling
 
 1.  **Collapse of Point-wise Prediction**: Due to infinitesimal initial differences, coordinate-level predictions (RMSE) reached their physical limit and collapsed at **$t = 0.005\text{s}$**.
 2.  **Survival of Structural Prediction**: Even after the point-wise prediction failed, the geometric shape and phase coherence of the attractor were maintained. This implies that while micro-level predictions of "exact location" fail, the macro-level prediction of "how the system behaves structurally" (Structural Survival) continues.
 3.  **Self-Awareness of Predictive Limits**: The commutator norm $\|[\Omega, K]\|$ surged just before phase coherence was lost. This demonstrates that Noetics can physically detect the "limit point" where its own structural prediction becomes impossible.
 
-### **Structural Survival Margin and the Definition of Intelligence**
+### Structural Survival Margin and the Definition of Intelligence
 
 The **Structural Survival Margin ($1.420\text{s}$)** demonstrated in this experiment shows that structural prediction remains valid **more than 280 times longer** than the lifespan of point-wise prediction.
 
@@ -253,11 +253,10 @@ This provides physical proof that the essence of intelligence lies not in the "a
 
 ---
 
-# **9. Conclusion**
 
 ---
 
-# **9. Conclusion**
+# 9. Conclusion
 
 This paper establishes a mathematical foundation for **nonlinear extensions of PKGF** and verifies its validity through numerical experiments using SDK v1.0.
 
@@ -271,7 +270,7 @@ Future work includes:
 
 ---
 
-# **References**
+# References
 
 [Brezis 2011] Brezis, H. (2011). Functional Analysis, Sobolev Spaces and Partial Differential Equations.  
 [Chen 2024] Chen, H., Liu, H., & Xu, X. (2024). The Onsager principle and structure preserving numerical schemes.  

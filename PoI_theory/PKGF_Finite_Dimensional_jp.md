@@ -1,4 +1,4 @@
-# Parallel Key Geometric Flow の有限次元近似と数値解析：  
+# Parallel Key Geometric Flow の有限次元近似と数値解析：
 **Galerkin 法による統合相ダイナミクスの離散化と安定性**
 
 **著者：Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
@@ -15,7 +15,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-## **要旨（Abstract）**
+## 要旨（Abstract）
 
 本稿では、Parallel Key Geometric Flow（PKGF）の有限次元近似を構築し、  
 Galerkin 法に基づく数値解析を通じて、統合相（Unified Phase）における  
@@ -36,7 +36,7 @@ PKGF は無限次元 Hilbert 束上の作用素流として定式化されるが
 
 ---
 
-# **1. 序論**
+# 1. 序論
 
 Parallel Key Geometric Flow（PKGF）は、保存的交換子項と散逸的楕円項を統合する作用素進化方程式であり、Noetics の数学的基盤を形成する [Fagan 2026]。
 
@@ -57,7 +57,7 @@ Parallel Key Geometric Flow（PKGF）は、保存的交換子項と散逸的楕�
 
 ---
 
-# **2. Galerkin 近似の構成**
+# 2. Galerkin 近似の構成
 
 Hilbert 空間  
 \[
@@ -75,7 +75,7 @@ P_n : H \to H_n
 
 ---
 
-## **2.1 基底関数の選択**
+## 2.1 基底関数の選択
 
 有限次元部分空間 \(H_n\) の構成には、以下の基底を用いる：
 
@@ -87,7 +87,7 @@ P_n : H \to H_n
 
 ---
 
-## **2.2 非線形項の離散化**
+## 2.2 非線形項の離散化
 
 非線形ポテンシャル \(\Omega(K)\) は一般に \(H\) 上の作用素値関数であるため、  
 有限次元近似では **接続（connection）自体も離散化** する必要がある。
@@ -102,7 +102,7 @@ P_n : H \to H_n
 
 ---
 
-# **3. 離散化された PKGF**
+# 3. 離散化された PKGF
 
 線形 PKGF：
 
@@ -130,9 +130,9 @@ P_n : H \to H_n
 
 ---
 
-# **4. 収束性解析**
+# 4. 収束性解析
 
-## **4.1 保存項と射影作用素の干渉**
+## 4.1 保存項と射影作用素の干渉
 
 射影 \(P_n\) を **Hilbert 空間上の直交射影** とすると、  
 \(K_n \in H_n\) であるため
@@ -152,7 +152,7 @@ P_n : H \to H_n
 
 ---
 
-## **4.2 Mild 解の収束**
+## 4.2 Mild 解の収束
 
 線形 PKGF の解 \(K(t)\) に対し、  
 Galerkin 近似解 \(K_n(t)\) は
@@ -165,7 +165,7 @@ Galerkin 近似解 \(K_n(t)\) は
 
 ---
 
-## **4.3 非線形 PKGF の収束**
+## 4.3 非線形 PKGF の収束
 
 非線形項 \(\mathcal{N}\) が局所 Lipschitz ならば、
 
@@ -177,7 +177,7 @@ K_n \to K \quad \text{in } C([0,T]; L^2)
 
 ---
 
-# **5. エネルギー構造の保存・減衰**
+# 5. エネルギー構造の保存・減衰
 
 離散エネルギーを
 
@@ -189,7 +189,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2
 
 ---
 
-## **定理 5.1（離散エネルギー減衰）**
+## 定理 5.1（離散エネルギー減衰）
 
 \[
 \frac{d}{dt}E_n(K_n(t))
@@ -201,7 +201,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2
 
 ---
 
-# **6. 統合相（U-phase）の数値的再現**
+# 6. 統合相（U-phase）の数値的再現
 
 統合相では複素化された作用素
 
@@ -213,7 +213,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2
 
 ---
 
-## **6.1 離散スペクトル流**
+## 6.1 離散スペクトル流
 
 離散作用素
 
@@ -232,7 +232,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2
 
 ---
 
-## **6.2 数値的堅牢性：ε-閾値と avoided crossing**
+## 6.2 数値的堅牢性：ε-閾値と avoided crossing
 
 数値計算では固有値が正確にゼロを横切る瞬間を捉えることは困難である。  
 そのため：
@@ -245,7 +245,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2
 
 ---
 
-# **7. 数値実験（概念例）**
+# 7. 数値実験（概念例）
 
 1. **1 次元トーラス上の Laplace 型 PKGF**  
 2. **行列値 PKGF（有限次元モデル）**  
@@ -254,7 +254,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2
 
 ---
 
-# **8. 結論と今後の課題**
+# 8. 結論と今後の課題
 
 本稿では、PKGF の有限次元近似を構築し：
 
@@ -276,7 +276,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2
 
 ---
 
-# **参考文献**
+# 参考文献
 
 [Aoki 2025] Aoki, S., et al. (2025). K-theoretic computation of the Atiyah(-Patodi)-Singer index of lattice Dirac operators.  
 [Chen 2024] Chen, H., Liu, H., & Xu, X. (2024). The Onsager principle and structure preserving numerical schemes.  

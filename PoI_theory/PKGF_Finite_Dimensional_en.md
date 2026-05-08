@@ -1,4 +1,4 @@
-# Finite-Dimensional Approximations and Numerical Analysis of the Parallel Key Geometric Flow:  
+# Finite-Dimensional Approximations and Numerical Analysis of the Parallel Key Geometric Flow:
 **Galerkin Discretization and Stability of Unified-Phase Dynamics**
 
 **Author: Fumio Miyata https://orcid.org/0009-0008-8797-5578**  
@@ -15,7 +15,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-## **Abstract**
+## Abstract
 
 This paper develops finite-dimensional approximations of the Parallel Key Geometric Flow (PKGF) and analyzes the resulting numerical schemes based on Galerkin discretization. Through these approximations, we investigate the discrete behavior of the **conservative–dissipative–unified (C/D/U)** dynamics that characterize the unified phase of PKGF.
 
@@ -32,7 +32,7 @@ The results provide a bridge between the infinite-dimensional theory of PKGF and
 
 ---
 
-# **1. Introduction**
+# 1. Introduction
 
 The Parallel Key Geometric Flow (PKGF) is an operator evolution equation that unifies a conservative commutator term with a dissipative elliptic term. It forms a mathematical foundation for Noetics and operator-level structural dynamics [Fagan 2026].
 
@@ -49,7 +49,7 @@ This paper develops Galerkin approximations of PKGF and analyzes their convergen
 
 ---
 
-# **2. Construction of Galerkin Approximations**
+# 2. Construction of Galerkin Approximations
 
 Let  
 \[
@@ -70,7 +70,7 @@ the **orthogonal projection** onto \(H_n\). In our discretization, we apply insi
 
 ---
 
-## **2.1 Choice of Basis**
+## 2.1 Choice of Basis
 
 The construction of \(H_n\) may use:
 
@@ -82,7 +82,7 @@ This ensures that the geometric properties of PKGF are preserved under discretiz
 
 ---
 
-## **2.2 Discretization of Nonlinear Terms**
+## 2.2 Discretization of Nonlinear Terms
 
 Since the nonlinear potential \(\Omega(K)\) is an operator-valued function on \(H\),  
 the **connection itself must be discretized**.
@@ -98,7 +98,7 @@ This aligns the theory with matrix-based numerical implementations.
 
 ---
 
-# **3. Discrete PKGF Equations**
+# 3. Discrete PKGF Equations
 
 For the linear PKGF:
 
@@ -120,9 +120,9 @@ the discrete system becomes:
 
 ---
 
-# **4. Convergence Analysis**
+# 4. Convergence Analysis
 
-## **4.1 Interaction Between the Conservative Term and Projection**
+## 4.1 Interaction Between the Conservative Term and Projection
 
 Because \(P_n\) is an **orthogonal projection** and \(K_n \in H_n\), we have:
 
@@ -142,7 +142,7 @@ just as in the continuous setting.
 
 ---
 
-## **4.2 Convergence of Mild Solutions**
+## 4.2 Convergence of Mild Solutions
 
 Let \(K(t)\) be the solution of the linear PKGF.  
 Then the Galerkin approximations satisfy:
@@ -155,7 +155,7 @@ The proof utilizes analytic techniques related to Lojasiewicz–Simon gradient i
 
 ---
 
-## **4.3 Convergence for Nonlinear PKGF**
+## 4.3 Convergence for Nonlinear PKGF
 
 If \(\mathcal{N}\) is locally Lipschitz, then:
 
@@ -165,7 +165,7 @@ K_n \to K \quad \text{in } C([0,T]; L^2).
 
 ---
 
-# **5. Discrete Energy Preservation and Decay**
+# 5. Discrete Energy Preservation and Decay
 
 Define the discrete energy:
 
@@ -175,7 +175,7 @@ E_n(K_n) = \frac{1}{2}\|K_n\|_{L^2}^2.
 
 ---
 
-## **Theorem 5.1 (Discrete Energy Decay)**
+## Theorem 5.1 (Discrete Energy Decay)
 
 \[
 \frac{d}{dt}E_n(K_n(t))
@@ -187,7 +187,7 @@ The conservative term does not contribute to the energy. This structure is highl
 
 ---
 
-# **6. Numerical Reproduction of Unified-Phase Dynamics**
+# 6. Numerical Reproduction of Unified-Phase Dynamics
 
 The unified phase involves the complexified operator:
 
@@ -200,7 +200,7 @@ which induces rotations, collapses, and crossings of eigenvalues.
 
 ---
 
-## **6.1 Discrete Spectral Flow**
+## 6.1 Discrete Spectral Flow
 
 For the discrete operator:
 
@@ -218,7 +218,7 @@ K-theoretic computational methods for lattice-based operators [Aoki et al. 2025]
 
 ---
 
-## **6.2 Numerical Robustness: ε-thresholds and Avoided Crossings**
+## 6.2 Numerical Robustness: ε-thresholds and Avoided Crossings
 
 In numerical computations, exact zero-crossings are difficult to detect.  
 We therefore use:
@@ -231,7 +231,7 @@ Analytic results on the stability of Fredholm operators and gap topology [Waters
 
 ---
 
-# **7. Numerical Experiments (Conceptual Examples)**
+# 7. Numerical Experiments (Conceptual Examples)
 
 1. **Laplace-type PKGF on the 1D torus**  
 2. **Matrix-valued PKGF (finite-dimensional model)**  
@@ -240,7 +240,7 @@ Analytic results on the stability of Fredholm operators and gap topology [Waters
 
 ---
 
-# **8. Conclusion and Future Work**
+# 8. Conclusion and Future Work
 
 This paper developed finite-dimensional approximations of PKGF and established:
 
@@ -258,7 +258,7 @@ Future work includes:
 
 ---
 
-# **References**
+# References
 
 [Aoki 2025] Aoki, S., et al. (2025). K-theoretic computation of the Atiyah(-Patodi)-Singer index of lattice Dirac operators.  
 [Chen 2024] Chen, H., Liu, H., & Xu, X. (2024). The Onsager principle and structure preserving numerical schemes.  

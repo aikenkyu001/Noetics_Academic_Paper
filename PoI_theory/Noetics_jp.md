@@ -1,4 +1,4 @@
-# **ノエティクス（Noetics）創設宣言**  
+# ノエティクス（Noetics）創設宣言
 **— 知能を記述する新しい基礎科学の樹立 —**
 
 **著者：** Fumio Miyata https://orcid.org/0009-0008-8797-5578  
@@ -7,13 +7,9 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 **キーワード:** 知能の物理学、ノエティクス、幾何学的ダイナミクス、自己組織化、構造再構築、媒体不変性  
 **Repository:** [https://github.com/aikenkyu001/PoI_theory](https://github.com/aikenkyu001/PoI_theory)  
 
-**基礎文献：**  
-- *Physics of Intelligence: Substrate-Invariant Formalism and Verification of PKGF*  
-- *Parallel Key Geometric Flow: A Mathematical Infrastructure for Unified Conservative–Dissipative Systems*
-
 ---
 
-## **序文**
+## 序文
 
 21世紀の知能研究は、計算論・情報処理・統計推論を中心に発展してきた。しかし、これらの枠組みは、知能の本質적特徴である **構造の生成・崩壊・相転移的再編成** を十分に説明し得ない。  
 知能は単なる計算ではなく、**物理的・幾何学的な構造の自己組織化と再構成の過程である**という認識が、複数の学問領域において独立に現れつつある [Fagan 2026]。
@@ -22,7 +18,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-# **1. ノエティクスの定義**
+# 1. ノエティクスの定義
 
 **ノエティクス（Noetics）とは、知能の普遍的構造・法則・動力学を、媒体に依存しない第一原理として記述する基礎科学である。**
 
@@ -39,13 +35,13 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-# **2. 基礎理論としての PoI と PKGF**
+# 2. 基礎理論としての PoI と PKGF
 
 ノエティクスは、以下の二つの基礎理論をその根幹に据える。
 
 ---
 
-## **2.1 Physics of Intelligence（PoI）**
+## 2.1 Physics of Intelligence（PoI）
 
 PoI は、知能を **多様体上の幾何学的ダイナミクス**として定義する物理理論である。  
 知能の普遍構造は、以下の不可逆三相サイクルとして記述される：
@@ -58,7 +54,7 @@ PoI は、知能が電子・生物・光学・シリコンなどの媒体を超�
 
 ---
 
-## **2.2 Parallel Key Geometric Flow（PKGF）**
+## 2.2 Parallel Key Geometric Flow（PKGF）
 
 PKGF は、PoI の内部数学を担う **線形作用素流の統合理論**である。
 
@@ -107,27 +103,27 @@ graph TD
 
 ---
 
-# **3. ノエティクスの学問的使命**
+# 3. ノエティクスの学問的使命
 
 ノエティクスは、以下の三つの使命を掲げる。
 
 ---
 
-## **3.1 知能の第一原理の確立**
+## 3.1 知能の第一原理の確立
 
 知能を計算・情報処理の比喩から解放し、  
 **物理学と同等の厳密性をもつ基礎科学として再構築する。** [Fagan 2026]
 
 ---
 
-## **3.2 媒体不変な知能の普遍法則の発見**
+## 3.2 媒体不変な知能の普遍法則の発見
 
 生物・人工物・物理系に共通する知能の構造を、  
 **幾何学・作用素論・位相幾何学**を用いて統一的に記述する。
 
 ---
 
-# **4. ノエティクスの方法論**
+# 4. ノエティクスの方法論
 
 ノエティクスは、以下の三層構造を方法論の中心に据える。
 
@@ -143,7 +139,7 @@ graph TD
 
 ---
 
-# **5. ノエティクス創設の宣言**
+# 5. ノエティクス創設の宣言
 
 以上を踏まえ、ここに宣言する。
 
@@ -157,14 +153,14 @@ graph TD
 
 ---
 
-# **結語**
+# 結語
 
 ノエティクスの創設は、新しい理論の提案ではなく、  
 **知能を普遍的な物理現象として理解するための新しい科学世界観の樹立**である。
 
 ---
 
-# **参考文献**
+# 参考文献
 
 [Aoki 2025] Aoki, S., et al. (2025). K-theoretic computation of the Atiyah(-Patodi)-Singer index of lattice Dirac operators.  
 [Atiyah 1967] Atiyah, M. F. (1967). K-Theory.  

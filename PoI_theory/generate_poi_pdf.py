@@ -17,11 +17,19 @@ def tex_escape(text):
         '—': r'---',
         '–': r'--'
     }
-    # Protect math mode
-    parts = re.split(r'(\$\$.*?\$\$|\$.*?\$)', text, flags=re.DOTALL)
+    # Protect blocks that should NOT be escaped:
+    # 1. Math mode: $...$, $$...$$, \[...\], \(...\), \begin{...}...\end{...}
+    # 2. Code blocks: ```...```
+    # We use a non-greedy match and re.DOTALL
+    pattern = r'(\$\$.*?\$\$|\$.*?\$|\\\[.*?\\\]|\\\(.*?\\\)|\\begin\{.*?\}.*?\\end\{.*?\}|```.*?```)'
+    parts = re.split(pattern, text, flags=re.DOTALL)
     res = ""
     for part in parts:
-        if part.startswith('$'):
+        if not part: continue
+        # Check if this part is a protected block
+        if (part.startswith('$') or part.startswith('\\[' ) or 
+            part.startswith('\\(') or part.startswith('\\begin') or 
+            part.startswith('```')):
             res += part
         else:
             temp = part
@@ -50,14 +58,14 @@ def convert_table(lines):
     filtered_lines = [l for l in lines if not re.match(r'^\|[- :|]+\|$', l)]
     if not filtered_lines: return ""
     
-    headers = [inline_format(tex_escape(h.strip())) for h in filtered_lines[0].strip('|').split('|')]
+    headers = [inline_format(h.strip()) for h in filtered_lines[0].strip('|').split('|')]
     num_cols = len(headers)
     tex = [r"\begin{table}[htbp]\centering"]
     tex.append(r"\begin{tabular}{" + "l" * num_cols + "}")
     tex.append(r"\hline")
     tex.append(" & ".join(headers) + r" \\ \hline")
     for line in filtered_lines[1:]:
-        cols = [inline_format(tex_escape(c.strip())) for c in line.strip('|').split('|')]
+        cols = [inline_format(c.strip()) for c in line.strip('|').split('|')]
         if len(cols) < num_cols: cols += [""] * (num_cols - len(cols))
         else: cols = cols[:num_cols]
         tex.append(" & ".join(cols) + r" \\")
@@ -66,165 +74,247 @@ def convert_table(lines):
     tex.append(r"\end{table}")
     return "\n".join(tex)
 
-def process_markdown(md_path, output_pdf_name, is_jp=False):
-    if not os.path.exists(md_path):
-        print(f"Error: {md_path} not found.")
-        return
-
-    with open(md_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # Metadata extraction
-    title_m = re.search(r'^# (.*?)(?=\n\n|\n\*\*)', content, re.S)
-    title_raw = title_m.group(1).strip() if title_m else os.path.basename(md_path)
-    title_tex = tex_escape(title_raw).replace('\n', ' ')
-    if is_jp and "：" in title_tex:
-        title_tex = title_tex.replace("：", "：\\\\\\\\ ")
-
-    author_m = re.search(r'\*\*(?:Author|著者):\s*(.*?)\*\*', content)
-    if not author_m:
-        author_m = re.search(r'\*\*(?:Author|著者):\s*(.*)', content)
-    author = author_m.group(1).strip() if author_m else ""
-    
-    date_m = re.search(r'\*\*(?:Date|日付):\s*(.*?)\*\*', content)
-    if not date_m:
-        date_m = re.search(r'\*\*(?:Date|日付):\s*(.*)', content)
-    date = date_m.group(1).strip() if date_m else ""
-    
-    keywords_m = re.search(r'\*\*(?:Keywords|キーワード):\s*(.*?)\*\*', content)
-    if not keywords_m:
-        keywords_m = re.search(r'\*\*(?:Keywords|キーワード):\s*(.*)', content)
-    keywords = keywords_m.group(1).strip() if keywords_m else ""
-    
-    # Abstract
-    abstract_m = re.search(r'(?:##|# \*\*0\.\*\*)\s+(?:Abstract|概要.*?)\s+(.*?)\s+(?:---|\n# |\n## )', content, re.S)
-    abstract = inline_format(tex_escape(abstract_m.group(1).strip())) if abstract_m else ""
-
-    # Body
-    body_content = content
-    # Try to find the first real section
-    first_sec = re.search(r'^# (?!#)(?!0\.)', content, re.M)
-    if first_sec:
-        body_content = content[first_sec.start():]
-    else:
-        # Fallback: skip metadata and abstract
-        idx = content.find('---')
-        if idx != -1:
-            body_content = content[content.find('---', idx + 3) + 3:]
-
-    lines = body_content.split('\n')
-    tex_body = []
+def process_lines(lines, is_jp, m_base, mermaid_idx=1, in_abstract=False):
+    tex_out = []
     in_list = None
     in_table = False
     table_buffer = []
     in_refs = False
-    in_mermaid = False
-
-    for i, line in enumerate(lines):
+    
+    i = 0
+    while i < len(lines):
+        line = lines[i]
         trimmed = line.strip()
         
         # Mermaid handling
         if trimmed.startswith('```mermaid'):
-            in_mermaid = True
-            continue
-        if in_mermaid:
-            if trimmed.startswith('```'):
-                in_mermaid = False
+            # Skip until ```
+            while i < len(lines) and not lines[i].strip() == '```' and not (i > 0 and lines[i].strip().startswith('```') and not lines[i].strip().startswith('```mermaid')):
+                i += 1
+            if i < len(lines): i += 1 # Skip the closing ```
+            
+            pattern = f"images/mermaid_{m_base}_{mermaid_idx}_*.pdf"
+            matches = glob.glob(pattern)
+            if matches:
+                pdf_path = matches[0]
+                if len(matches) > 1:
+                    matches.sort(key=lambda x: os.path.getsize(x), reverse=is_jp)
+                    pdf_path = matches[0]
+                
+                if in_abstract:
+                    tex_out.append(r"\begin{center}")
+                    tex_out.append(f"\\includegraphics[width=0.8\\textwidth,height=0.4\\textheight,keepaspectratio]{{{pdf_path}}}")
+                else:
+                    tex_out.append(r"\begin{figure}[htbp]\centering")
+                    tex_out.append(f"\\includegraphics[width=0.8\\textwidth,height=0.4\\textheight,keepaspectratio]{{{pdf_path}}}")
+                
+                desc = f"Diagram {mermaid_idx}"
+                # Look ahead for caption
+                for j in range(i, min(i + 5, len(lines))):
+                    nl = lines[j].strip()
+                    if nl.startswith('\\textbf{Fig') or nl.startswith('\\textbf{図'):
+                        desc = clean_caption(nl)
+                        lines[j] = "" # Consume it
+                        break
+                    if nl.startswith('\\section') or nl.startswith('!['): break
+                
+                if in_abstract:
+                    tex_out.append(f"\\captionof{{figure}}{{{inline_format(desc)}}}")
+                    tex_out.append(r"\end{center}")
+                else:
+                    tex_out.append(f"\\caption{{{inline_format(desc)}}}")
+                    tex_out.append(r"\end{figure}")
+            mermaid_idx += 1
             continue
 
         if not trimmed:
-            if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            if in_table: tex_body.append(convert_table(table_buffer)); table_buffer = []; in_table = False
-            tex_body.append("\n")
+            if in_list: tex_out.append(f"\\end{{{in_list}}}"); in_list = None
+            if in_table: tex_out.append(convert_table(table_buffer)); table_buffer = []; in_table = False
+            tex_out.append("\n")
+            i += 1
             continue
         
         if trimmed.startswith('|'):
             in_table = True
             table_buffer.append(trimmed)
+            i += 1
             continue
         elif in_table:
-            tex_body.append(convert_table(table_buffer))
+            tex_out.append(convert_table(table_buffer))
             table_buffer = []
             in_table = False
 
-        if trimmed == "---": continue
+        if trimmed == "---":
+            i += 1
+            continue
 
-        # Headers
-        if trimmed.startswith('# '):
-            if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            h_text = trimmed[2:].strip()
+        # Headers - they are already escaped, so we look for \#
+        if trimmed.startswith('\\# '):
+            if in_list: tex_out.append(f"\\end{{{in_list}}}"); in_list = None
+            h_text = trimmed[3:].strip()
+            # Remove leading numbers like "1 ", "2.1 " etc.
             h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
             if h_text.lower() in ["references", "参考文献", "bibliography"]:
                 in_refs = True
-                tex_body.append(r"\begin{thebibliography}{99}")
+                tex_out.append(r"\begin{thebibliography}{99}")
             else:
-                tex_body.append(f"\\section{{{inline_format(tex_escape(h_text))}}}")
+                tex_out.append(f"\\section{{{inline_format(h_text)}}}")
+            i += 1
             continue
-        elif trimmed.startswith('## '):
-            if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            h_text = trimmed[3:].strip()
+        elif trimmed.startswith('\\#\\# '):
+            if in_list: tex_out.append(f"\\end{{{in_list}}}"); in_list = None
+            h_text = trimmed[5:].strip()
             h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
-            tex_body.append(f"\\subsection{{{inline_format(tex_escape(h_text))}}}")
+            tex_out.append(f"\\subsection{{{inline_format(h_text)}}}")
+            i += 1
             continue
-        elif trimmed.startswith('### '):
-            if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
-            h_text = trimmed[4:].strip()
+        elif trimmed.startswith('\\#\\#\\# '):
+            if in_list: tex_out.append(f"\\end{{{in_list}}}"); in_list = None
+            h_text = trimmed[7:].strip()
             h_text = re.sub(r'^\d+(\.\d+)*\.?\s+', '', h_text)
-            tex_body.append(f"\\subsubsection{{{inline_format(tex_escape(h_text))}}}")
+            tex_out.append(f"\\subsubsection{{{inline_format(h_text)}}}")
+            i += 1
             continue
 
         # Image
         if trimmed.startswith('!['):
-            if in_list: tex_body.append(f"\\end{{{in_list}}}"); in_list = None
+            if in_list: tex_out.append(f"\\end{{{in_list}}}"); in_list = None
             m = re.match(r'!\[(.*?)\]\((.*?)\)', trimmed)
             if m:
                 cap_raw, path = m.groups()
                 desc = ""
                 found_desc = False
-                for j in range(i+1, min(i+4, len(lines))):
+                for j in range(i+1, min(i+5, len(lines))):
                     nl = lines[j].strip()
-                    if nl.startswith('**Fig') or nl.startswith('**図'):
+                    if nl.startswith('\\textbf{Fig') or nl.startswith('\\textbf{図'):
                         desc = clean_caption(nl)
                         lines[j] = "" 
                         found_desc = True
                         break
-                    if nl.startswith('#') or nl.startswith('!['): break
+                    if nl.startswith('\\section') or nl.startswith('!['): break
                 if not found_desc: desc = clean_caption(cap_raw)
-                tex_body.append(r"\begin{figure}[htbp]\centering")
-                tex_body.append(f"\\includegraphics[width=0.8\\textwidth,height=0.35\\textheight,keepaspectratio]{{{path}}}")
-                tex_body.append(f"\\caption{{{inline_format(tex_escape(desc))}}}")
-                tex_body.append(r"\end{figure}")
+                
+                if in_abstract:
+                    tex_out.append(r"\begin{center}")
+                    tex_out.append(f"\\includegraphics[width=0.8\\textwidth,height=0.35\\textheight,keepaspectratio]{{{path}}}")
+                    tex_out.append(f"\\captionof{{figure}}{{{inline_format(desc)}}}")
+                    tex_out.append(r"\end{center}")
+                else:
+                    tex_out.append(r"\begin{figure}[htbp]\centering")
+                    tex_out.append(f"\\includegraphics[width=0.8\\textwidth,height=0.35\\textheight,keepaspectratio]{{{path}}}")
+                    tex_out.append(f"\\caption{{{inline_format(desc)}}}")
+                    tex_out.append(r"\end{figure}")
+            i += 1
             continue
 
-        # Lists
-        if trimmed.startswith('- ') or trimmed.startswith('* '):
+        # Lists - after tex_escape, - becomes - (no change) or \-? No, - is not in conv.
+        # But * becomes \*
+        if trimmed.startswith('- ') or trimmed.startswith('\\* '):
             if not in_refs:
                 if in_list != 'itemize':
-                    if in_list: tex_body.append(f"\\end{{{in_list}}}")
-                    tex_body.append(r"\begin{itemize}")
+                    if in_list: tex_out.append(f"\\end{{{in_list}}}")
+                    tex_out.append(r"\begin{itemize}")
                     in_list = 'itemize'
             
-            content_text = trimmed[2:].strip()
+            content_text = trimmed[2:].strip() if trimmed.startswith('- ') else trimmed[3:].strip()
             if in_refs:
                 key = "".join(filter(str.isalnum, content_text[:15])) + str(i)
-                tex_body.append(f"\\bibitem{{{key}}} {inline_format(tex_escape(content_text))}")
+                tex_out.append(f"\\bibitem{{{key}}} {inline_format(content_text)}")
             else:
-                tex_body.append(f"\\item {inline_format(tex_escape(content_text))}")
+                tex_out.append(f"\\item {inline_format(content_text)}")
+            i += 1
             continue
         elif re.match(r'^\d+\.\s+', trimmed):
             if in_list != 'enumerate':
-                if in_list: tex_body.append(f"\\end{{{in_list}}}")
-                tex_body.append(r"\begin{enumerate}")
+                if in_list: tex_out.append(f"\\end{{{in_list}}}")
+                tex_out.append(r"\begin{enumerate}")
                 in_list = 'enumerate'
             content_text = re.sub(r'^\d+\.\s+', '', trimmed)
-            tex_body.append(f"\\item {inline_format(tex_escape(content_text))}")
+            tex_out.append(f"\\item {inline_format(content_text)}")
+            i += 1
             continue
 
         # Normal Paragraph
-        tex_body.append(inline_format(tex_escape(trimmed)))
+        tex_out.append(inline_format(trimmed))
+        i += 1
 
-    if in_list: tex_body.append(f"\\end{{{in_list}}}")
-    if in_refs: tex_body.append(r"\end{thebibliography}")
+    if in_list: tex_out.append(f"\\end{{{in_list}}}")
+    if in_refs: tex_out.append(r"\end{thebibliography}")
+    return tex_out, mermaid_idx
+
+def process_markdown(md_path, output_pdf_name, is_jp=False):
+    if not os.path.exists(md_path):
+        print(f"Error: {md_path} not found.")
+        return
+
+    # Use utf-8-sig to handle BOM
+    with open(md_path, 'r', encoding='utf-8-sig') as f:
+        content = f.read()
+
+    # Metadata extraction (BEFORE tex_escape to keep regex simple)
+    title_m = re.search(r'^#\s+(.*?)(?=\n\n|\n\*\*)', content, re.S | re.M)
+    title_raw = title_m.group(1).strip() if title_m else os.path.basename(md_path)
+    
+    author_m = re.search(r'\*\*(?:Author|著者)[:：]\s*(?:\*\*|)\s*(.*?)(?:\*\*|(?=\n))', content)
+    author = author_m.group(1).strip() if author_m else ""
+    
+    date_m = re.search(r'\*\*(?:Date|日付)[:：]\s*(?:\*\*|)\s*(.*?)(?:\*\*|(?=\n))', content)
+    date = date_m.group(1).strip() if date_m else ""
+    
+    keywords_m = re.search(r'\*\*(?:Keywords|キーワード)[:：]\s*(?:\*\*|)\s*(.*?)(?:\*\*|(?=\n))', content)
+    keywords = keywords_m.group(1).strip() if keywords_m else ""
+    
+    # Abstract extraction
+    abstract_m = re.search(r'(?:##|#)\s+(?:\*\*|)\s*(?:0\.\s*|)(?:Abstract|概要|要旨.*?)\s*(?:\*\*|)\s+(.*?)\s+(?:---|\n# |\n## )', content, re.S | re.I)
+    abstract_raw = abstract_m.group(1).strip() if abstract_m else ""
+
+    # Body extraction
+    headers = list(re.finditer(r'^#+ .*', content, re.M))
+    body_start = 0
+    for h_match in headers:
+        h_text = h_match.group(0).lower()
+        if h_match.start() < 10: continue # Title
+        if any(x in h_text for x in ["abstract", "概要", "要旨"]): continue
+        if h_text.startswith('# **0.'): continue
+        body_start = h_match.start()
+        break
+    
+    if body_start:
+        body_raw = content[body_start:]
+    else:
+        idx = content.find('---')
+        if idx != -1:
+            idx2 = content.find('---', idx + 3)
+            if idx2 != -1: body_raw = content[idx2 + 3:]
+            else: body_raw = content[idx + 3:]
+        else:
+            body_raw = content
+
+    # NOW tex_escape everything
+    title_tex = tex_escape(title_raw).replace('\n', ' ')
+    if is_jp and "：" in title_tex:
+        title_tex = title_tex.replace("：", "：\\\\\\\\ ")
+    
+    author_tex = tex_escape(author)
+    date_tex = tex_escape(date)
+    keywords_tex = tex_escape(keywords)
+    
+    abstract_escaped = tex_escape(abstract_raw)
+    body_escaped = tex_escape(body_raw)
+
+    # Derive mermaid base name
+    m_base = os.path.basename(md_path)
+    if m_base.endswith("_jp.md"): m_base = m_base[:-6]
+    elif m_base.endswith("_en.md"): m_base = m_base[:-6]
+    else: m_base = m_base[:-3]
+
+    # Process abstract
+    abstract_tex_lines, next_mermaid_idx = process_lines(abstract_escaped.split('\n'), is_jp, m_base, mermaid_idx=1, in_abstract=True)
+    abstract_tex = "\n".join(abstract_tex_lines)
+
+    # Process body
+    body_tex_lines, _ = process_lines(body_escaped.split('\n'), is_jp, m_base, mermaid_idx=next_mermaid_idx)
+    tex_body = "\n".join(body_tex_lines)
 
     # LaTeX Template
     jp_preamble = r'''\usepackage{xeCJK}
@@ -255,20 +345,20 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
 \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
 
 \title{''' + title_tex + r'''}
-\author{''' + tex_escape(author) + r'''}
-\date{''' + tex_escape(date) + r'''}
+\author{''' + author_tex + r'''}
+\date{''' + date_tex + r'''}
 
 \begin{document}
 ''' + localized_labels + r'''
 \maketitle
 
 \begin{abstract}
-''' + abstract + r'''
+''' + abstract_tex + r'''
 \end{abstract}
 
-\textbf{''' + ("Keywords:" if not is_jp else "キーワード:") + r'''} ''' + inline_format(tex_escape(keywords)) + r'''
+\textbf{''' + ("Keywords:" if not is_jp else "キーワード:") + r'''} ''' + keywords_tex + r'''
 
-''' + '\n'.join(tex_body) + r'''
+''' + tex_body + r'''
 
 \end{document}
 '''

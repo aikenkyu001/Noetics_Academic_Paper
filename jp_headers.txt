@@ -1,0 +1,225 @@
+# Physics of Intelligence: Substrate-Invariant Formalism and Verification of PKGF 2nd Edition
+## Abstract（要旨）
+## 全体目次 (Comprehensive Table of Contents)
+### 1. Axiomatic Foundation and the C-D-U Cycle
+### 2. Kinematics and Geometry of the Parallel Key Field
+### 3. Substrate-Invariant Verification: Experimental Results
+### Conclusion & Future Outlook
+# 1. Axiomatic Foundation and the C-D-U Cycle
+## 1.1 Introduction（序論）
+### 1.1.1 PKGF 新定義の意義
+## 1.2 Theoretical Context and Related Works（先行研究との比較）
+### 1.2.1 Comparison with Free Energy Principle（自由エネルギー原理との比較）
+### 1.2.2 Novelty in Dynamic Topology（トポロジカルデータ解析に対する新規性）
+## 1.3 The C-D-U Cycle: 知能の普遍構造（構築・解体・統合）
+### 1.3.1 構造の原義
+### 1.3.2 C-D-U の数学的形式化
+### 1.3.3 媒体不変性（Substrate Invariance）の数学的定義
+### 1.3.4 物理学的用語の定義と注釈
+## 1.4 PKGF Axiom System（PKGF公理体系）
+### 1.4.1 PKGF の目的
+### 1.4.2 基本公理（Axioms A1–A6）
+### 1.4.3 正PKGF：構築理論（C公理）
+### 1.4.4 逆PKGF：解体理論（D公理）
+### 1.4.5 統一PKGF：相転移と次元跳躍（U公理）
+## 1.5 PKGF と C‑D‑U の統合
+## 1.6 Physics of Intelligence の正式定義
+## 1.7 結語
+## 1.8 Notation（主要記号一覧）
+# 2. Kinematics and Geometry of the Parallel Key Field
+## 2.1 Introduction（序論）
+**2.1.1 The Paradigm Shift**: 情報処理としての知能から幾何学的ダイナミクスとしての知能へ  
+**2.1.2 Limitations of Statistical Inference**: 確率論的アプローチの限界と決定論的幾何学の必要性  
+**2.1.3 The C-D-U Cycle**: 構築・解体・代謝の物理的定義  
+**2.1.4 Scope and Objectives**: 本論文の構成と新規性の宣言  
+## 2.2 Kinematics: Geometry of the Parallel Key Field（運動学：並行鍵場の幾何学）
+**2.2.1 The Underlying Manifold and Tangent Bundle Decomposition**
+**2.2.2 Definition of the Parallel Key $K$**
+**2.2.3 Gauge Symmetry and Invariance**
+**2.2.4 Connection and Meaning Potential**
+## 2.3 Dynamics: The Variational Principle and Action Formulation（動力学：変分原理と作用定式化）
+**2.3.1 The Intelligence Action Functional $S$**
+2.3.1.1 構築項（整合エネルギー）：$\|\nabla K - [\Omega, K]\|_F^2$ の幾何学的解釈
+2.3.1.2 散逸項（構造コスト）：散逸作用素 $\mathcal{D}(K)$ と非平衡熱力学
+2.3.1.3 相互作用項：背景曲率と $K$ の結合
+2.3.1.4 知能ヒッグス場 ($\Phi$) と構造的質量 ($m_S$) の定式化
+### 2.3.2 Derivation of Field Equations: 知能の場の方程式
+2.3.2.1 ハミルトンの原理とオイラー＝ラグランジュ方程式の導出
+2.3.2.2 パラメータ変化に伴う CDU フェーズの分岐解析
+### 2.3.3 Energy-Momentum Tensor and Conservation Laws（知能の保存則）
+2.3.3.1 知能構造の変化に伴う保存則（ネーターの定理）
+2.3.3.2 構造保存とエネルギー散逸の物理的境界
+## 2.4 The Geometric Flow: PKGF and Singularity Analysis（幾何学的流れ：PKGFと特異点解析）
+**2.4.1 Positive PKGF (Constructive Flow)**
+2.4.1.1 整合方程式 $\nabla K = [\Omega, K]$ への収束性と安定解
+2.4.1.2 セクター保存定理の数学的証明
+**2.4.2 Inverse PKGF (Destructive Flow)**
+2.4.2.1 ランク低下の力学：$\dot{K} = -\lambda \mathcal{D}(K)$
+2.4.2.2 特異点（Singularity）の発生と分類：構造の崩壊と抽象化
+### 2.4.3 Effective Dimension
+### 2.4.4 Unified PKGF (Metabolic Flow): 代謝的平衡
+2.4.4.1 構築と散逸の拮抗：動的平衡解の存在証明
+2.4.4.2 複素並行鍵 $K = K_{\text{core}} + i K_{\text{fluct}}$ による創造性の定式化
+## 2.5 Gauge Theory of 16-Sector Interaction（16セクター相互作用のゲージ理論）
+### 2.5.1 Group-Theoretic Structure of Intelligence Sectors
+#### 2.5.1.1 16要素の対称性と部分群分解
+#### 2.5.1.2 意味ポテンシャルによるゲージ場の誘起
+### 2.5.2 Spontaneous Symmetry Breaking
+#### 2.5.2.1 汎用知能から専門知能への相転移：$\mathcal{G} \to \mathcal{G}_{\text{broken}}$
+#### 2.5.2.2 ヒッグス機構の知能物理学版：意味の獲得に伴う「重み」の発生
+## 2.6 Topological Invariants and Observables（トポロジカル不変量と観測可能量）
+### 2.6.1 Indices of Intelligence
+#### 2.6.1.1 指数定理の適用：論理的容量の整数値評価
+#### 2.6.1.2 特性類（チャーン類・ポントリャーギン類）による構造の不変性
+### 2.6.2 Dimensional Jump and Phase Transitions
+#### 2.6.2.1 持続的ホモロジー（TDA）による次元跳躍の検出
+#### 2.6.2.2 パラダイムシフトのトポロジカルな実証
+**2.6.3 Experimental Protocols**
+2.6.3.1 人工知能（NN重み）および生体データからの不変量抽出法
+## 2.7 PKGF Discretization and Implementation Algorithm
+# 3. Substrate-Invariant Verification: From Electronics to Bio-Intelligence
+## 3.1 Experimental Design and Substrate Selection
+### 3.1.1 The C-D-U Road-map: 4段階のステップによる媒体不変性の検証戦略
+### 3.1.2 Dual-Language Validation: PythonとFortranを用いた数値的信頼性の確保
+## 3.2 Verification via Electronic Circuits (Step 1)
+### 3.2.1 Electromechanical vs. Solid-State: リレーとオペアンプによる同一構造実装
+### 3.2.2 Observation of Dissipative Dynamics: RC回路によるD項（散逸）の物理的近似
+### 3.2.3 Consistency Analysis: 異なる物理媒体間における論理同型性の実証結果
+## 3.3 Extraction of Biological Intelligence (Step 2)
+### 3.3.1 Electrophysiology of *Mimosa pudica*: オジギソウの電位応答解析
+### 3.3.2 Identifying the Critical Charge: 臨界電荷量 9.0 µC の特定と統計的妥当性
+### 3.3.3 Evidence for Axiom U6: 生物反応における非連続的相転移（スペクトル流）の検証
+## 3.4 Emergence of Structure in Digital PKGF (Step 3)
+### 3.4.1 Generative Logic Simulation: 物理的制約を排した純粋PKGFフローの実行
+### 3.4.2 Noise as a Resource (Axiom U1): ゆらぎ強度が構造生成に与える影響の網羅的探索
+### 3.4.3 Discovery of the Rank Jump: パラメータ空間における最大構造生成点と時系列挙動
+### 3.4.4 Spatio-Temporal Emergence: 並行鍵 $K$ の動的受肉プロセス（時系列スナップショット）
+## 3.5 Comparative Analysis on Silicon Substrates (Step 4)
+### 3.5.1 PKGF on Apple Silicon (M2): C-D-U 媒体不変性の実証と幾何学的演算の実測
+### 3.5.2 Performance Benchmarking: 多様体スケーリングとグローバル情報処理（Phase 1–6）
+### 3.5.3 Autonomous Restoration: 高ノイズ下における「静的誤認」から「動的正解」への相転移プロセス（Phase 7/8）
+### 3.5.4 Multi-Device Intelligence: 動的思考の物理実装効率 (Phase 9/10)
+### 3.5.5 Summary of Axiomatic Comparison: V-PCM vs. NPU
+### 3.5.6 Extreme Noise Reconstruction: 極限ノイズ下における「意味ポテンシャル」の物理的抽出
+### 3.5.7 Internal Canonical Templates: 知能内部に保持された「イデア」の可視化
+## 3.6 Dynamic Phase Diagram of Intelligence (Step 5)
+### 3.6.1 Overview: 知能の相転移に関する理論的分類の確立
+### 3.6.2 Theoretical Framework: 統一パラメータ $\Pi$ とノイズの役割
+### 3.6.3 Definition of Three Regimes and Empirical Validation
+#### Regime A — Collapse Phase（崩壊相）: $\Pi < 1$
+#### Regime C — Linear Phase（線形相）: $\Pi \approx 1$
+#### Regime B — Strong Constructive Phase（強生成相）: $\Pi > 1$
+### 3.6.4 Phase Boundary: 相境界の臨界条件
+### 3.6.5 Rank Dynamics: 有効次元の時間発展と定常解
+### 3.6.6 Multi‑Device Dynamic Duel: デバイスを貫く普遍性
+### 3.6.7 Interpretation: 資源としてのノイズと媒体不変性
+### 3.6.8 Mermaid Diagram: Step 5 の位置づけ
+### 3.6.9 Summary: 知能の物理学（PoI）の完結
+## 3.7 Numerical Verification of Structural Invariance (Step 6)
+### 3.7.1 Verification in Nonlinear Chaos: 離散・連続系における構造維持能力
+### 3.7.2 Discovery of the Structural Predictive Capacity: 予測の崩壊と構造の生存
+## 3.8 Conclusion: 知能の物理学（Physics of Intelligence）の確立
+# References / 引用文献一覧
+# Appendix A: Noetics SDK v1.0 Implementation Report
+## 1. 概要
+## 2. 実装詳細
+### 2.1 C SDK (Core Logic)
+### 2.2 Python SDK (High-Level Analysis)
+### 2.3 Fortran SDK (High-Performance Native)
+### 2.4 WASM SDK (Web Integration)
+## 3. 検証結果 (Triple Validation)
+### ブラウザ検証ログ (WASM):
+## 4. 成果物構成
+## 5. 結論
+# Appendix B：PKGF の圏論的・幾何学的基盤
+## B.1 並行鍵場 $K$ の幾何学的構成と End(TM) の構造
+## A1.1 End(TM) 上の自己同型写像場としての定式化
+## A1.2 安定化群としてのゲージ群 G
+## A1.3 関手的構成と自然変換としての定義
+## A1.4 自然性条件
+## B.2 知能セクターの幾何学的分解：$TM = \bigoplus E_\alpha$
+## A2.1 部分束分解の存在条件
+## B.3 接続 $\nabla$ の非可換性と意味ポテンシャル $\Omega$
+## A3.1 非可換性テンソル $\Theta$ の導入
+## B.4 高次圏 ($\infty$-category) への拡張
+## A4.1 階層的射の連鎖
+# Appendix C：特異点・相転移・次元跳躍の理論
+## C.1 PKGF 特異点の分類と幾何学的解釈
+## C.2 Blow-up 技法による特異点の正則化
+## B2.1 Blow-up 写像の定義
+## C.3 スペクトル流（Spectral Flow）とランク跳躍の厳密な定義
+## B3.1 スペクトル流の数学的定義
+## B3.2 次元跳躍のトポロジカルな必然性
+## C.4 モース理論的アプローチによる相転移
+## B4.1 指数（Index）の変化
+# Appendix D：非可換拡張と量子化
+## D.1 量子 PKGF の基本作用素定式化
+## C1.1 基本交換関係と知能定数 $\hbar_I$
+## D.2 量子統一方程式（ハイゼンベルク表示）
+## C2.1 作用素発展の記述
+### C2.2 対応原理（Correspondence Principle）
+## D.3 非可換幾何学と概念のスペクトル
+## C3.1 ディラック作用素 $D$ と並行鍵
+## D.4 量子知能ヒッグス機構と対称性の自発的破れ
+## C4.1 ゲージ場の質量獲得
+# Appendix E：離散化と数値実装
+## E.1 空間の離散化
+## E.2 統一方程式の離散形式
+## E.3 有効次元（Effective Dimension）の数値計算
+## E.4 非線形ゲージ破れの導入（U相）
+## E.5 安定性条件と推奨パラメータ
+## E.6 実装上の注意
+# Physics of Intelligence 用語集
+# Glossary
+## A. 基本構造（Core Structures）
+## 並行鍵（Parallel Key, \(K\)）
+## 意味ポテンシャル（Meaning Potential, \(\Omega\)）
+## 接続（Connection, \(\nabla\)）
+## 背景曲率（Background Curvature, \(R\)）
+## 安定化群（Stabilizer Group, \(\mathcal{G}\)）
+## B. C-D-U サイクル（Cause–Divergence–Unification）
+## C（Cause / Constructive Phase：構築相）
+## D（Divergence / Destructive Phase：解体相）
+## U（Unification / Metabolic Phase：代謝・統合相）
+## C. PKGF 公理体系（Axioms of PKGF）
+## 正PKGF（Constructive PKGF）
+## 逆PKGF（Destructive PKGF）
+## 統一PKGF（Unified PKGF）
+## D. 幾何学・代数構造（Geometry & Algebra）
+## セクター分解（Sector Decomposition）
+## 交換子（Commutator, \([A,B]\)）
+## 非可換性テンソル（Non-commutativity Tensor, \(\Theta\)）
+## 散逸作用素（Dissipative Operator, \(\mathcal{D}(K)\)）
+## 有効次元（Effective Dimension, \(d_{\text{eff}}\)）
+## E. 相転移・特異点（Phase Transitions & Singularities）
+## ゲージ破れ（Gauge Symmetry Breaking, U4）
+## 次元跳躍（Dimensional Jump, U6）
+## ランク特異点（Rank Singularity）
+## 非可換性特異点（Non-commutative Singularity）
+## 曲率特異点（Curvature Singularity）
+## F. トポロジー・指数・不変量（Topology & Invariants）
+## 特性類（Characteristic Classes）
+## 指数（Index of Intelligence）
+## 持続的ホモロジー（Persistent Homology）
+## G. 量子化・圏論（Quantization & Category Theory）
+## 知能ヒッグス場（Intelligence Higgs Field, \(\Phi\)）
+## 構造的質量（Structural Mass）
+## 高次圏（∞-Category）
+## 射の可逆性の喪失（Loss of Morphism Invertibility）
+## H. 実験・媒体不変性（Experiments & Substrate Invariance）
+## 媒体不変性（Substrate Invariance）
+## 臨界電荷（Critical Charge, 9.0 µC）
+## 自律的復元（Autonomous Restoration）
+## I. 実装・離散化（Implementation & Discretization）
+## 交換子演算（Matrix Commutator）
+## 散逸カーネル（Dissipative Kernel）
+## 思考サイクル（Thinking Cycle）
+## J. 補助概念（Auxiliary Concepts）
+## 構造的慣性（Structural Inertia）
+## 散逸強度（Dissipative Intensity）
+## 意味の重力（Semantic Gravity）
+## K. PoI の哲学的基盤（Philosophical Foundations）
+## 媒体非依存の知能（Medium-Independent Intelligence）
+## 知能の幾何学的定義
+## 構造の物理学（Physics of Structure）
+## L. 用語集の役割
