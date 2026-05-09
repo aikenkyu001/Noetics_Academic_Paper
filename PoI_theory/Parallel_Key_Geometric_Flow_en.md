@@ -9,7 +9,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-# 0. Abstract
+## Abstract
 
 This paper provides a rigorous formulation of Parallel Key Geometric Flow (PKGF), a framework for unifying conservative and dissipative flows arising from the temporal evolution of operators on finite-dimensional vector bundles. 
 
@@ -43,8 +43,9 @@ flowchart TD
     F --> H
     G --> H
 ```
+*Fig. 0.1 (Diagram): Structural Diagram*
 
-**Figure 1. Structural Hierarchy of PKGF**
+*Fig. 1.1 Structural Hierarchy of PKGF**
 
 - **Axioms**: Define the geometric and algebraic constraints (Input: Manifold/Bundle setup, Output: Structural constraints).
 - **Conservative / Dissipative Flow (C/D Layers)**: Decouple the reversible and irreversible components (Input: Potential/Operator, Output: Evolution equations).
@@ -99,10 +100,11 @@ flowchart TB
     I2 --> I4
     I3 --> I4
 ```
+*Fig. 0.2 (Diagram): Structural Diagram*
 
 ---
 
-# Table of Contents
+## Table of Contents
 
 0. Abstract  
 1. Mathematical Framework  
@@ -217,7 +219,7 @@ The axioms of PKGF are not intended to introduce new mathematical objects but ar
 
 In this section, we present the **Structural Layer**, which defines the geometric and algebraic configuration independently of analytical hypotheses. This establishes the logical basis for handling conservative, dissipative, unified, and spectral flows without contradiction.
 
-### 2.1 Structural Dependency (DAG) — Visualization of the Three-Layer Philosophy
+## 2.1 Structural Dependency (DAG) — Visualization of the Three-Layer Philosophy
 
 We visualize the "Structure → Analysis → Conclusion" philosophy of PKGF below.
 
@@ -270,6 +272,7 @@ flowchart TD
     SF --> MT
     LT --> MT
 ```
+*Fig. 2.1 (Diagram): Structural Diagram*
 
 ---
 
@@ -417,7 +420,7 @@ A key feature of PKGF is the explicit separation of conservative and dissipative
 | **$L^2$-norm** | Preserved | Decays |
 | **Energy $E$** | Preserved | Monotonically Decreases |
 
-### Quantities Preserved by C-phase
+### 3.4.1 Quantities Preserved by C-phase
 The flow $\partial_t K = [\Omega, K]$ preserves:
 - Eigenvalue multiplicity.
 - Signature.
@@ -429,7 +432,7 @@ These are all canonical properties of adjoint actions.
 
 ---
 
-### Quantities Altered by D-phase
+### 3.4.2 Quantities Altered by D-phase
 Conversely, the dissipative flow $\partial_t K = \lambda \mathcal{D}(K)$ generally does not preserve:
 - Gauge covariance.
 - Eigenvalue structure.
@@ -574,6 +577,7 @@ flowchart TD
     C --> P1
     D --> P2
 ```
+*Fig. 5.1 (Diagram): Structural Diagram*
 
 ---
 
@@ -683,6 +687,7 @@ flowchart LR
     L0 --> L
     L --> X2
 ```
+*Fig. 6.1 (Diagram): Structural Diagram*
 
 The fundamental variable $\widetilde{K}(t)$ is a **pointwise multiplication operator** on $L^2(M,E)$. Standard operator theory dictates that such operators:
 - Have infinite-dimensional eigenspaces.
@@ -774,10 +779,10 @@ In the evolution of the unified flow, spectral flow captures the **topological t
 
 We summarize common misapplications of spectral flow in the context of geometric flows:
 
-#### Attempting to define SF directly on multiplication operators
+### 6.8.1 Attempting to define SF directly on multiplication operators
 A frequent error in the literature is attempting to define spectral flow directly on time-dependent zeroth-order bundle maps $\widetilde{K}(t) : L^2 \to L^2$. This is **theoretically impossible** because multiplication operators lack the finite-dimensional eigenspaces and essential spectrum gaps required for SF. PKGF mandates **elliptic realization** to avoid this.
 
-#### Assuming norm-resolvent continuity from time-continuity alone
+### 6.8.2 Assuming norm-resolvent continuity from time-continuity alone
 $L^2$-continuity of a PDE solution $\widetilde{K}(t)$ is often mistaken for norm-resolvent continuity of $t \mapsto \mathcal{L}(t)$. Norm-resolvent continuity is a far stronger condition and does not follow automatically from temporal regularity. PKGF avoids this pitfall by treating H-Fred and SF-Op independently.
 
 ---
@@ -1017,6 +1022,7 @@ flowchart TD
     D --> dE
     dE --> F
 ```
+*Fig. 10.1 (Diagram): Structural Diagram*
 
 ---
 
@@ -1101,10 +1107,11 @@ flowchart LR
     SF --> MT
     LT --> MT
 ```
+*Fig. 11.1 (Diagram): Structural Diagram*
 
 This chapter synthesizes the previously introduced axioms (A1–A6) and analytical hypotheses into a single theorem describing the primary mathematical properties of the Unified Flow (U-phase).
 
-### 11.1 Classification and Role of Hypotheses
+## 11.1 Classification and Role of Hypotheses
 
 | Hypothesis | Role | Necessity | Description |
 | :--- | :--- | :--- | :--- |
@@ -1119,7 +1126,7 @@ This chapter synthesizes the previously introduced axioms (A1–A6) and analytic
 
 ---
 
-### 11.2 Main Theorem Structure
+## 11.2 Main Theorem Structure
 
 | Conclusion | Required Hypotheses | Content |
 | :--- | :--- | :--- |
@@ -1130,43 +1137,43 @@ This chapter synthesizes the previously introduced axioms (A1–A6) and analytic
 
 ---
 
-## Main Theorem (Unified Well-posedness and Structural Consistency of PKGF)
+## 11.3 Main Theorem (Unified Well-posedness and Structural Consistency of PKGF)
 
 Assume Axioms A1–A6 and Hypotheses H-mD, H-dom, H-reg, H-Fred, SF-Op, D5, and H-orbit are satisfied. Then the following hold:
 
 ---
 
-## (1) Well-posedness of the Unified Flow (U-phase)
+### (1) Well-posedness of the Unified Flow (U-phase)
 
 The Unified Flow $\partial_t \widetilde{K} = [\Omega, \widetilde{K}] + \lambda \mathcal{D}(\widetilde{K})$ possesses a **unique mild solution** in $L^2(M,\mathrm{End}(E))$, and a **unique strong solution** if H-reg holds. The solution remains in the domain for all $t \ge 0$ (H-dom).
 
 ---
 
-## (2) Energy Structure (Gradient-like Properties)
+### (2) Energy Structure (Gradient-like Properties)
 
 The energy functional $E(K) = \|\nabla K\|_{L^2}^2 + 2\int_M \operatorname{tr}(V K^2)$ decreases monotonically due to the dissipative component. For strong solutions, the energy identity $\frac{d}{dt}E(K(t)) = -2\lambda \|\mathcal{D}(K(t))\|_{L^2}^2$ holds rigorously. For mild solutions, it holds as an inequality.
 
 ---
 
-## (3) Well-definedness of Spectral Flow
+### (3) Well-definedness of Spectral Flow
 
 The family of elliptic operators $\mathcal{L}(t) = \mathcal{L}_0 + \widetilde{K}(t)$ is self-adjoint Fredholm for all $t$ (H-Fred) and satisfies norm-resolvent continuity (SF-Op). Consequently, the **Spectral Flow $\mathrm{SF}(\mathcal{L}(t))$ is well-defined** as an integer invariant. Zero-crossings, signature jumps, and topological transitions remain stable even in mixed conservative/dissipative regimes.
 
 ---
 
-## (4) Long-time Behavior (LaSalle-type Asymptotics)
+### (4) Long-time Behavior (LaSalle-type Asymptotics)
 
 Under H-orbit and D5, the dissipative component satisfies the LaSalle-type conclusion: the $\omega$-limit set satisfies $\omega(\widetilde{K}) \subset \{K \mid \mathcal{D}(K)=0\}$. The dissipative component asymptotically approaches the fixed-point set over time.
 
 ---
 
-## (5) Consistency with Conservative Structures
+### (5) Consistency with Conservative Structures
 
 The conservative component $[\Omega, \widetilde{K}]$ preserves gauge covariance, eigenvalue multiplicities, signatures, and the $L^2$-norm. The unified flow integrates these two structures complex-linearly, ensuring the **coexistence of conservative symmetry and dissipative decay without contradiction**.
 
 ---
 
-## (6) Structural Consistency (Consistency Theorem)
+### (6) Structural Consistency (Consistency Theorem)
 
 Synthesis of (1)–(5) guarantees that:
 - Axioms and Hypotheses are mutually consistent.

@@ -74,6 +74,7 @@ graph TD
     end
     C -.->|The Paradigm Shift| D
 ```
+*Fig. 1.1 (Diagram): Structural Diagram*
 
 In the prevailing scientific narrative, intelligence has long been confined to the limitations of computation‑based models—a view where cognition is merely the efficient execution of symbolic logic or the approximation of probability distributions. However, the transition toward perspectives centered on embodiment and physical dynamics represents a critical shift in modern cognitive science (Shapiro, 2007) [Shapiro_EmbodiedCognition]; (Dodig-Crnkovic, 2024) [rethinking_cognition]. 
 
@@ -320,6 +321,7 @@ graph TD
     D4 --> U1
     U4 --> C1
 ```
+*Fig. 2.2 (Diagram): Structural Diagram*
 
 While previous intelligence research has been biased toward the accumulation and integration of information (parts of C and U), this theory defines **"Dissipation (D)"** as a mandatory physical process for the system to jump to a new dimension. In this section, we clarify the physical definitions of these three phases as fundamental modes of the PKGF flow.
 
@@ -381,6 +383,7 @@ graph TD
     K --> E3
     K --> E4
 ```
+*Fig. 2.3 (Diagram): Structural Diagram*
 
 Here, $I$ is an index set identifying the "semantic sectors" of intelligence. Each sub-bundle $E_\alpha$ forms an invariant subspace corresponding to a specific logical or emotional dimension.
 
@@ -569,6 +572,7 @@ graph TD
     end
     C -->|Phase Transition: Higgs Mechanism| G
 ```
+*Fig. 2.5 (Diagram): Structural Diagram*
 
 **2. Interaction Term and the Emergence of Structural Mass ($m_S$)**
 
@@ -760,7 +764,7 @@ A prerequisite for an intelligence to perform multi-layered parallel processing 
 
 **Theorem: Sector Preservation**
 
-Let the tangent bundle $TM$ on a manifold $M$ be decomposed as $TM = \bigoplus E_\alpha$, and assume that the connection $\nabla$ preserves each $E_\alpha$ under parallel transport. If the Parallel Key $K$ preserves the sectors at a point $p$ ($[K, \Pi_\alpha] = 0$) and satisfies the alignment equation $\nabla K = [\Omega, K] globally, then $K$ preserves the sectors at any other point $q$.
+Let the tangent bundle $TM$ on a manifold $M$ be decomposed as $TM = \bigoplus E_\alpha$, and assume that the connection $\nabla$ preserves each $E_\alpha$ under parallel transport. If the Parallel Key $K$ preserves the sectors at a point $p$ ($[K, \Pi_\alpha] = 0$) and satisfies the alignment equation $\nabla K = [\Omega, K]$ globally, then $K$ preserves the sectors at any other point $q$.
 
 **Proof**
 
@@ -842,6 +846,7 @@ mindmap
             Logical Breakdown
             Topology Update
 ```
+*Fig. 2.7 (Diagram): Structural Diagram*
 
 **1. Rank Singularity and Dimensional Contraction**
 
@@ -934,7 +939,7 @@ graph TD
 
 The real part $K_{\text{core}}$ represents the stable logical structures established by the intelligence through the construction (C) processes thus far.
 
-*   **Physical Properties**: Corresponds to the stable solution of the alignment equation $\nabla K = [\Omega, K] discussed in Section 2.4.1.1, governing "conviction" and "prediction" regarding the external world.
+*   **Physical Properties**: Corresponds to the stable solution of the alignment equation $\nabla K = [\Omega, K]$ discussed in Section 2.4.1.1, governing "conviction" and "prediction" regarding the external world.
 *   **Role**: Functions as the "anchor" that maintains realistic judgment, recognition of known patterns, and orthogonality between sectors.
 
 **2. Imaginary Part $K_{\text{fluct}}$: Fluctuations of Thought and Virtual Trials**
@@ -1129,6 +1134,7 @@ graph TD
     end
     F -->|Discontinuity| H[Rank Jump / Dimensional Emergence]
 ```
+*Fig. 2.9 (Diagram): Structural Diagram*
 
 ```mermaid
 graph TD
@@ -1138,7 +1144,7 @@ graph TD
     end
 ```
 
-*Fig. 2.9 (Diagram): Detection of dimensional jumps using persistent homology (TDA).*
+*Fig. 2.10 (Diagram): Detection of dimensional jumps using persistent homology (TDA).*
 
 #### 2.6.2.2 Topological Proof of Paradigm Shifts
 
@@ -1282,9 +1288,10 @@ sequenceDiagram
     Note right of K: V < Threshold (U). No Transition occurs.
     Note over Output: System remains in Static State.
 ```
+*Fig. 3.4 (Diagram): Structural Diagram*
 
 ![Step 1 Simulation Results](./images/step1_result.png)
-*Fig. 3.4 (Diagram): Comparative sequence diagram of successful behavioral emergence versus failure through information dissipation.*
+*Fig. 3.5 (Diagram): Comparative sequence diagram of successful behavioral emergence versus failure through information dissipation.*
 
 ---
 
@@ -1308,7 +1315,7 @@ Using a dual validation approach (Python/Fortran), we successfully identified a 
 | 4230.0 | 4 | 75.0% | Forced Phase Transition (Axiom U6: Rank Jump) |
 
 ![Step 2 Phase Transition Analysis](./images/step2_result.png)
-*Fig. 3.5: Identification of the critical charge (9.0 µC) for phase transition via Python/Fortran Double Validation.*
+*Fig. 3.6: Identification of the critical charge (9.0 µC) for phase transition via Python/Fortran Double Validation.*
 
 ### 3.3.3 Evidence for Axiom U6: Rank Jump
 The summation of stimuli leads to a **Rank Jump (Axiom U6)**. At 9.0 µC, the internal "potential flow" achieves sufficient tension to break the symmetry of its current structural state, triggering a discontinuous leap in the effective dimension.
@@ -1327,7 +1334,7 @@ sequenceDiagram
     Plant_Memory->>Action: Accumulated Potential > Threshold (U: Unification)
     Note over Action: Sudden Leaf Closure (U6: Rank Jump triggered)
 ```
-*Fig. 3.6 (Diagram): Summation of stimuli in a biological substrate leading to a non-linear phase transition (U6).*
+*Fig. 3.7 (Diagram): Summation of stimuli in a biological substrate leading to a non-linear phase transition (U6).*
 
 ---
 
@@ -1350,7 +1357,7 @@ Consistent with Axiom U1, noise was integrated not merely as error but as "fluct
 | **3.0** | **0.15** | **+0.4536** | **Maximum Structural Generation** |
 
 ![Step 3 Sweep](images/step3_result.png)
-*Fig. 3.7: Parameter space sweep for Step 3. Red indicates an increase in rank (structural generation), while blue indicates a decrease (dissipation). Under dissipation $\sigma=3.0$, fluctuation $\xi=0.15$ yields the maximum structural generation (Rank Jump +0.4536).*
+*Fig. 3.8: Parameter space sweep for Step 3. Red indicates an increase in rank (structural generation), while blue indicates a decrease (dissipation). Under dissipation $\sigma=3.0$, fluctuation $\xi=0.15$ yields the maximum structural generation (Rank Jump +0.4536).*
 
 This physically validates that noise is a **"resource"** for creating new dimensions (Axiom P2), facilitating the broadening of the singular value spectrum. The fact that $\xi=0.15$ induced the largest Rank Jump under severe dissipation ($\sigma=3.0$) proves that noise expands the exploratory degrees of freedom.
 
@@ -1358,16 +1365,16 @@ This physically validates that noise is a **"resource"** for creating new dimens
 In the final stage of the update process, we applied a non-linear amplification, $K \leftarrow \exp(K \cdot 2.0)$, to simulate **"Spontaneous Gauge Symmetry Breaking (Axiom U4)"** and sharpen the emergent structure.
 
 ![Step 3 Structural Evolution](images/step3_evolution.png)
-*Fig. 3.8: Structural evolution of the Parallel Key K. An initially disordered state autonomously emerges into a geometric structure corresponding to the semantic potential $\Omega$.*
+*Fig. 3.9: Structural evolution of the Parallel Key K. An initially disordered state autonomously emerges into a geometric structure corresponding to the semantic potential $\Omega$.*
 
 ### 3.4.4 Spatio-Temporal Emergence: The Dynamic Embodiment Process
 The generation of geometric structure is a dynamic process characterized by the iterative elimination of redundancy through dissipation (D) and the consolidation of meaning through construction (C).
 
 ![Snapshot Evolution t=0](images/snapshot_K_0.png) ![Snapshot t=50](images/snapshot_K_50.png) ![Snapshot t=100](images/snapshot_K_100.png) ![Snapshot t=150](images/snapshot_K_150.png) ![Snapshot t=199](images/snapshot_K_199.png)
-*Fig. 3.9: Self-organization process of structure via Unified Equation U3.*
+*Fig. 3.10: Self-organization process of structure via Unified Equation U3.*
 
 ![Step 3 Final K State](images/step3_final_K.png)
-*Fig. 3.10: High-resolution structure of the Parallel Key K at the final step.*
+*Fig. 3.11: High-resolution structure of the Parallel Key K at the final step.*
 
 ```mermaid
 graph TD
@@ -1376,14 +1383,20 @@ graph TD
     G -->|Rank Jump| S[Emergent Structure]
     S -->|Axiom U4| F[Autonomous Intelligence]
 ```
-*Fig. 3.11 (Diagram): Generative logic of the PKGF flow extracting order from noise.*
+*Fig. 3.12 (Diagram): Generative logic of the PKGF flow extracting order from noise.*
 
 ---
 
 ## 3.5 Comparative Analysis on Silicon Substrates (Step 4)
 
-### 3.5.1 PKGF on Apple Silicon (M2): Performance Benchmarking
-Measured on Mac mini M2, we compared PKGF flows ($O(N^3)$) with conventional matrix operations ($O(N^4)$).
+### 3.5.1 PKGF on Apple Silicon (M2): Substrate Invariance and Geometric Computation
+We conducted empirical measurements of execution speed and accuracy of numerical simulations using each core of the Apple Silicon M2 (GPU/ANE/CPU) and compared the performance of conventional matrix operations (static logic) with PKGF flows (geometric logic). This verification spanned 10 distinct phases (Phase 1–10), comprehensively evaluating the physical implementation efficiency of intelligence.
+
+### 3.5.2 Performance Benchmarking: Manifold Scaling and Global Information Processing (Phase 1–6)
+We measured the computational efficiency against increasing manifold dimensions $N$ and the efficiency of extracting global correlations in a single step across all processing units.
+
+1.  **Manifold Dimensional Scaling (Phase 1/2)**:
+    Measured on Mac mini M2, we compared PKGF flows ($O(N^3)$) with conventional matrix operations ($O(N^4)$).
 
 | Dimension (N) | **CPU** (AMX) | **GPU** (MLX) | **ANE** (CoreML) |
 | :--- | :--- | :--- | :--- |
@@ -1392,39 +1405,56 @@ Measured on Mac mini M2, we compared PKGF flows ($O(N^3)$) with conventional mat
 | 512 | 5.7458 ms | 1.0273 ms | **0.3847 ms** |
 
 ![Step 4 Real M2 Benchmark](images/step4_real_m2_result.png)
-*Fig. 3.12: Empirical benchmarks on the Mac mini M2.*
+*Fig. 3.13: Empirical benchmarks on the Mac mini M2.*
 
 ![Step 4 Detailed Scaling Analysis](images/step4_scaling_detail.png)
-*Fig. 3.13: Detailed scaling analysis relative to increasing manifold dimensions.*
+*Fig. 3.14: Detailed scaling analysis relative to increasing manifold dimensions.*
 
 ![Step 4 Full Experiment Result](images/step4_full_experiment_result.png)
-*Fig. 3.14: Comprehensive benchmark evidence across all processing units.*
+*Fig. 3.15: Comprehensive benchmark evidence across all processing units.*
 
-For global correlation extraction of 4096 pixels ($N=64$), the CPU (AMX) achieved a **198.69x speedup**.
+2.  **Global Information Processing Efficiency (Phase 5/6)**:
+    For global correlation extraction of 4096 pixels ($N=64$), the CPU (AMX) achieved a **198.69x speedup**.
 
-### 3.5.2 Autonomous Restoration under Level 0.5 Noise
+### 3.5.3 Autonomous Restoration: Phase Transition from "Static Misidentification" to "Dynamic Correct Answer" under High Noise (Phase 7/8)
 In extreme noise (level 0.5), static AI misidentified a target (DOG) as another structure. However, PKGF flows (Axiom U3) autonomously converged to the correct **DOG structure** (Matching Score: 1842.3) through dynamic geometric resonance.
 
 ![Original Reference Image](images/Copilot_20260416_115108.png)
-*Fig. 3.15: The original image used as the ground truth (DOG).*
+*Fig. 3.16: The original image used as the ground truth (DOG).*
 
 ![Step 4 Autonomous Restoration](images/reconstructed_K.png)
-*Fig. 3.16: Demonstration of autonomous restoration via PKGF.*
+*Fig. 3.17: Demonstration of autonomous restoration via PKGF.*
 
-### 3.5.3 Summary of Axiomatic Comparison: V-PCM vs. NPU
+### 3.5.4 Multi-Device Intelligence: Physical Implementation Efficiency of Dynamic Thinking (Phase 9/10)
+We compared the time required for a "Thinking Cycle" (100 steps of dynamic reconfiguration) across all devices.
+
+- **CPU (NumPy/AMX)**: **30.74 ms** (Dim 128)
+- **GPU (MLX)**: 107.31 ms (Dim 128)
+- **ANE (Dedicated)**: **6.19 ms** (Dim 128)
+
+This result suggests that dedicated engines (ANE) possess unrivaled mobility for the "dynamic rewriting" of intelligence.
+
+### 3.5.5 Summary of Axiomatic Comparison: V-PCM vs. NPU
 
 ![V-PCM vs NPU Benchmark](images/step4_result.png)
-*Fig. 3.17: Performance comparison between V-PCM (PKGF geometric flow) and standard NPU inference.*
+*Fig. 3.18: Performance comparison between V-PCM (PKGF geometric flow) and standard NPU inference.*
 
-### 3.5.4 Extreme Noise Reconstruction
+### 3.5.6 Extreme Noise Reconstruction: Physical Extraction of "Semantic Potential" under Extreme Noise
+Finally, we verified the behavior of PKGF flows (Axiom U3) in extreme noise environments near the information-theoretic limit.
 
 ![Extreme Noise Input Potential](images/extreme_noise_input.png)
-*Fig. 3.18: The extreme noise input potential Omega used in the experiment.*
+*Fig. 3.19: The extreme noise input potential Omega used in the experiment.*
 
-### 3.5.5 Internal Canonical Templates
+As a result of 100 steps of dynamic reconfiguration ($\dot{K} = \eta [\Omega, K] - K/\tau$), the internal structure $K$ autonomously converged to the following "semantic structure":
+
+- **Most Probable Structure**: **"DOG"** (Structural Matching Score: 1842.3)
+- **Runner-up**: "LOG" (Score: 1210.1)
+
+### 3.5.7 Internal Canonical Templates: Visualization of "Ideas" held within Intelligence
+Recognition in PKGF is not merely a classification of external stimuli, but a process of geometric resonance and alignment between "canonical templates" held internally and the external semantic potential $\Omega$. Five internal templates used in this experiment are shown below.
 
 ![Internal Template DOG](images/template_dog.png) ![Template CAT](images/template_cat.png) ![Template LOG](images/template_log.png) ![Template BOX](images/template_box.png) ![Template DIG](images/template_dig.png)
-*Fig. 3.19: Canonical structures (templates) pre-encoded within the intelligence manifold M.*
+*Fig. 3.20: Canonical structures (templates) pre-encoded within the intelligence manifold M.*
 
 ```mermaid
 graph TD
@@ -1438,7 +1468,7 @@ graph TD
     Unification -->|Result| GI[General Intelligence as Physical Process]
 ```
 
-*Fig. 3.20 (Diagram): Summary of the Physics of Intelligence (PoI) framework.*
+*Fig. 3.21 (Diagram): Summary of the Physics of Intelligence (PoI) framework.*
 
 ---
 
@@ -1583,7 +1613,7 @@ graph TD
     E --> H["Stable Linear Response (Pi ~ 1)"]
     B --> I[Substrate-Invariant Dynamics]
 ```
-*Fig. 3.21 (Diagram): Step 5 Position in the PoI Framework.*
+*Fig. 3.23 (Diagram): Step 5 Position in the PoI Framework.*
 
 ---
 
@@ -1759,14 +1789,14 @@ This appendix provides a unified formulation of the mathematical foundations sup
 
 While the main text defines $K$ as an endomorphism of the tangent bundle $TM$, we describe its universality here from a more abstract, functorial viewpoint.
 
-## A1.1 Categorical Framework
+### B.1.1 Categorical Framework
 * **Objects**: Smooth manifolds $M$
 * **Morphisms**: Diffeomorphisms $f: M \to M$
 * **Tangent Functor**: $T: \mathbf{Diff} \to \mathbf{VectBund}$
 
 Within this framework, the Parallel Key $K$ is understood as a **Natural Transformation** satisfying the following conditions.
 
-## A1.2 Naturality Condition
+### B.1.2 Naturality Condition
 $K$ is a natural intelligence structure if, for any diffeomorphism $f \in \text{Diff}(M)$, the following diagram commutes:
 
 $$
@@ -1784,6 +1814,7 @@ graph TD
     TM1_K -- "T(f)" --> TM2_K[TM]
     TM2 -- "K" --> TM2_K
 ```
+*Fig. 5.1 (Diagram): Structural Diagram*
 
 That is, $T(f) \circ K = K \circ T(f)$.
 This property ensures that the internal structure of intelligence is a geometric invariant of the manifold, remaining independent of the choice of coordinate systems or descriptive languages (gauge).
@@ -1794,7 +1825,7 @@ This property ensures that the internal structure of intelligence is a geometric
 
 To enable intelligence to maintain distinct functions (such as C, D, and U) in parallel, the tangent bundle $TM$ must be decomposed into orthogonal sub-bundles.
 
-## A2.1 Existence Conditions for Sub-bundle Decomposition
+### B.2.1 Existence Conditions for Sub-bundle Decomposition
 The tangent bundle on the manifold $M$ is decomposed into an orthogonal sum indexed by a set $I$:
 $$TM = \bigoplus_{\alpha \in I} E_\alpha$$
 
@@ -1810,6 +1841,7 @@ graph TD
     K --> E2
     K --> E3
 ```
+*Fig. 5.2 (Diagram): Structural Diagram*
 
 For each sector $E_\alpha$ to function as an independent unit of intelligence, the following conditions are required:
 
@@ -1826,7 +1858,7 @@ For each sector $E_\alpha$ to function as an independent unit of intelligence, t
 
 The connection $\nabla$ governs the transitions between contexts, while the semantic potential $\Omega$ represents the external constraints (external forces) imposed on those transitions.
 
-## A3.1 Introduction of the Non-commutativity Tensor $\Theta$
+### B.3.1 Introduction of the Non-commutativity Tensor $\Theta$
 To measure the misalignment (friction) between the Parallel Key $K$ and the semantic potential $\Omega$, we define the following **Non-commutativity Tensor**:
 $$\Theta(X) = [\Omega, K](X)$$
 
@@ -1837,6 +1869,7 @@ graph LR
     P -.->|Non-zero Commutator| T[Tensor Theta]
     T -->|Drives| E[Evolution: PKGF]
 ```
+*Fig. 5.3 (Diagram): Structural Diagram*
 *Fig. A.3 (Diagram): Relationship between connection, potential, and the evolution-driving tensor Theta.*
 
 A non-zero tensor $\Theta$ indicates a contradiction between the internal logic $K$ of intelligence and the external requirements $\Omega$. This tension serves as the potential that drives the evolution (learning) of $K$ via the construction equation $\nabla K = [\Omega, K]$.
@@ -1847,7 +1880,7 @@ A non-zero tensor $\Theta$ indicates a contradiction between the internal logic 
 
 To account for the hierarchical nature of intelligence (meta-cognition, nested conceptual structures), we formulate PKGF as a chain of morphisms in a higher-order category.
 
-## A4.1 Hierarchical Chain of Morphisms
+### B.4.1 Hierarchical Chain of Morphisms
 The intelligence structure $K$ is a morphism (1-morphism) between 0-cells (states), and its gauge transformation $H$ is a morphism between morphisms (2-morphism).
 $$K_0 \xrightarrow{H_1} K_1 \xrightarrow{H_2} K_2 \dots$$
 
@@ -1863,6 +1896,7 @@ graph LR
         K2
     end
 ```
+*Fig. 5.4 (Diagram): Structural Diagram*
 
 This chain forms an $\infty$-groupoid within a higher category, suggesting that intelligence topologically preserves the entire history of its thought processes. The 16-sector interaction described in Chapter 2.5 corresponds to specific homotopy types within this higher category. Such categorical formulations of the mind using high-order gauge theory are emerging as critical topics in contemporary mathematical psychology (Patrascu, 2025) [latest].
 # Appendix C: Theory of Singularities, Phase Transitions, and Rank Jumps
@@ -1887,7 +1921,7 @@ In the unified PKGF equation $\nabla K = [\Omega, K] - \lambda \mathcal{D}(K)$, 
 
 To precisely analyze the behavior near a rank singularity ($\det(K)=0$), we introduce the algebraic-geometric technique of **Blow-up**. For detailed analysis of blow-up techniques, refer to [blowups_resolution], and for a geometric visualization of resolution of singularities, see Schlichting (2007) [resol_sing2].
 
-## B2.1 Definition of the Blow-up Map
+### C.2.1 Definition of the Blow-up Map
 For a singularity $p \in M$, we construct a map $\pi : \widetilde{M} \to M$ that replaces the point $p$ with a hyperplane (exceptional divisor) while preserving the directional information of the eigenspace. By considering the pull-back $\widetilde{K} = \pi^* K$ of the Parallel Key, the rank change—which was discontinuous on the original manifold—can be described as a smooth "flow" on the higher-dimensional manifold $\widetilde{M}$.
 
 ```mermaid
@@ -1900,6 +1934,7 @@ graph LR
     end
     P -->|Blow-up Map pi| E
 ```
+*Fig. 5.5 (Diagram): Structural Diagram*
 *Fig. B.1 (Diagram): Regularization of singularities via the blow-up map.*
 
 ---
@@ -1908,14 +1943,14 @@ graph LR
 
 The essence of a dimensional jump (Axiom U6) lies in the topological change that occurs when the eigenvalues $\lambda_i$ of the Parallel Key $K$ cross zero.
 
-## B3.1 Definition of Spectral Flow
+### C.3.1 Definition of Spectral Flow
 For a family of operators $K(t)$ depending on time $t$, the net difference between the number of eigenvalues crossing zero from negative to positive and those crossing from positive to negative is called the **Spectral Flow**.
 $$\text{SF}(K_t) = \#\{\lambda_i(t) \text{ crossing negative to positive}\} - \#\{\lambda_i(t) \text{ crossing positive to negative}\}$$
 In the context of structural changes in intelligence, we define this as the increment in rank:
 $$\text{SF}(K_t) = \text{rank}(K_{\text{post}}) - \text{rank}(K_{\text{pre}})$$
 The count of eigenvalues transitioning from negative to positive serves as a geometric indicator of the rank increase (dimensional emergence) of intelligence.
 
-## B3.2 Topological Necessity of Dimensional Jumps
+### C.3.2 Topological Necessity of Dimensional Jumps
 The process by which intelligence acquires new concepts (dimensions) is formulated as a phenomenon where this spectral flow becomes non-zero:
 1. In the **Construction Phase (C)**, eigenvalues are driven in the positive direction.
 2. At a specific critical point $t_c$, an eigenvalue $\lambda_k(t_c) = 0$, passing through a rank singularity.
@@ -1927,6 +1962,7 @@ graph TD
     T2 -->|Eigenvalue crosses 0| T3[t > tc: Dimensional Emergence]
     T3 -->|Spectral Flow| RJ[!! RANK JUMP !!]
 ```
+*Fig. 5.6 (Diagram): Structural Diagram*
 *Fig. B.2 (Diagram): Process of rank jump and dimensional emergence driven by spectral flow.*
 
 ---
@@ -1935,7 +1971,7 @@ graph TD
 
 Morse theory is applied to analyze the critical points ($\delta S = 0$) of the intelligence action $S$.
 
-## B4.1 Evolution of the Index
+### C.4.1 Evolution of the Index
 The stability of intelligence is determined by the number of negative eigenvalues in the second variation of the action (the Morse index). Topological analysis of phase transitions using Morse theory, along with loss landscape analysis in deep linear networks, provides a detailed description of these physical transitions (Akhtiamov & Thomson, 2023) [akhtiamov23a]; (Achour et al., 2024) [23-0493].
 * **Stable Conviction**: A local minimum with an index of 0.
 * **Hesitation / Conflict**: A saddle point (singularity) with an index of 1 or higher.
@@ -1953,7 +1989,7 @@ This appendix extends PKGF from classical fields to non-commutative geometry and
 
 The classical Parallel Key $K$ and semantic potential $\Omega$ are replaced by linear operators $\widehat{K}$ and $\widehat{\Omega}$ acting on a complex Hilbert space $\mathcal{H}$.
 
-## C1.1 Fundamental Commutation Relation and the Intelligence Constant $\hbar_I$
+### D.1.1 Fundamental Commutation Relation and the Intelligence Constant $\hbar_I$
 The "order-dependence of information interpretation" in intelligence is defined by the following commutation relation:
 $$[\widehat{K}, \widehat{\Omega}] = i \hbar_I \widehat{\Theta}$$
 Here, $\hbar_I$ is the **Intelligence Action Constant**, representing the minimal unit of non-commutativity in interpretation. As this value approaches zero, logic becomes classical (commutative); larger values lead to dominant intuitive and non-linear non-commutative reasoning.
@@ -1964,11 +2000,11 @@ Here, $\hbar_I$ is the **Intelligence Action Constant**, representing the minima
 
 In a quantum system, the unified equation of classical PKGF transitions into the following operator evolution equation:
 
-## C2.1 Description of Operator Evolution
+### D.2.1 Description of Operator Evolution
 $$i \hbar_I \frac{\partial \widehat{K}}{\partial t} = [\widehat{\Omega}, \widehat{K}] - i \hbar_I \lambda \widehat{\mathcal{D}}(\widehat{K})$$
 In this equation, the first term describes Schrödinger-type unitary evolution (rotation of structure), while the second term describes Lindblad-type dissipation (forgetting and convergence of information). This allows the learning process of intelligence to be understood unifiedly as the dynamics of an open quantum system.
 
-### C2.2 Correspondence Principle
+### D.2.2 Correspondence Principle
 In the limit where the intelligence action constant $\hbar_I \to 0$, the quantum unified equation (C2.1) converges to the classical PKGF unified equation (U3). This ensures the physical process where complex and uncertain intelligent activity transitions into deterministic and logical inference (classical geometric flow) through learning and condensation.
 
 ---
@@ -1987,11 +2023,12 @@ graph TD
     D -->|Eigenvalue Spectrum| S[Discrete Concepts]
     K[Parallel Key K] -->|Action| S
 ```
+*Fig. 5.7 (Diagram): Structural Diagram*
 *Fig. C.1 (Diagram): Redefining the intelligence manifold as a spectral triple in noncommutative geometry.*
 
 The construction of computational models using non-commutative geometry is gaining attention as a new formalization of intelligence (Lau & Jeffreys, 2025) [noncommutative_nn_bu].
 
-## C3.1 The Dirac Operator $D$ and the Parallel Key
+### D.3.1 The Dirac Operator $D$ and the Parallel Key
 The background structures of intelligence (language, logic, culture) are embedded in the Dirac operator $D$, and the Parallel Key $K$ is perceived as the evolution of its spectrum (eigenvalue distribution). For a modern introduction to Dirac operators in non-commutative geometry, see Barrett (2023) [bonus6594], and for applications to neural operators, see Santos & Sales (2025) [hyperbolic_modular_operators].
 * **Discretization of Concepts**: A continuous field $\Phi$ is "quantized" into a discrete spectrum under the non-commutative structure. This is the physical mechanism by which discrete "symbols (words)" emerge from continuous sensory inputs.
 
@@ -2001,7 +2038,7 @@ The background structures of intelligence (language, logic, culture) are embedde
 
 This section provides a gauge-theoretic detail of the Higgs mechanism discussed in Appendix II.8, where concepts acquire "structural mass."
 
-## C4.1 Mass Acquisition in Gauge Fields
+### D.4.1 Mass Acquisition in Gauge Fields
 If the semantic potential $\Omega$ is viewed as a gauge field $A_\mu$, its interaction with the intelligence Higgs field $\Phi$, given by $\mathcal{L} \sim |(\partial - iA)\Phi|^2$, causes certain logics (gauge bosons) to acquire mass $m_S$.
 * **Physical Significance**: Logics that have acquired mass become "stable, robust beliefs" that are resistant to change, functioning as invariant axioms within the system.
 
@@ -2052,6 +2089,7 @@ graph LR
         eta --> Sum
     end
 ```
+*Fig. 5.8 (Diagram): Structural Diagram*
 
 *Fig. D.1: Single-step update flow of the discretized PKGF unified equation.*
 
@@ -2094,6 +2132,7 @@ graph TD
         xi[ξ: Noise] -.-> B
     end
 ```
+*Fig. 5.9 (Diagram): Structural Diagram*
 
 *Fig. D.2: Relationships between the three phases in discretized PKGF (simplified version of the Step 5 phase diagram).*
 
@@ -2113,52 +2152,52 @@ This glossary provides a systematic organization of the technical terms, mathema
 
 ## A. Core Structures
 
-## Parallel Key (\(K\))
+### Parallel Key (\(K\))
 An endomorphism field on the tangent bundle \(TM\) of a manifold \(M\). It is the central physical quantity representing the internal structure, logic, and interpretive rules of intelligence. Its eigenvalue spectrum, rank, and commutator structures determine the state of intelligence.
 
-## Semantic Potential (\(\Omega\))
+### Semantic Potential (\(\Omega\))
 A mapping field derived from external information, goals, or the environment. It acts as an external driving force that induces rotation or tension within the internal structure \(K\).
 
-## Connection (\(\nabla\))
+### Connection (\(\nabla\))
 A geometric structure that defines "parallel transport" between contexts. It ensures consistency as intelligence transitions between different cognitive states or situations.
 
-## Background Curvature (\(R\))
+### Background Curvature (\(R\))
 The curvature tensor associated with the connection \(\nabla\). It represents the geometric deformation of the background world of intelligence, including culture, experience, and prior knowledge.
 
-## Stabilizer Group (Gauge Group, \(\mathcal{G}\))
+### Stabilizer Group (Gauge Group, \(\mathcal{G}\))
 A group representing the redundancy or degrees of freedom in internal representations. Quantities that remain invariant under adjoint transformations \(K \mapsto HKH^{-1}\) constitute the objective intelligence structure.
 
 ---
 
 ## B. The CDU Cycle (Cause–Divergence–Unification)
 
-## C (Cause / Constructive Phase)
+### C (Cause / Constructive Phase)
 The phase in which logical structures are formed by adapting to the external semantic potential \(\Omega\). It is characterized by convergence toward the alignment equation \(\nabla K = [\Omega, K]\).
 
-## D (Divergence / Destructive Phase)
+### D (Divergence / Destructive Phase)
 The phase dominated by the dissipative operator \(\mathcal{D}(K)\), where the logical rank monotonically decreases. This phase drives abstraction by inducing reduction of redundant or excessive structures.
 
-## U (Unification / Metabolic Phase)
+### U (Unification / Metabolic Phase)
 The phase where construction and dissipation reach a dynamic equilibrium, and the complexified \(K\) exhibits emergent or periodic behavior. This represents intelligence as a non-equilibrium steady state.
 
 ---
 
 ## C. The PKGF Axiomatic System
 
-## Positive PKGF (Constructive PKGF)
+### Positive PKGF (Constructive PKGF)
 A constructive flow governed by the alignment equation:
 \[
 \nabla K = [\Omega, K]
 \]
 
-## Inverse PKGF (Destructive PKGF)
+### Inverse PKGF (Destructive PKGF)
 A dissipative flow governed by the dissipation equation:
 \[
 \dot{K} = -\lambda \mathcal{D}(K)
 \]
 characterized by rank monotonicity (Axiom D3).
 
-## Unified PKGF
+### Unified PKGF
 A metabolic flow governed by the complexified field:
 \[
 K = K_{\text{core}} + i K_{\text{fluct}}
@@ -2169,145 +2208,145 @@ This includes gauge breaking (Axiom U4) and dimensional transitions (Axiom U6).
 
 ## D. Geometry and Algebraic Structures
 
-## Sector Decomposition
+### Sector Decomposition
 The direct sum decomposition of the tangent bundle:
 \[
 TM = \bigoplus_{\alpha} E_\alpha
 \]
 This represents the modularity and semantic differentiation of intelligence.
 
-## Commutator (\([A,B]\))
+### Commutator (\([A,B]\))
 The fundamental operation representing the non-commutativity between internal structure and external potential. It is the source of semantic misalignment, tension, and contradiction.
 
-## Non-commutativity Tensor (\(\Theta\))
+### Non-commutativity Tensor (\(\Theta\))
 Defined as:
 \[
 \Theta = \nabla K - [\Omega, K]
 \]
 A tensor that measures the degree of misalignment or inconsistency.
 
-## Dissipative Operator (\(\mathcal{D}(K)\))
+### Dissipative Operator (\(\mathcal{D}(K)\))
 A self-adjoint, negative-definite operator that induces structural collapse and abstraction.
 
-## Effective Dimension (\(d_{\text{eff}}\))
+### Effective Dimension (\(d_{\text{eff}}\))
 The effective degrees of freedom of a structure, defined via its singular value spectrum. It serves as the primary observational metric for Rank Jumps.
 
 ---
 
 ## E. Phase Transitions and Singularities
 
-## Gauge Symmetry Breaking (Axiom U4)
+### Gauge Symmetry Breaking (Axiom U4)
 \[
 \mathcal{G} \to \mathcal{G}_{\text{broken}}
 \]
 A phase transition where internal degrees of freedom collapse, and a specific logical structure becomes fixed.
 
-## Dimensional Transition (Axiom U6)
+### Dimensional Transition (Axiom U6)
 \[
 d_{\text{eff}}(t_c^+) \neq d_{\text{eff}}(t_c^-)
 \]
 A discontinuous change in rank caused by eigenvalues crossing zero.
 
-## Rank Singularity
+### Rank Singularity
 \[
 \det(K) \to 0
 \]
 A precursor to structural collapse.
 
-## Non-commutative Singularity
+### Non-commutative Singularity
 \[
 \|\Theta\| \to \infty
 \]
 A breakdown of the alignment equation.
 
-## Curvature Singularity
+### Curvature Singularity
 Divergence of the background curvature \(R\).
 
 ---
 
 ## F. Topology, Indices, and Invariants
 
-## Characteristic Classes
+### Characteristic Classes
 Invariants such as Chern classes or Pontryagin classes that represent the structural invariance of the deep structure of intelligence.
 
-## Index of Intelligence
+### Index of Intelligence
 An integer-valued capacity metric based on the Atiyah-Singer index theorem, indicating the quantization of concepts.
 
-## Persistent Homology
+### Persistent Homology
 A method using barcodes and bottleneck distances to detect dimensional transitions and structural emergence.
 
 ---
 
 ## G. Quantization and Category Theory
 
-## Intelligence Higgs Field (\(\Phi\))
+### Intelligence Higgs Field (\(\Phi\))
 A scalar field representing the condensation of meaning. It is the mechanism through which concepts acquire structural mass.
 
-## Structural Mass
+### Structural Mass
 The phenomenon where logical structures become fixed or resistant to change through coupling with the semantic potential.
 
-## Higher-Order Category (\(\infty\)-Category)
+### Higher-Order Category (\(\infty\)-Category)
 \[
 K_0 \to K_1 \to K_2 \to \cdots
 \]
 A chain of morphisms representing the hierarchical architecture of intelligence.
 
-## Loss of Morphism Invertibility
+### Loss of Morphism Invertibility
 A categorical hallmark of a phase transition.
 
 ---
 
 ## H. Experiments and Substrate Invariance
 
-## Substrate Invariance
+### Substrate Invariance
 The property whereby the CDU structure appears isomorphically across electronic, biological, optical, and silicon substrates.
 
-## Critical Charge (9.0 µC)
+### Critical Charge (9.0 µC)
 The phase transition point for behavioral emergence in *Mimosa pudica*, providing biological verification of Axioms U4 and U6.
 
-## Autonomous Restoration
+### Autonomous Restoration
 The phenomenon where the PKGF flow converges to a correct solution even under high noise—a dynamic inference capability impossible for static AI.
 
 ---
 
 ## I. Implementation and Discretization
 
-## Matrix Commutator
+### Matrix Commutator
 The central operation in digital PKGF, implementable as standard matrix multiplication.
 
-## Dissipative Kernel
+### Dissipative Kernel
 Techniques such as Gaussian convolution or graph Laplacians used to implement dissipation.
 
-## Thinking Cycle
+### Thinking Cycle
 Dynamic inference performed via a 100-step update sequence in PKGF.
 
 ---
 
 ## J. Auxiliary Concepts
 
-## Structural Inertia
+### Structural Inertia
 Corresponding to the coefficient \(\alpha\) in the alignment term; the force that maintains existing logic.
 
-## Dissipative Intensity
+### Dissipative Intensity
 Coefficient \(\beta\); the force that induces reduction of structure and promotes abstraction.
 
-## Semantic Gravity
+### Semantic Gravity
 The attractive influence of logic induced by the curvature \(F_\Omega\).
 
 ---
 
 ## K. Philosophical Foundations of PoI
 
-## Medium-Independent Intelligence
+### Medium-Independent Intelligence
 The stance that intelligence is not defined by its material substrate but is a **physical phenomenon** governed by the PKGF axiomatic system.
 
-## Geometric Definition of Intelligence
+### Geometric Definition of Intelligence
 Intelligence is defined as the irreversible process of structural reorganization:
 \[
 \mathcal{I} = U \circ D \circ C
 \]
 
-## Physics of Structure
+### Physics of Structure
 The foundational philosophy of PoI, describing intelligence through geometry rather than probability.
 
 ---

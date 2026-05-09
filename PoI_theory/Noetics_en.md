@@ -9,7 +9,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-## Preface
+## Abstract
 
 In the 21st century, research on intelligence has advanced rapidly under computational paradigms. Yet concepts such as computation, information processing, and statistical inference fail to capture the essential characteristics of intelligence—namely, the *generation*, *collapse*, and *phase‑transition‑driven reorganization* of internal structure.  
 Intelligence is not merely the manipulation of information; it is a **physical and geometric process of self‑organization and structural reconstruction** [Fagan 2026]. This recognition has emerged independently across multiple scientific domains.

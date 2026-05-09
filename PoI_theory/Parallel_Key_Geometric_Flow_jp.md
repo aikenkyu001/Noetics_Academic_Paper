@@ -9,7 +9,7 @@ Supplementary Research Package: https://doi.org/10.5281/zenodo.20018571
 
 ---
 
-# 0. 要旨（Abstract）
+## 要旨（Abstract）
 
 本稿では、有限次元ベクトル束上の作用素の時間発展として現れる保存的流と散逸的流を、統一的な枠組みのもとで厳密に定式化する。
 
@@ -47,8 +47,9 @@ flowchart TD
     F --> H
     G --> H
 ```
+*Fig. 0.1 (Diagram): Structural Diagram*
 
-**Figure 1. PKGF の構造的階層図**
+*Fig. 1.1 PKGF の構造的階層図**
 
 - **Axioms（公理層）**：幾何学的・代数的構造を規定。(Input: Manifold/Bundle setup, Output: Structural constraints)
 - **Conservative / Dissipative Flow（C/D 層）**：保存的・散逸的成分を分離配置。(Input: Potential/Operator, Output: Evolution equations)
@@ -103,10 +104,11 @@ flowchart TB
     I2 --> I4
     I3 --> I4
 ```
+*Fig. 0.2 (Diagram): Structural Diagram*
 
 ---
 
-# Table of Contents
+## Table of Contents
 
 0. 要旨  
 1. 数学的設定  
@@ -250,7 +252,7 @@ PKGF の公理体系は、新しい数学的対象を導入するためのもの
 これにより、保存的流・散逸流・統合流・スペクトル流を  
 矛盾なく扱うための論理的基盤が確立される。
 
-### 2.1 構造的依存関係（Dependency DAG）— PKGF の三層構造の可視化
+## 2.1 構造的依存関係（Dependency DAG）— PKGF の三層構造の可視化
 
 PKGF の「構造層 → 解析層 → 結果層」という三層構造の哲学を以下に可視化する。
 
@@ -303,6 +305,7 @@ flowchart TD
     SF --> MT
     LT --> MT
 ```
+*Fig. 2.1 (Diagram): Structural Diagram*
 
 ---
 
@@ -344,7 +347,7 @@ K(0) \in \Gamma(\mathrm{End}(E))
 は自己共役 Fredholm であり、0 にスペクトルギャップを持つ。
 
 この条件は、スペクトル流を扱う際に
-**固有値の 0 横断を明確に定義するための正準적要請** であり、
+**固有値の 0 横断を明確に定義するための正準的要請** であり、
 楕円型作用素論における古典的前提と一致する（[Phillips 1996], [Waterstraat 2016] を参照）。
 
 **注釈：** A3 は初期時刻のみの仮定であるが、時間発展に伴う Fredholm 性の維持は、後に述べる解析的仮定 **H‑Fred（時間保存）** とセットで考慮される。これにより、初期の Fredholm 性が全時間においてスペクトル流の well-definedness を保証するための十分な出発点となる。
@@ -526,7 +529,7 @@ PKGF の重要な特徴は、保存的流（Lie 代数的構造）と
 | **\(L^2\)-ノルム** | 保存 | 減衰 |
 | **エネルギー \(E\)** | 保存 | 単調減少 |
 
-### C-phase が保存する量
+### 3.4.1 C-phase が保存する量
 
 保存的流
 
@@ -546,7 +549,7 @@ PKGF の重要な特徴は、保存的流（Lie 代数的構造）と
 
 ---
 
-### D-phase が破壊する量
+### 3.4.2 D-phase が破壊する量
 
 一方、散逸流
 
@@ -762,6 +765,7 @@ flowchart TD
     C --> P1
     D --> P2
 ```
+*Fig. 5.1 (Diagram): Structural Diagram*
 
 ---
 
@@ -925,6 +929,7 @@ flowchart LR
     L0 --> L
     L --> X2
 ```
+*Fig. 6.1 (Diagram): Structural Diagram*
 
 PKGF の基本変数 \(\widetilde{K}(t)\) は
 
@@ -937,7 +942,7 @@ PKGF の基本変数 \(\widetilde{K}(t)\) は
 しかし、作用素論の古典的事実として：
 
 - 固有空間が無限次元  
-- スペクトルが本質적スペクトルのみ  
+- スペクトルが本質的スペクトルのみ  
 - Fredholm ではない  
 
 という性質を持つため、  
@@ -1123,7 +1128,7 @@ PKGF は、このスペクトル流を
 
 スペクトル流の理論を PKGF や幾何学的流に適用する際、しばしば見受けられる誤用例を以下に整理する。
 
-#### 誤用例：掛け算作用素に対してスペクトル流を定義しようとする誤り
+### 6.8.1 誤用例：掛け算作用素に対してスペクトル流を定義しようとする誤り
 しばしば文献において、時間依存の 0 次束写像 \(\widetilde{K}(t) : L^2(M,E) \to L^2(M,E)\) に対して直接スペクトル流を定義しようとする誤りが見られる。しかしながら、掛け算作用素は以下の理由により、スペクトル流の定義域に属さない：
 
 - 固有空間は一般に無限次元である  
@@ -1133,7 +1138,7 @@ PKGF は、このスペクトル流を
 
 したがって、\(\widetilde{K}(t)\) そのものに対してスペクトル流を定義することは **理論的に不可能** である。PKGF ではこの誤用を避けるため、古典的手法に従い \(\mathcal{L}(t) = \mathcal{L}_0 + \widetilde{K}(t)\) という **楕円型作用素への持ち上げ（elliptic realization）** を必須とする。
 
-#### 誤用例：時間連続性だけで norm-resolvent continuity を主張する誤り
+### 6.8.2 誤用例：時間連続性だけで norm-resolvent continuity を主張する誤り
 PDE の解 \(\widetilde{K}(t)\) が \(L^2\)-連続であることから、\(t \mapsto \mathcal{L}(t)\) が norm-resolvent 連続であると誤解されることがある。しかし、norm-resolvent continuity は極めて強い要請であり、PDE の時間正則性からは決して自動的には得られない。この誤用を避けるため、PKGF では H-Fred（Fredholm 性の保存）と SF-Op（norm-resolvent continuity）を明確に分離して扱う。
 
 ---
@@ -1618,6 +1623,7 @@ flowchart TD
     D --> dE
     dE --> F
 ```
+*Fig. 10.1 (Diagram): Structural Diagram*
 
 ---
 
@@ -1684,7 +1690,7 @@ E(K(t_2)) \le E(K(t_1)) \qquad (t_2 > t_1).
 
 さらに、エネルギー関数が解析的である場合、  
 Łojasiewicz–Simon 型の議論により  
-**収束速度（指数적収束など）** を議論できる。
+**収束速度（指数的収束など）** を議論できる。
 
 PKGF はこの既存理論を  
 **統合流の枠組みの中に正しく組み込む**。
@@ -1755,11 +1761,12 @@ flowchart LR
     SF --> MT
     LT --> MT
 ```
+*Fig. 11.1 (Diagram): Structural Diagram*
 
 本章では、これまでに導入した公理層（A1–A6）および解析的仮定（H‑mD, H‑dom, H‑reg, H‑Fred, SF‑Op, D5, H‑orbit）を前提として、  
 **PKGF の統合流（U-phase）が満たす主要な数学的性質を一つの定理として総合的に述べる。**
 
-### 11.1 解析的仮定の分類と役割（Hypothesis Classification）
+## 11.1 解析的仮定の分類と役割（Hypothesis Classification）
 
 主定理を構成する各仮定の役割と必要性を以下の表にまとめる。
 
@@ -1778,7 +1785,7 @@ flowchart LR
 
 ---
 
-### 11.2 主定理の構成（Main Theorem Structure）
+## 11.2 主定理の構成（Main Theorem Structure）
 
 主定理が提供する主要な結論を、必要な仮定と共に以下に整理する。
 
@@ -1793,14 +1800,14 @@ flowchart LR
 
 ---
 
-## 主定理（PKGF の統合的 well-posedness と構造的整合性）
+## 11.3 主定理（PKGF の統合的 well-posedness と構造的整合性）
 
 公理 A1–A6 と解析的仮定 H‑mD, H‑dom, H‑reg, H‑Fred, SF‑Op, D5, H‑orbit を満たすとする。  
 このとき、以下が成立する。
 
 ---
 
-## (1) 統合流（U-phase）の well-posedness
+### (1) 統合流（U-phase）の well-posedness
 
 統合流
 
@@ -1827,7 +1834,7 @@ flowchart LR
 
 ---
 
-## (2) エネルギー構造（gradient-like structure）
+### (2) エネルギー構造（gradient-like structure）
 
 エネルギー関数
 
@@ -1861,7 +1868,7 @@ E(K(t_2)) \le E(K(t_1)) \qquad (t_2>t_1)
 
 ---
 
-## (3) スペクトル流の well-definedness
+### (3) スペクトル流の well-definedness
 
 楕円型作用素族
 
@@ -1883,7 +1890,7 @@ E(K(t_2)) \le E(K(t_1)) \qquad (t_2>t_1)
 
 ---
 
-## (4) 長時間挙動（LaSalle 型の漸近挙動）
+### (4) 長時間挙動（LaSalle 型の漸近挙動）
 
 軌道相対コンパクト性（H‑orbit）と固定点集合の相対コンパクト性（D5）の下で、  
 統合流の散逸成分は LaSalle 型の結論を満たす。
@@ -1903,7 +1910,7 @@ E(K(t_2)) \le E(K(t_1)) \qquad (t_2>t_1)
 
 ---
 
-## (5) 保存的構造との整合性
+### (5) 保存的構造との整合性
 
 保存的成分 \([ \Omega, \widetilde{K} ]\) は
 
@@ -1922,7 +1929,7 @@ E(K(t_2)) \le E(K(t_1)) \qquad (t_2>t_1)
 
 ---
 
-## (6) PKGF の構造的整合性（Consistency Theorem）
+### (6) PKGF の構造的整合性（Consistency Theorem）
 
 以上の (1)–(5) を総合すると、PKGF は以下を保証する：
 

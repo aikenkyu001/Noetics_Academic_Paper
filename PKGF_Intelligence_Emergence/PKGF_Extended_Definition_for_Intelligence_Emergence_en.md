@@ -29,7 +29,7 @@ This ensures that the "background" or context determines the spatial density and
 The Parallel Key $K \in \Gamma(\mathrm{End}(TM))$ is a $(1,1)$ tensor field defining the logical structure of the manifold. It represents the logical consistency of an individual agent.
 
 ### **2.2 Adjoint Holonomy Update (Parallel Transport)**
-While the theoretical parallel transport condition is $\nabla K = 0$$, the real-time evolution along a flow $v$ is described by an **adjoint holonomy update**:
+While the theoretical parallel transport condition is $\nabla K = 0$, the real-time evolution along a flow $v$ is described by an **adjoint holonomy update**:
 \[ K(t+dt) = H K(t) H^{-1}, \quad H = \exp(\Omega dt) \]
 Where $\Omega$ is the connection matrix derived from the Levi-Civita connection $\Gamma^i_{kj}$ and the velocity $v$:
 \[ \Omega^i_j = \Gamma^i_{kj} v^k \]

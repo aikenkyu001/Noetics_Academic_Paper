@@ -106,7 +106,7 @@ The main analytical challenge is that:
 
 We use the Crandall–Liggett theorem and nonlinear semigroup theory.
 
-### Theorem 4.1 (Existence of Mild Solutions)
+## 4.1 Existence of Mild Solutions
 Assume:
 
 1. \(\mathcal{D}\) is m-dissipative on \(L^2\),  
@@ -121,7 +121,7 @@ Then the nonlinear PKGF equation admits a unique mild solution
 K \in C([0,T]; L^2(M,\mathrm{End}(E))).
 \]
 
-### Theorem 4.2 (Strong Solutions)
+## 4.2 Strong Solutions
 If in addition:
 
 - \(\mathcal{N}\) maps \(H^1\) to \(L^2\),  
@@ -156,7 +156,7 @@ The commutator term vanishes:
 \langle [\Omega(K), K], K\rangle = 0.
 \]
 
-### Energy Decay Condition
+## 5.1 Energy Decay Condition
 
 If  
 \[
@@ -175,7 +175,7 @@ This stability is mathematically consistent with structure-preserving numerical 
 
 Using LaSalle-type arguments [Mei and Bullo 2020]:
 
-### Theorem 6.1 (Asymptotic Stability)
+## 6.1 Theorem 6.1 (Asymptotic Stability)
 If the fixed-point set  
 \[
 \mathcal{F} = \{K : \mathcal{D}(K) + \mathcal{N}(K) = 0\}
@@ -187,7 +187,7 @@ is compact, then every solution satisfies:
 \]
 The rate of convergence may be characterized by Lojasiewicz–Simon gradient inequalities [Feehan and Maridakis 2019]. This corresponds to **structural collapse / abstraction** (D-phase).
 
-### Theorem 6.2 (Attractor Existence)
+## 6.2 Theorem 6.2 (Attractor Existence)
 If \(\mathcal{N}\) is dissipative and compact,  
 the nonlinear PKGF admits a global attractor.
 
@@ -224,7 +224,7 @@ The theoretical framework for nonlinear PKGF has been empirically verified using
 
 We evaluated the PKGF model's ability to maintain structural integrity in a 1D Logistic Map operating in a chaotic regime ($r=3.8$) under high Gaussian noise ($\sigma=0.04$). The system was embedded as the primary component in a 4-dimensional Hermitian operator space.
 
-### Numerical Metrics
+### 8.1.1 Numerical Metrics
 
 | Metric | Standard Model (1D) | PKGF Model (4D) |
 | :--- | :--- | :--- |
@@ -239,13 +239,13 @@ We evaluated the PKGF model's ability to maintain structural integrity in a 1D L
 
 We analyzed the decoupling between "Sensitive Dependence on Initial Conditions (Butterfly Effect)" and "Structural Integrity" in the Lorenz system to verify the **Structural Predictive Capacity** of the Noetics framework.
 
-### Observed Temporal Dynamics and Predictive Decoupling
+### 8.2.1 Observed Temporal Dynamics and Predictive Decoupling
 
 1.  **Collapse of Point-wise Prediction**: Due to infinitesimal initial differences, coordinate-level predictions (RMSE) reached their physical limit and collapsed at **$t = 0.005\text{s}$**.
 2.  **Survival of Structural Prediction**: Even after the point-wise prediction failed, the geometric shape and phase coherence of the attractor were maintained. This implies that while micro-level predictions of "exact location" fail, the macro-level prediction of "how the system behaves structurally" (Structural Survival) continues.
 3.  **Self-Awareness of Predictive Limits**: The commutator norm $\|[\Omega, K]\|$ surged just before phase coherence was lost. This demonstrates that Noetics can physically detect the "limit point" where its own structural prediction becomes impossible.
 
-### Structural Survival Margin and the Definition of Intelligence
+### 8.2.2 Structural Survival Margin and the Definition of Intelligence
 
 The **Structural Survival Margin ($1.420\text{s}$)** demonstrated in this experiment shows that structural prediction remains valid **more than 280 times longer** than the lifespan of point-wise prediction.
 
