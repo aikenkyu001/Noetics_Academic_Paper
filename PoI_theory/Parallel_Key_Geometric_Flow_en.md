@@ -27,6 +27,8 @@ Furthermore, we provide:
 
 The primary objective of PKGF is not to introduce a novel class of physical flows, but rather to establish a rigorous infrastructure for the integrated application of existing parabolic PDE theory, semigroup theory, and spectral flow theory. This analytical foundation provides a robust platform for the future development of unified field theories and non-equilibrium statistical models.
 
+In addition to its analytical role, PKGF is designed as a mathematical infrastructure for the process-ontological framework of *Stable Otherness* developed in *Noetic Genesis*. In this interpretation, the conservative–dissipative–unified decomposition corresponds to the Construction–Dissipation–Unification (CDU) cycle on a relational manifold, providing a rigorous substrate for the geometric dynamics of otherness.
+
 ```mermaid
 flowchart TD
     A["Axioms<br>Geometric & Algebraic Layer<br>(A1-A6)"] --> B["Conservative Flow<br>(Lie Algebraic Structure)"]
@@ -209,6 +211,26 @@ However, integrating these elements into a single, consistent mathematical frame
 - **Spectral flow** (Elliptic operator theory)
 
 each belong to distinct theoretical backgrounds and have traditionally been treated in isolation. PKGF aims to logically decouple and then reintegrate these structures within the bounds of existing theory, providing a foundation to safely handle these elements as they appear in physical models.
+
+---
+
+## 1.6 Relation to Noetic Genesis
+
+This work also serves as the analytical foundation for the philosophical framework of *Noetic Genesis*, where intelligence and otherness are described as geometric processes on a relational manifold. The mathematical objects introduced in PKGF correspond directly to the ontological structures of Stable Otherness:
+
+| Noetic Genesis Concept | PKGF Object | Interpretation |
+|---|---|---|
+| Relational Manifold | \(M\) | Space of relational states |
+| Interpretive Connection | \(\nabla\) | Background structure of interpretive inclination |
+| Parallel Key (Otherness Kernel) | \(K(t)\) | Evolving endomorphism encoding relational structure |
+| Construction Phase | Conservative flow \([\Omega,K]\) | Reversible structural preservation |
+| Dissipation Phase | Dissipative flow \(\mathcal{D}(K)\) | Irreversible reduction of redundancy |
+| Unification Phase | Unified flow + spectral flow | Rank-jumps / phase transitions |
+| Covariant Aufheben | Spectral flow + LaSalle behavior | Integration of self and other via connection deformation |
+
+This correspondence allows PKGF to function as the mathematical substrate for the geometric process ontology developed in *Noetic Genesis*.
+
+In this sense, PKGF does not merely “apply” to Noetic Genesis but provides the minimal analytical substrate required for its process ontology to be mathematically meaningful. The CDU cycle becomes a decomposition of operator evolution, the relational manifold becomes a geometric stage for operator flows, and Covariant Aufheben becomes a spectral–asymptotic transition. Thus, PKGF supplies the rigorous mathematical backbone for the natural-historical and geometric structures articulated in Noetic Genesis.
 
 ---
 
@@ -607,6 +629,11 @@ The unified flow equation $\partial_t \widetilde{K} = [\Omega, \widetilde{K}] + 
 3. Their sum is therefore linear. $\square$
 
 **Note:** This linearity is a crucial property ensuring the analytical transparency of PKGF. Complexification is an algebraic method for integration and does not introduce non-linearity. Consequently, well-posedness is fully resolved within classical linear semigroup theory, without requiring non-linear extensions.
+
+The unified flow is also the point at which the mathematical structure of PKGF directly interfaces with the process ontology of Noetic Genesis.
+
+In the context of *Noetic Genesis*, the unified flow realizes the Unification phase of the CDU cycle.
+ The conservative component preserves structural invariants, while the dissipative component smooths curvature and reduces redundancy. Their complexified combination produces the conditions under which rank-jumps and topological transitions—mathematically expressed through spectral flow—can occur. This structure corresponds to the ontological “integration” stage of Covariant Aufheben, where the interpretive connection \(\nabla\) is dynamically reconfigured to incorporate the structure of the other.
 
 The right-hand side is simply the **complex linear sum** of:
 - Conservative flow: $[\Omega, \widetilde{K}]$
@@ -1067,6 +1094,14 @@ H-reg ($K \in H^2, \partial_t K \in L^2$) is the **established Sobolev regularit
 ### Proposition (Relationship to Gradient Flows)
 Dissipative flows possess the same structure as gradient flows with respect to energy $E$. Thus, the framework is understood as a coupling of gradient flows and conservative flows.
 
+The long-time behavior of the dissipative component, together with the spectral transitions of the unified operator, provides a mathematical realization of *Covariant Aufheben* as introduced in the geometric foundations of Stable Otherness. In this interpretation:
+
+- Negation corresponds to structural fluctuation encoded in \(\widetilde{K}(t)\),
+- Correction corresponds to dissipative smoothing and connection deformation,
+- Integration corresponds to the formation of a new invariant manifold detected through spectral flow.
+
+Thus, PKGF offers a rigorous analytical model for the ontological transformation process central to Noetic Genesis. In the Noetic Genesis interpretation, the long-time convergence of the dissipative component and the discrete spectral transitions of the unified operator jointly encode the ontological integration process—Covariant Aufheben—where a new relational manifold is stabilized.
+
 ---
 
 # 11. Main Theorem
@@ -1245,6 +1280,8 @@ Establishing conditions for H-orbit (e.g., uniform $H^2$ boundedness, regularity
 ## (5) Extensions to Non-linear PKGF
 
 While the current paper focuses on linear settings, extending unified flows to include non-linear terms $F(K)$ (e.g., in reaction-diffusion systems, non-linear gauge theories, or non-linear eigenvalue problems) is a natural progression. Furthermore, integrating **higher-order spectral flow** [Dai & Zhang 1998] or **K-theoretic computations** [Aoki et al. 2025] could describe more complex topological phase transitions.
+
+While the present PKGF framework is strictly linear in $K$, this should be regarded as a first-order analytical substrate capturing the Construction and Dissipation phases of the CDU cycle. The genuinely non-linear Unification phase—corresponding to ontological rank-jumps in Stable Otherness—will require extensions via bifurcation theory, non-linear operator flows, or generalized Ricci-type geometric evolutions. These directions constitute the mathematical development of the full Noetic Genesis ontology.
 
 ---
 
