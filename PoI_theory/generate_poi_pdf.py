@@ -359,7 +359,8 @@ def process_markdown(md_path, output_pdf_name, is_jp=False):
     tex_body = "\n".join(body_tex_lines)
 
     jp_preamble = r'''\usepackage{xeCJK}
-\setCJKmainfont{Noto Sans CJK JP}''' if is_jp else ""
+\setCJKmainfont{Hiragino Sans}''' if is_jp else ""
+# \setCJKmainfont{Noto Sans CJK JP}''' if is_jp else ""
     
     localized_labels = r'''
 \renewcommand{\abstractname}{概要}
